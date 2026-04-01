@@ -1,0 +1,104 @@
+{
+  "date": "March 29, 2026",
+  "breaking_news": {
+    "text": "Fed holds rates steady for third consecutive meeting — Chair signals data-dependent approach through Q2 2026",
+    "is_breaking": true
+  },
+  "market_stories": [
+    {
+      "cat": "Markets", "cat_class": "tag-market", "time": "2h ago",
+      "title": "Fed Holds Rates — Third Meeting in a Row",
+      "summary": "The Federal Reserve kept interest rates at 4.25–4.5% for the third consecutive meeting. Chair Powell said the committee needs more confidence that inflation is falling before cutting. For students: higher rates mean your savings account pays more, but loans cost more too. If you plan to take out student loans, this matters directly.",
+      "mins": "3 min read", "featured": true
+    },
+    {
+      "cat": "Markets", "cat_class": "tag-market", "time": "3h ago",
+      "title": "Why Gold Just Hit an All-Time High",
+      "summary": "Gold crossed $3,090 per ounce — a record. When investors get nervous about the economy, they buy gold as a 'safe haven' asset. That surge tells you a lot about current market anxiety and uncertainty.",
+      "mins": "2 min read", "featured": false
+    },
+    {
+      "cat": "Markets", "cat_class": "tag-market", "time": "4h ago",
+      "title": "VIX Drops 4% — What the 'Fear Index' Is Telling Us",
+      "summary": "The VIX measures how much volatility traders expect in the market. When it falls, it means traders feel calmer. This week's drop suggests investors are less panicked than last week, even with rate uncertainty in the air.",
+      "mins": "2 min read", "featured": false
+    }
+  ],
+  "world_stories": [
+    {
+      "cat": "Economy", "cat_class": "tag-world", "time": "1h ago",
+      "title": "New Tariffs on Steel: What It Means for Prices",
+      "summary": "The US announced new 25% tariffs on imported steel. Tariffs are taxes on foreign goods — they protect US companies but raise prices for consumers. Think higher car and appliance costs in 6–12 months.",
+      "mins": "3 min read", "featured": false
+    },
+    {
+      "cat": "Global", "cat_class": "tag-world", "time": "5h ago",
+      "title": "China's Economy Is Slowing — Should You Care?",
+      "summary": "China's GDP growth fell to 4.5%, below the 5% target. Since China makes a massive share of global goods, a slowdown there ripples into supply chains, tech hardware, and commodity prices worldwide.",
+      "mins": "4 min read", "featured": false
+    },
+    {
+      "cat": "Economy", "cat_class": "tag-world", "time": "6h ago",
+      "title": "US Unemployment Holds at 4.1% — Is That Good?",
+      "summary": "The job market remains resilient despite high rates. Full employment is typically considered around 4–5%. The key question: if jobs stay strong, will the Fed feel pressure to cut rates at all?",
+      "mins": "2 min read", "featured": false
+    }
+  ],
+  "personal_stories": [
+    {
+      "cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today",
+      "title": "How to Open Your First Brokerage Account at 17",
+      "summary": "You can start investing before 18 with a custodial account — a brokerage account a parent opens on your behalf. Fidelity and Charles Schwab both offer these for free with no minimums. Here's exactly how to do it in under 20 minutes.",
+      "mins": "5 min read", "featured": false
+    },
+    {
+      "cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today",
+      "title": "The Roth IRA: The Best Tax Hack Teenagers Have Access To",
+      "summary": "If you have a part-time job, you can contribute to a Roth IRA — money grows completely tax-free for life. Starting at 16 vs 25 can mean $200,000+ more at retirement. This is the single best financial move a teenager can make right now.",
+      "mins": "4 min read", "featured": false
+    }
+  ],
+  "tech_stories": [
+    {
+      "cat": "Tech", "cat_class": "tag-tech", "time": "3h ago",
+      "title": "Nvidia's AI Chips Are Behind Everything Right Now",
+      "summary": "From ChatGPT to self-driving cars, Nvidia's GPUs power most modern AI. The company's market cap just crossed $2 trillion again — meaning investors bet AI is here to stay. Understanding why helps you understand the whole tech market.",
+      "mins": "3 min read", "featured": false
+    },
+    {
+      "cat": "Tech", "cat_class": "tag-tech", "time": "5h ago",
+      "title": "Apple's AI Strategy Is Finally Taking Shape",
+      "summary": "Apple Intelligence rolled out globally this quarter, integrating AI into every iPhone. Unlike Nvidia which sells the 'picks and shovels' of AI, Apple bets on AI as a reason to buy new hardware. Two very different business models worth studying.",
+      "mins": "3 min read", "featured": false
+    },
+    {
+      "cat": "Tech", "cat_class": "tag-tech", "time": "7h ago",
+      "title": "What Is a Valuation — And Why Does Every Startup Claim Billions?",
+      "summary": "When a startup says it's 'valued at $10 billion,' that number comes from the last funding round, not actual revenue. Valuation is what investors agree a company is worth — and it can be wildly wrong in both directions.",
+      "mins": "2 min read", "featured": false
+    }
+  ],
+  "word_of_day": {
+    "word": "Yield Curve",
+    "type": "noun / economics",
+    "definition": "A graph showing interest rates on US government bonds at different maturity lengths. When short-term rates are higher than long-term ones (inverted), it has historically predicted recessions.",
+    "example": "Analysts pointed to the inverted yield curve as a warning sign, noting that short-term Treasury bills were paying more than 10-year bonds — a pattern that preceded each of the last seven US recessions.",
+    "tags": ["bonds", "interest rates", "recession signal", "Federal Reserve"]
+  },
+  "quiz": {
+    "question": "If the Federal Reserve raises interest rates, what typically happens to the stock market?",
+    "options": [
+      {"text": "A. Stocks usually go up immediately", "correct": false},
+      {"text": "B. Stocks often fall because borrowing becomes more expensive", "correct": true},
+      {"text": "C. Nothing — rates and stocks are unrelated", "correct": false},
+      {"text": "D. The stock market closes for the day", "correct": false}
+    ],
+    "explanation": "When the Fed raises rates, companies pay more to borrow money, reducing profits. Investors also earn more from 'safe' bonds, making risky stocks less attractive. Both effects push prices down."
+  },
+  "explainer_strip": [
+    {"term": "Today's Context", "def": "The S&P 500 is a basket of 500 large US companies. When it rises, it means most big businesses are doing well."},
+    {"term": "Why It Matters", "def": "Interest rates affect everything — your future mortgage, student loans, and how much banks pay you to save money."},
+    {"term": "Key Number", "def": "US inflation sits at 2.8% — meaning something that cost $100 last year now costs $102.80. The Fed's goal is 2%."},
+    {"term": "Quick Tip", "def": "If you invest $100/month starting at 17 at a 7% return, you will have ~$525,000 by age 65. That's compound interest."}
+  ]
+}
