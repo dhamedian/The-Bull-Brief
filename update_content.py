@@ -1,25 +1,15 @@
-"""
-update_content.py — The Bull Brief Daily AI Content Updater
-Run this script daily (via GitHub Actions) to refresh content.json
-Requires: pip install google-generativeai python-dotenv
-Get your FREE Gemini API key at: https://aistudio.google.com
-"""
-
 import os, json, datetime, re
-import google.generativeai as genai
-
-# ── CONFIG ──────────────────────────────────────────────────────────────────
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel("gemini-1.5-flash")  # Free tier model
+from google import genai
 
 TODAY = datetime.date.today().strftime("%B %d, %Y")
 
-# ── PROMPT ──────────────────────────────────────────────────────────────────
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+
 PROMPT = f"""
-You are the editor of "The Bull Brief," a daily finance newsletter written specifically 
+You are the editor of "The Bull Brief," a daily finance newsletter written specifically
 for high school students (ages 14-18) in the US. Today is {TODAY}.
 
-Generate today's content as a JSON object with this EXACT structure. 
+Generate today's content as a JSON object with this EXACT structure.
 Return ONLY the JSON, no markdown, no backticks, no extra text.
 
 {{
@@ -38,27 +28,29 @@ Return ONLY the JSON, no markdown, no backticks, no extra text.
       "mins": "3 min read",
       "featured": true
     }},
-    {{same structure, featured: false}},
-    {{same structure, featured: false}}
+    {{"cat": "Markets", "cat_class": "tag-market", "time": "3h ago", "title": "Second market story", "summary": "Explanation.", "mins": "2 min read", "featured": false}},
+    {{"cat": "Markets", "cat_class": "tag-market", "time": "4h ago", "title": "Third market story", "summary": "Explanation.", "mins": "2 min read", "featured": false}}
   ],
   "world_stories": [
-    {{same 3-story structure with cat: "Economy" or "Global", cat_class: "tag-world"}},
-    ...
+    {{"cat": "Economy", "cat_class": "tag-world", "time": "1h ago", "title": "World story 1", "summary": "Explanation.", "mins": "3 min read", "featured": false}},
+    {{"cat": "Global", "cat_class": "tag-world", "time": "5h ago", "title": "World story 2", "summary": "Explanation.", "mins": "4 min read", "featured": false}},
+    {{"cat": "Economy", "cat_class": "tag-world", "time": "6h ago", "title": "World story 3", "summary": "Explanation.", "mins": "2 min read", "featured": false}}
   ],
   "personal_stories": [
-    {{same structure with cat: "Personal Finance", cat_class: "tag-personal", 2 stories}},
-    ...
+    {{"cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today", "title": "Personal finance story 1", "summary": "Explanation.", "mins": "5 min read", "featured": false}},
+    {{"cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today", "title": "Personal finance story 2", "summary": "Explanation.", "mins": "4 min read", "featured": false}}
   ],
   "tech_stories": [
-    {{same structure with cat: "Tech", cat_class: "tag-tech", 3 stories}},
-    ...
+    {{"cat": "Tech", "cat_class": "tag-tech", "time": "3h ago", "title": "Tech story 1", "summary": "Explanation.", "mins": "3 min read", "featured": false}},
+    {{"cat": "Tech", "cat_class": "tag-tech", "time": "5h ago", "title": "Tech story 2", "summary": "Explanation.", "mins": "3 min read", "featured": false}},
+    {{"cat": "Tech", "cat_class": "tag-tech", "time": "7h ago", "title": "Tech story 3", "summary": "Explanation.", "mins": "2 min read", "featured": false}}
   ],
   "word_of_day": {{
-    "word": "Financial term",
+    "word": "A financial term relevant to today's news",
     "type": "noun / finance",
     "definition": "Clear 2-sentence definition a high schooler understands",
     "example": "A realistic quote using the word in a news context",
-    "tags": ["related", "terms", "here", "max5"]
+    "tags": ["related", "terms", "here"]
   }},
   "quiz": {{
     "question": "Multiple choice question testing understanding of today's news",
@@ -68,7 +60,7 @@ Return ONLY the JSON, no markdown, no backticks, no extra text.
       {{"text": "C. Option three", "correct": false}},
       {{"text": "D. Option four", "correct": false}}
     ],
-    "explanation": "2-sentence explanation of why the correct answer is right, in plain English"
+    "explanation": "2-sentence explanation of why the correct answer is right"
   }},
   "explainer_strip": [
     {{"term": "Today's Context", "def": "One key concept from today's news explained simply"}},
@@ -79,31 +71,35 @@ Return ONLY the JSON, no markdown, no backticks, no extra text.
 }}
 
 Rules:
-- Write at an 8th-10th grade reading level (clear, not dumbed down)
+- Write at an 8th-10th grade reading level
 - Explain every financial term the first time you use it
-- Always connect news to what it means for students' lives, savings, or future
-- Be accurate — use real current events and real market data from {TODAY}
+- Always connect news to what it means for students lives, savings, or future
+- Use real current financial news and data from today {TODAY}
 - Sound like a smart older student, not a corporate newsletter
-- Stories must be genuinely educational, not just headlines
 """
 
-# ── RUN ──────────────────────────────────────────────────────────────────────
 def update():
     print(f"Generating content for {TODAY}...")
-    response = model.generate_content(PROMPT)
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=PROMPT
+    )
     raw = response.text.strip()
-    
-    # Strip any accidental markdown fences
     raw = re.sub(r'^```json\s*', '', raw)
     raw = re.sub(r'\s*```$', '', raw)
-    
     data = json.loads(raw)
-    
     with open("content.json", "w") as f:
         json.dump(data, f, indent=2)
-    
-    print(f"✓ content.json written with {len(data)} top-level keys")
-    print(f"  Stories: {len(data['market_stories'])} market, {len(data['world_stories'])} world, {len(data['personal_stories'])} personal, {len(data['tech_stories'])} tech")
+    print(f"Done! content.json written for {TODAY}")
 
 if __name__ == "__main__":
     update()
+```
+
+**Then also update `daily-update.yml`** — find this line:
+```
+run: pip install google-generativeai
+```
+Change it to:
+```
+run: pip install google-genai
