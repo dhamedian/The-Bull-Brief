@@ -94,12 +94,3 @@ def update():
 
 if __name__ == "__main__":
     update()
-```
-
-**Then also update `daily-update.yml`** — find this line:
-```
-run: pip install google-generativeai
-```
-Change it to:
-```
-run: pip install google-genai
