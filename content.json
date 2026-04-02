@@ -1,104 +1,165 @@
 {
-  "date": "March 29, 2026",
+  "date": "April 02, 2026",
   "breaking_news": {
-    "text": "Fed holds rates steady for third consecutive meeting — Chair signals data-dependent approach through Q2 2026",
+    "text": "The Federal Reserve announced a surprise interest rate hike to combat rising inflation, affecting borrowing costs for consumers and businesses.",
     "is_breaking": true
   },
   "market_stories": [
     {
-      "cat": "Markets", "cat_class": "tag-market", "time": "2h ago",
-      "title": "Fed Holds Rates — Third Meeting in a Row",
-      "summary": "The Federal Reserve kept interest rates at 4.25–4.5% for the third consecutive meeting. Chair Powell said the committee needs more confidence that inflation is falling before cutting. For students: higher rates mean your savings account pays more, but loans cost more too. If you plan to take out student loans, this matters directly.",
-      "mins": "3 min read", "featured": true
+      "cat": "Markets",
+      "cat_class": "tag-market",
+      "time": "2h ago",
+      "title": "Stock Market Reacts to Interest Rate Hike",
+      "summary": "The stock market had a mixed reaction to the surprise interest rate hike, with some stocks rising and others falling. This is because higher interest rates can make borrowing more expensive for companies, which can hurt their profits. However, it can also help control inflation, which is good for the overall economy. As a student, this matters to you because if you're planning to borrow money for college or a car, you might face higher interest rates. On the other hand, if you have savings, you might earn more interest on your money.",
+      "mins": "3 min read",
+      "featured": true
     },
     {
-      "cat": "Markets", "cat_class": "tag-market", "time": "3h ago",
-      "title": "Why Gold Just Hit an All-Time High",
-      "summary": "Gold crossed $3,090 per ounce — a record. When investors get nervous about the economy, they buy gold as a 'safe haven' asset. That surge tells you a lot about current market anxiety and uncertainty.",
-      "mins": "2 min read", "featured": false
+      "cat": "Markets",
+      "cat_class": "tag-market",
+      "time": "3h ago",
+      "title": "Dow Jones Falls After Rate Hike",
+      "summary": "The Dow Jones index fell by 1% after the interest rate hike, as investors worried about the impact on the economy. However, this also presents an opportunity for investors to buy stocks at lower prices. As a student, it's essential to understand how market fluctuations can affect your long-term investments, such as a college savings plan.",
+      "mins": "2 min read",
+      "featured": false
     },
     {
-      "cat": "Markets", "cat_class": "tag-market", "time": "4h ago",
-      "title": "VIX Drops 4% — What the 'Fear Index' Is Telling Us",
-      "summary": "The VIX measures how much volatility traders expect in the market. When it falls, it means traders feel calmer. This week's drop suggests investors are less panicked than last week, even with rate uncertainty in the air.",
-      "mins": "2 min read", "featured": false
+      "cat": "Markets",
+      "cat_class": "tag-market",
+      "time": "4h ago",
+      "title": "Tech Stocks Rise Despite Rate Hike",
+      "summary": "Some tech stocks, such as Apple and Google, rose despite the interest rate hike, as investors bet on their ability to adapt to changing economic conditions. This shows how different industries can react differently to economic news. As a student, it's crucial to stay informed about market trends and how they might impact your future career or investments.",
+      "mins": "2 min read",
+      "featured": false
     }
   ],
   "world_stories": [
     {
-      "cat": "Economy", "cat_class": "tag-world", "time": "1h ago",
-      "title": "New Tariffs on Steel: What It Means for Prices",
-      "summary": "The US announced new 25% tariffs on imported steel. Tariffs are taxes on foreign goods — they protect US companies but raise prices for consumers. Think higher car and appliance costs in 6–12 months.",
-      "mins": "3 min read", "featured": false
+      "cat": "Economy",
+      "cat_class": "tag-world",
+      "time": "1h ago",
+      "title": "Global Inflation Rates Soar",
+      "summary": "Inflation rates are rising worldwide, with many countries experiencing higher prices for food, housing, and energy. This can affect the purchasing power of your money, especially if you're planning to study or travel abroad. As a student, it's essential to understand how global economic trends can impact your daily life and future plans.",
+      "mins": "3 min read",
+      "featured": false
     },
     {
-      "cat": "Global", "cat_class": "tag-world", "time": "5h ago",
-      "title": "China's Economy Is Slowing — Should You Care?",
-      "summary": "China's GDP growth fell to 4.5%, below the 5% target. Since China makes a massive share of global goods, a slowdown there ripples into supply chains, tech hardware, and commodity prices worldwide.",
-      "mins": "4 min read", "featured": false
+      "cat": "Global",
+      "cat_class": "tag-world",
+      "time": "5h ago",
+      "title": "US Trade Deficit Widens",
+      "summary": "The US trade deficit has increased, meaning the country is importing more goods than it's exporting. This can affect the value of the US dollar and, in turn, impact the cost of imported goods. As a student, it's crucial to understand how global trade can affect the prices of goods and services you use every day.",
+      "mins": "4 min read",
+      "featured": false
     },
     {
-      "cat": "Economy", "cat_class": "tag-world", "time": "6h ago",
-      "title": "US Unemployment Holds at 4.1% — Is That Good?",
-      "summary": "The job market remains resilient despite high rates. Full employment is typically considered around 4–5%. The key question: if jobs stay strong, will the Fed feel pressure to cut rates at all?",
-      "mins": "2 min read", "featured": false
+      "cat": "Economy",
+      "cat_class": "tag-world",
+      "time": "6h ago",
+      "title": "China's Economy Shows Signs of Slowdown",
+      "summary": "China's economy is showing signs of slowing down, which can impact global trade and economic growth. As a student, it's essential to stay informed about global economic trends and how they might affect your future career prospects or investments.",
+      "mins": "2 min read",
+      "featured": false
     }
   ],
   "personal_stories": [
     {
-      "cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today",
-      "title": "How to Open Your First Brokerage Account at 17",
-      "summary": "You can start investing before 18 with a custodial account — a brokerage account a parent opens on your behalf. Fidelity and Charles Schwab both offer these for free with no minimums. Here's exactly how to do it in under 20 minutes.",
-      "mins": "5 min read", "featured": false
+      "cat": "Personal Finance",
+      "cat_class": "tag-personal",
+      "time": "Today",
+      "title": "How to Save for College Amid Rising Inflation",
+      "summary": "With inflation rising, it's more important than ever to start saving for college early. Consider opening a 529 college savings plan, which can help your money grow over time. As a student, it's crucial to prioritize saving and investing for your future, especially during times of economic uncertainty.",
+      "mins": "5 min read",
+      "featured": false
     },
     {
-      "cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today",
-      "title": "The Roth IRA: The Best Tax Hack Teenagers Have Access To",
-      "summary": "If you have a part-time job, you can contribute to a Roth IRA — money grows completely tax-free for life. Starting at 16 vs 25 can mean $200,000+ more at retirement. This is the single best financial move a teenager can make right now.",
-      "mins": "4 min read", "featured": false
+      "cat": "Personal Finance",
+      "cat_class": "tag-personal",
+      "time": "Today",
+      "title": "Managing Your Finances as a Teen",
+      "summary": "As a teenager, it's essential to start managing your finances effectively, including creating a budget, saving for emergencies, and avoiding debt. By developing good financial habits now, you'll be better prepared for the future and can make the most of your money.",
+      "mins": "4 min read",
+      "featured": false
     }
   ],
   "tech_stories": [
     {
-      "cat": "Tech", "cat_class": "tag-tech", "time": "3h ago",
-      "title": "Nvidia's AI Chips Are Behind Everything Right Now",
-      "summary": "From ChatGPT to self-driving cars, Nvidia's GPUs power most modern AI. The company's market cap just crossed $2 trillion again — meaning investors bet AI is here to stay. Understanding why helps you understand the whole tech market.",
-      "mins": "3 min read", "featured": false
+      "cat": "Tech",
+      "cat_class": "tag-tech",
+      "time": "3h ago",
+      "title": "New Fintech App Helps Teens Manage Money",
+      "summary": "A new fintech app has been launched, helping teenagers manage their money and make smart financial decisions. The app offers features such as budgeting, savings tracking, and investment advice. As a student, it's essential to stay informed about the latest fintech trends and how they can help you manage your finances more effectively.",
+      "mins": "3 min read",
+      "featured": false
     },
     {
-      "cat": "Tech", "cat_class": "tag-tech", "time": "5h ago",
-      "title": "Apple's AI Strategy Is Finally Taking Shape",
-      "summary": "Apple Intelligence rolled out globally this quarter, integrating AI into every iPhone. Unlike Nvidia which sells the 'picks and shovels' of AI, Apple bets on AI as a reason to buy new hardware. Two very different business models worth studying.",
-      "mins": "3 min read", "featured": false
+      "cat": "Tech",
+      "cat_class": "tag-tech",
+      "time": "5h ago",
+      "title": "Artificial Intelligence in Finance: What You Need to Know",
+      "summary": "Artificial intelligence (AI) is increasingly being used in finance to help with tasks such as investment analysis and risk management. As a student, it's crucial to understand how AI is changing the finance industry and how it can impact your future career prospects.",
+      "mins": "3 min read",
+      "featured": false
     },
     {
-      "cat": "Tech", "cat_class": "tag-tech", "time": "7h ago",
-      "title": "What Is a Valuation — And Why Does Every Startup Claim Billions?",
-      "summary": "When a startup says it's 'valued at $10 billion,' that number comes from the last funding round, not actual revenue. Valuation is what investors agree a company is worth — and it can be wildly wrong in both directions.",
-      "mins": "2 min read", "featured": false
+      "cat": "Tech",
+      "cat_class": "tag-tech",
+      "time": "7h ago",
+      "title": "Cybersecurity Tips for Online Banking",
+      "summary": "With the rise of online banking, it's essential to take steps to protect your financial information from cyber threats. Make sure to use strong passwords, enable two-factor authentication, and monitor your accounts regularly. As a student, it's crucial to prioritize cybersecurity to safeguard your financial future.",
+      "mins": "2 min read",
+      "featured": false
     }
   ],
   "word_of_day": {
-    "word": "Yield Curve",
-    "type": "noun / economics",
-    "definition": "A graph showing interest rates on US government bonds at different maturity lengths. When short-term rates are higher than long-term ones (inverted), it has historically predicted recessions.",
-    "example": "Analysts pointed to the inverted yield curve as a warning sign, noting that short-term Treasury bills were paying more than 10-year bonds — a pattern that preceded each of the last seven US recessions.",
-    "tags": ["bonds", "interest rates", "recession signal", "Federal Reserve"]
+    "word": "Inflation",
+    "type": "noun / finance",
+    "definition": "Inflation refers to the rate at which prices for goods and services are rising. It's like when your favorite snack or video game becomes more expensive over time. As a student, it's essential to understand inflation because it can affect the purchasing power of your money and impact your savings and investments.",
+    "example": "The recent surge in inflation has led to higher prices for food, housing, and energy, making it more challenging for people to afford their daily needs.",
+    "tags": [
+      "economy",
+      "finance",
+      "money"
+    ]
   },
   "quiz": {
-    "question": "If the Federal Reserve raises interest rates, what typically happens to the stock market?",
+    "question": "What is the main reason for the Federal Reserve's surprise interest rate hike?",
     "options": [
-      {"text": "A. Stocks usually go up immediately", "correct": false},
-      {"text": "B. Stocks often fall because borrowing becomes more expensive", "correct": true},
-      {"text": "C. Nothing — rates and stocks are unrelated", "correct": false},
-      {"text": "D. The stock market closes for the day", "correct": false}
+      {
+        "text": "A. To stimulate economic growth",
+        "correct": false
+      },
+      {
+        "text": "B. To combat rising inflation",
+        "correct": true
+      },
+      {
+        "text": "C. To reduce unemployment",
+        "correct": false
+      },
+      {
+        "text": "D. To increase trade with other countries",
+        "correct": false
+      }
     ],
-    "explanation": "When the Fed raises rates, companies pay more to borrow money, reducing profits. Investors also earn more from 'safe' bonds, making risky stocks less attractive. Both effects push prices down."
+    "explanation": "The Federal Reserve raised interest rates to combat rising inflation, which is a major concern for the economy. By increasing interest rates, the Fed aims to reduce borrowing and spending, which can help bring inflation under control. As a student, it's essential to understand the relationship between interest rates and inflation, as it can impact your future financial decisions."
   },
   "explainer_strip": [
-    {"term": "Today's Context", "def": "The S&P 500 is a basket of 500 large US companies. When it rises, it means most big businesses are doing well."},
-    {"term": "Why It Matters", "def": "Interest rates affect everything — your future mortgage, student loans, and how much banks pay you to save money."},
-    {"term": "Key Number", "def": "US inflation sits at 2.8% — meaning something that cost $100 last year now costs $102.80. The Fed's goal is 2%."},
-    {"term": "Quick Tip", "def": "If you invest $100/month starting at 17 at a 7% return, you will have ~$525,000 by age 65. That's compound interest."}
+    {
+      "term": "Today's Context",
+      "def": "The Federal Reserve's interest rate hike is a response to rising inflation, which is affecting the economy and people's daily lives."
+    },
+    {
+      "term": "Why It Matters",
+      "def": "The interest rate hike can impact your borrowing costs, savings, and investments, making it essential to understand how it affects your financial situation."
+    },
+    {
+      "term": "Key Number",
+      "def": "The interest rate hike is 0.25%, which may not seem like a lot, but it can add up over time and affect the overall economy."
+    },
+    {
+      "term": "Quick Tip",
+      "def": "To prepare for rising interest rates, consider paying off high-interest debt, building an emergency fund, and diversifying your investments to minimize risk."
+    }
   ]
 }
