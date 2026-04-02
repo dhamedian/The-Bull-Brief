@@ -1,9 +1,9 @@
 import os, json, datetime, re
-from google import genai
+from groq import Groq
 
 TODAY = datetime.date.today().strftime("%B %d, %Y")
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 PROMPT = f"""
 You are the editor of "The Bull Brief," a daily finance newsletter written specifically
@@ -80,11 +80,13 @@ Rules:
 
 def update():
     print(f"Generating content for {TODAY}...")
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=PROMPT
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[{"role": "user", "content": PROMPT}],
+        temperature=0.7,
+        max_tokens=4000
     )
-    raw = response.text.strip()
+    raw = response.choices[0].message.content.strip()
     raw = re.sub(r'^```json\s*', '', raw)
     raw = re.sub(r'\s*```$', '', raw)
     data = json.loads(raw)
