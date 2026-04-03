@@ -37,6 +37,8 @@ jobs:
         run: |
           git config --global user.name "Bull Brief Bot"
           git config --global user.email "bot@bullbrief.com"
+          git fetch --all
+          git reset --hard origin/main
           git add content.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Daily content update: $(date +'%B %d, %Y')"
           git push --force
