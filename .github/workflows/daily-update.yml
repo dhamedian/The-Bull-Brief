@@ -39,4 +39,4 @@ jobs:
           git config --global user.email "bot@bullbrief.com"
           git add content.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Daily content update: $(date +'%B %d, %Y')"
-          git push
+          git push --force
