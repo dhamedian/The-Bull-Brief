@@ -21,29 +21,120 @@ Return ONLY the JSON, no markdown, no backticks, no extra text.
   "market_stories": [
     {{
       "cat": "Markets",
-      "cat_class": "tag-market",
+      "catClass": "tag-market",
       "time": "2h ago",
       "title": "Headline about today's biggest market story",
       "summary": "3-4 sentence explanation in plain language a high schooler can understand. End with why it matters to them personally.",
+      "fullContent": "<p>Opening paragraph expanding on the headline with real context.</p><h4>Subheading One</h4><p>Second paragraph going deeper. Explain any terms used.</p><div class='highlight'>A key stat, quote, or fact pulled out as a callout.</div><h4>What This Means For You</h4><p>Final paragraph connecting this directly to the student's life, savings, or future.</p>",
       "mins": "3 min read",
       "featured": true
     }},
-    {{"cat": "Markets", "cat_class": "tag-market", "time": "3h ago", "title": "Second market story", "summary": "Explanation.", "mins": "2 min read", "featured": false}},
-    {{"cat": "Markets", "cat_class": "tag-market", "time": "4h ago", "title": "Third market story", "summary": "Explanation.", "mins": "2 min read", "featured": false}}
+    {{
+      "cat": "Markets",
+      "catClass": "tag-market",
+      "time": "3h ago",
+      "title": "Second market story",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "2 min read",
+      "featured": false
+    }},
+    {{
+      "cat": "Markets",
+      "catClass": "tag-market",
+      "time": "4h ago",
+      "title": "Third market story",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "2 min read",
+      "featured": false
+    }}
   ],
   "world_stories": [
-    {{"cat": "Economy", "cat_class": "tag-world", "time": "1h ago", "title": "World story 1", "summary": "Explanation.", "mins": "3 min read", "featured": false}},
-    {{"cat": "Global", "cat_class": "tag-world", "time": "5h ago", "title": "World story 2", "summary": "Explanation.", "mins": "4 min read", "featured": false}},
-    {{"cat": "Economy", "cat_class": "tag-world", "time": "6h ago", "title": "World story 3", "summary": "Explanation.", "mins": "2 min read", "featured": false}}
+    {{
+      "cat": "Economy",
+      "catClass": "tag-world",
+      "time": "1h ago",
+      "title": "World story 1",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "3 min read",
+      "featured": false
+    }},
+    {{
+      "cat": "Global",
+      "catClass": "tag-world",
+      "time": "5h ago",
+      "title": "World story 2",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "4 min read",
+      "featured": false
+    }},
+    {{
+      "cat": "Economy",
+      "catClass": "tag-world",
+      "time": "6h ago",
+      "title": "World story 3",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "2 min read",
+      "featured": false
+    }}
   ],
   "personal_stories": [
-    {{"cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today", "title": "Personal finance story 1", "summary": "Explanation.", "mins": "5 min read", "featured": false}},
-    {{"cat": "Personal Finance", "cat_class": "tag-personal", "time": "Today", "title": "Personal finance story 2", "summary": "Explanation.", "mins": "4 min read", "featured": false}}
+    {{
+      "cat": "Personal Finance",
+      "catClass": "tag-personal",
+      "time": "Today",
+      "title": "Personal finance story 1",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "5 min read",
+      "featured": false
+    }},
+    {{
+      "cat": "Personal Finance",
+      "catClass": "tag-personal",
+      "time": "Today",
+      "title": "Personal finance story 2",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "4 min read",
+      "featured": false
+    }}
   ],
   "tech_stories": [
-    {{"cat": "Tech", "cat_class": "tag-tech", "time": "3h ago", "title": "Tech story 1", "summary": "Explanation.", "mins": "3 min read", "featured": false}},
-    {{"cat": "Tech", "cat_class": "tag-tech", "time": "5h ago", "title": "Tech story 2", "summary": "Explanation.", "mins": "3 min read", "featured": false}},
-    {{"cat": "Tech", "cat_class": "tag-tech", "time": "7h ago", "title": "Tech story 3", "summary": "Explanation.", "mins": "2 min read", "featured": false}}
+    {{
+      "cat": "Tech",
+      "catClass": "tag-tech",
+      "time": "3h ago",
+      "title": "Tech story 1",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "3 min read",
+      "featured": false
+    }},
+    {{
+      "cat": "Tech",
+      "catClass": "tag-tech",
+      "time": "5h ago",
+      "title": "Tech story 2",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "3 min read",
+      "featured": false
+    }},
+    {{
+      "cat": "Tech",
+      "catClass": "tag-tech",
+      "time": "7h ago",
+      "title": "Tech story 3",
+      "summary": "3-4 sentence summary.",
+      "fullContent": "<p>Opening paragraph.</p><h4>Subheading</h4><p>Deeper explanation.</p><div class='highlight'>Key fact or stat.</div><h4>What This Means For You</h4><p>Student relevance.</p>",
+      "mins": "2 min read",
+      "featured": false
+    }}
   ],
   "word_of_day": {{
     "word": "A financial term relevant to today's news",
@@ -76,6 +167,8 @@ Rules:
 - Always connect news to what it means for students lives, savings, or future
 - Use real current financial news and data from today {TODAY}
 - Sound like a smart older student, not a corporate newsletter
+- For fullContent: write real, full article content — not placeholder text. Each article should have 3-4 paragraphs with actual information expanding on the summary. Use the HTML tags exactly as shown.
+- IMPORTANT: the catClass field must use camelCase exactly as shown (catClass, not cat_class)
 """
 
 def update():
@@ -84,7 +177,7 @@ def update():
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": PROMPT}],
         temperature=0.7,
-        max_tokens=4000
+        max_tokens=8000
     )
     raw = response.choices[0].message.content.strip()
     raw = re.sub(r'^```json\s*', '', raw)
