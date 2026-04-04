@@ -403,6 +403,63 @@ footer{
 .story-card:nth-child(5){animation-delay:.4s}
 .story-card:nth-child(6){animation-delay:.5s}
 
+/* ── ARTICLE MODAL ─────────────────────────────────────────────────────── */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(5,8,18,.85);
+  backdrop-filter:blur(6px);z-index:2000;
+  display:flex;align-items:center;justify-content:center;
+  padding:24px;opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal-box{
+  background:var(--bg2);border:1px solid var(--border2);border-radius:20px;
+  max-width:680px;width:100%;max-height:85vh;overflow-y:auto;
+  transform:translateY(20px);transition:transform .3s;
+  position:relative;
+}
+.modal-overlay.open .modal-box{transform:translateY(0)}
+.modal-header{
+  padding:28px 28px 20px;border-bottom:1px solid var(--border);
+  position:sticky;top:0;background:var(--bg2);z-index:1;border-radius:20px 20px 0 0;
+}
+.modal-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.modal-meta{display:flex;align-items:center;gap:8px}
+.modal-close{
+  background:var(--bg3);border:1px solid var(--border);color:var(--text2);
+  width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .2s;
+  flex-shrink:0;
+}
+.modal-close:hover{background:var(--red-dim);border-color:var(--red);color:var(--red)}
+.modal-title{
+  font-family:var(--display);font-size:26px;font-weight:900;
+  color:var(--text);line-height:1.25;
+}
+.modal-body{padding:24px 28px 32px}
+.modal-body p{
+  font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;
+}
+.modal-body p:last-child{margin-bottom:0}
+.modal-body h4{
+  font-family:var(--display);font-size:17px;font-weight:700;
+  color:var(--text);margin:24px 0 10px;
+}
+.modal-body .highlight{
+  background:var(--bg3);border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0;padding:14px 16px;margin:16px 0;
+  font-size:14px;color:var(--text2);line-height:1.7;
+}
+.modal-footer{
+  padding:16px 28px 28px;display:flex;align-items:center;justify-content:space-between;
+}
+.modal-ai-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  background:rgba(0,214,143,.1);color:var(--accent);padding:4px 10px;border-radius:4px;
+}
+.modal-ai-badge::before{content:'✦'}
+.modal-time-badge{font-family:var(--mono);font-size:11px;color:var(--text3)}
+
 /* RESPONSIVE */
 @media(max-width:900px){
   .hero{grid-template-columns:1fr;gap:24px}
@@ -420,6 +477,8 @@ footer{
   nav.open{display:flex;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px;gap:4px;z-index:200}
   .hamburger{display:flex}
   .header-inner{position:relative}
+  .modal-box{max-height:92vh}
+  .modal-title{font-size:21px}
 }
 @media(max-width:600px){
   .hero-headline{font-size:28px}
@@ -429,10 +488,31 @@ footer{
   .portfolio-strip{grid-template-columns:repeat(2,1fr)}
   .sub-banner{padding:28px 20px}
   .sub-left h2{font-size:24px}
+  .modal-header{padding:20px 20px 16px}
+  .modal-body{padding:20px 20px 24px}
+  .modal-footer{padding:12px 20px 24px}
 }
 </style>
 </head>
 <body>
+
+<!-- ARTICLE MODAL -->
+<div class="modal-overlay" id="articleModal" onclick="closeModalOnOverlay(event)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-top">
+        <div class="modal-meta" id="modalMeta"></div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-title" id="modalTitle"></div>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-footer">
+      <span class="modal-ai-badge">AI Written</span>
+      <span class="modal-time-badge" id="modalTime"></span>
+    </div>
+  </div>
+</div>
 
 <!-- BREAKING NEWS BANNER -->
 <div class="breaking">
@@ -479,7 +559,7 @@ footer{
       Daily AI-powered finance news written specifically for high schoolers. No jargon, no fluff — just what's happening in markets, the economy, and your financial future. Updated every morning before first period.
     </p>
     <div class="hero-actions">
-      <a href="https://the-bull-brief-newsletter-f34f41.beehiiv.com/ class="btn-primary">Get Daily Emails Free</a>
+      <a href="https://the-bull-brief-newsletter-f34f41.beehiiv.com/" class="btn-primary">Get Daily Emails Free</a>
       <a href="#today" class="btn-ghost">Today's News ↓</a>
     </div>
   </div>
@@ -530,9 +610,7 @@ footer{
     <span class="sec-tag tag-market">Today</span>
     <a href="#" class="sec-more">See all →</a>
   </div>
-  <div class="content-grid wide" id="marketStories">
-    <!-- Filled by JS -->
-  </div>
+  <div class="content-grid wide" id="marketStories"></div>
 
   <!-- WORD OF THE DAY -->
   <div class="wod-card">
@@ -671,19 +749,50 @@ const MARKET_STORIES = [
     cat:'Markets',catClass:'tag-market',time:'2h ago',
     title:'Fed Holds Rates — Third Meeting in a Row',
     summary:'The Federal Reserve kept interest rates at 4.25–4.5% for the third consecutive meeting. Chair Powell said the committee needs more confidence that inflation is falling before cutting. For students: higher rates mean your savings account pays more, but loans cost more too.',
-    mins:'3 min read',featured:true
+    mins:'3 min read',featured:true,
+    fullContent:`
+      <p>The Federal Reserve held its benchmark interest rate at 4.25–4.5% on Wednesday, marking the third consecutive meeting where policymakers opted to stay put rather than cut borrowing costs.</p>
+      <h4>What Did the Fed Actually Say?</h4>
+      <p>Chair Jerome Powell emphasized a "data-dependent" approach, meaning the Fed won't move until the economic numbers tell them it's safe to do so. Specifically, they're watching two things: inflation coming down closer to their 2% target, and the job market staying healthy without overheating.</p>
+      <div class="highlight">The federal funds rate currently sits at 4.25–4.5%. That's the rate banks charge each other for overnight loans — but it ripples into every loan you'll ever take out, from car loans to mortgages to student debt.</div>
+      <h4>Why Does This Matter to You?</h4>
+      <p>High interest rates are a double-edged sword for young people. On the plus side, high-yield savings accounts are paying 4–5% annually right now — meaning your money actually grows if you park it somewhere smart. On the downside, when you eventually take out a car loan or mortgage, you'll pay significantly more in interest than someone borrowing at 2–3% rates a few years ago.</p>
+      <h4>When Will Rates Come Down?</h4>
+      <p>Markets are currently pricing in two rate cuts by the end of 2026, but that forecast has shifted dramatically in recent months. As recently as January, traders expected four cuts this year. The Fed's caution signals that inflation is proving stickier than hoped — which means the era of cheap borrowing isn't coming back as quickly as many had predicted.</p>
+      <p>For investors, this environment rewards patience and cash-generating assets over speculative bets. Understanding the Fed's rate decisions is one of the most important skills in financial literacy — it affects literally everything.</p>
+    `
   },
   {
     cat:'Markets',catClass:'tag-market',time:'3h ago',
     title:'Why Gold Just Hit an All-Time High',
     summary:'Gold crossed $3,090 per ounce — a record. When investors get nervous about the economy, they buy gold as a "safe haven." That surge tells you a lot about current market anxiety.',
-    mins:'2 min read',featured:false
+    mins:'2 min read',featured:false,
+    fullContent:`
+      <p>Gold broke above $3,090 per ounce this week, setting a new all-time high and extending a rally that has now seen the precious metal gain over 15% this year alone.</p>
+      <h4>Why Does Gold Go Up When People Are Scared?</h4>
+      <p>Gold is considered a "store of value" — it doesn't rot, doesn't default, and can't be printed by a government. When investors worry about inflation, currency devaluation, geopolitical instability, or a stock market crash, they move money into gold as a defensive play. It's essentially the financial world's version of hiding cash under the mattress, except it's also an asset that historically holds its purchasing power over centuries.</p>
+      <div class="highlight">Gold has been used as money for over 5,000 years. The US dollar only became untethered from gold in 1971, when President Nixon ended the Bretton Woods system. Before that, every dollar was technically backed by a fixed amount of gold.</div>
+      <h4>What's Driving This Particular Rally?</h4>
+      <p>Several things are happening simultaneously: concerns about US deficit spending, uncertainty around Federal Reserve policy, central banks worldwide buying more gold to diversify away from US dollars, and general investor anxiety about a slowing global economy. When all of these line up, gold tends to surge.</p>
+      <h4>Should You Buy Gold?</h4>
+      <p>For most young investors, gold serves a small portfolio role at best — typically 5–10% as a hedge. It generates no income (no dividends, no interest), so it's purely a bet on price appreciation driven by fear. For most high schoolers just starting out, understanding why gold moves is more valuable than actually buying it right now.</p>
+    `
   },
   {
     cat:'Markets',catClass:'tag-market',time:'4h ago',
     title:'VIX Drops 4% — What the "Fear Index" Is Telling Us',
     summary:'The VIX measures expected market volatility. When it falls, it means traders feel calmer. This week\'s drop suggests investors are less panicked than last week, even with rate uncertainty.',
-    mins:'2 min read',featured:false
+    mins:'2 min read',featured:false,
+    fullContent:`
+      <p>The CBOE Volatility Index — universally known as the VIX — fell roughly 4% this week to 21.4, pulling back from the elevated levels seen during last month's market turbulence.</p>
+      <h4>What Exactly Is the VIX?</h4>
+      <p>The VIX measures how much volatility options traders expect in the S&P 500 over the next 30 days. It's calculated from the prices of S&P 500 options contracts — when traders are buying lots of "protection" (put options) against a market drop, those contracts get expensive, and the VIX rises. When everyone's calm and nobody feels the need to hedge, the VIX falls.</p>
+      <div class="highlight">A VIX below 15 is generally considered calm. Between 15–25 signals moderate uncertainty. Above 30 is fear territory. During the COVID crash in March 2020, the VIX hit 82.69 — an all-time record.</div>
+      <h4>What Does 21.4 Mean Right Now?</h4>
+      <p>At 21.4, the market is in a mild fear zone — not panic, but not complacency either. Investors are uncertain about Fed policy, inflation data, and the global economic slowdown, but they're not running for the exits. The drop this week suggests the immediate anxiety from last week's headlines has faded slightly.</p>
+      <h4>Why Should You Track This?</h4>
+      <p>The VIX is one of the best real-time sentiment gauges available for free. When the VIX spikes, it often signals a potential buying opportunity for long-term investors — historically, markets tend to recover after fear peaks. Many professional investors use VIX spikes as a contrarian signal: when everyone is most scared, it's sometimes the best time to buy.</p>
+    `
   },
 ];
 
@@ -692,19 +801,49 @@ const WORLD_STORIES = [
     cat:'Economy',catClass:'tag-world',time:'1h ago',
     title:'New Tariffs on Steel: What It Means for Prices',
     summary:'The US announced new 25% tariffs on imported steel. Tariffs are taxes on foreign goods — they protect US companies but raise prices for consumers. Think higher car and appliance costs in 6–12 months.',
-    mins:'3 min read',featured:false
+    mins:'3 min read',featured:false,
+    fullContent:`
+      <p>The Biden administration announced this week that 25% tariffs on imported steel will take effect next month, targeting imports primarily from China, Brazil, and South Korea.</p>
+      <h4>What's a Tariff, Simply?</h4>
+      <p>A tariff is a tax that your government charges on goods imported from other countries. When a company wants to bring $1 million worth of steel into the US, it now has to pay an extra $250,000 in taxes. That cost almost always gets passed on to whoever buys the steel — which means manufacturers, which means eventually you.</p>
+      <div class="highlight">The logic behind tariffs: protect American steel workers by making foreign steel more expensive, so buyers prefer domestic steel. The counterargument: it raises costs for every industry that uses steel — cars, appliances, construction, and more.</div>
+      <h4>What Gets More Expensive?</h4>
+      <p>Steel is an input in thousands of products. Car manufacturers use massive amounts of it. Appliance makers need it for refrigerators and washing machines. Construction relies on steel beams. Analysts estimate these tariffs could add $200–800 to the price of a new car within 12 months, depending on the vehicle.</p>
+      <h4>The Bigger Economic Picture</h4>
+      <p>Tariffs are fundamentally inflationary — they raise prices. At a moment when the Federal Reserve is already battling 2.8% inflation, new tariffs could complicate the path to rate cuts. If tariffs push inflation back up, the Fed may have to keep rates elevated longer, which affects everything from mortgage rates to student loans.</p>
+    `
   },
   {
     cat:'Global',catClass:'tag-world',time:'5h ago',
     title:'China\'s Economy Is Slowing — Should You Care?',
     summary:'China\'s GDP growth fell to 4.5%, below the 5% target. Since China makes a massive share of global goods, a slowdown there ripples into supply chains, tech hardware, and commodity prices worldwide.',
-    mins:'4 min read',featured:false
+    mins:'4 min read',featured:false,
+    fullContent:`
+      <p>China's National Bureau of Statistics reported this week that the country's GDP grew at 4.5% in the most recent quarter, missing the government's official 5% target and marking the slowest pace of expansion in three years.</p>
+      <h4>Why China's Growth Rate Matters Globally</h4>
+      <p>China is the world's second-largest economy and the planet's largest manufacturer. When Chinese factories slow down, it affects supply chains from semiconductors to solar panels to consumer electronics. Apple makes most of its iPhones in China. Nike manufactures shoes there. The list goes on across virtually every consumer product category.</p>
+      <div class="highlight">China produces roughly 30% of global manufactured goods — more than the US, Germany, and Japan combined. A slowdown there doesn't stay in China.</div>
+      <h4>What's Causing the Slowdown?</h4>
+      <p>Several factors are converging. China's real estate sector — which historically accounted for about 25% of its GDP — remains in crisis after the Evergrande collapse. Youth unemployment sits above 15%, dampening consumer spending. And Western countries are actively reducing their dependence on Chinese manufacturing, a trend accelerated by COVID supply chain disruptions.</p>
+      <h4>How This Affects US Investors</h4>
+      <p>A slowing China typically means lower demand for commodities like oil, copper, and iron ore — which can push those prices down globally. It also puts pressure on multinational companies that generate significant revenue in China. For stock investors, this is a real risk factor for tech companies with heavy China exposure like Apple and Qualcomm.</p>
+    `
   },
   {
     cat:'Economy',catClass:'tag-world',time:'6h ago',
     title:'US Unemployment Holds at 4.1% — Is That Good?',
     summary:'The job market remains resilient despite high rates. Full employment is typically considered around 4–5%. The key question: if jobs stay strong, will the Fed feel pressure to cut rates at all?',
-    mins:'2 min read',featured:false
+    mins:'2 min read',featured:false,
+    fullContent:`
+      <p>The Bureau of Labor Statistics reported Friday that US unemployment remained at 4.1% in March, essentially unchanged from the previous month and broadly in line with what economists consider "full employment."</p>
+      <h4>What Does 4.1% Actually Mean?</h4>
+      <p>Economists generally consider 4–5% unemployment to represent full employment — not because everyone has a job, but because some level of unemployment is normal and healthy. People quit jobs, move cities, graduate from school, or change careers. The people in that 4% are mostly between jobs, not permanently unemployed.</p>
+      <div class="highlight">At 4.1%, there are roughly 6.8 million unemployed Americans. That sounds like a lot — but in a workforce of 168 million people, it represents a historically strong labor market.</div>
+      <h4>The Fed's Dilemma</h4>
+      <p>Here's the complication: the Fed cuts rates when the economy needs help, typically when unemployment rises and growth slows. If jobs remain strong at 4.1%, the Fed has less urgency to cut. A strong labor market means people have money to spend, which can keep inflation elevated. This is why a "too good" jobs report can sometimes actually send stock markets lower — traders interpret it as meaning rate cuts are further off.</p>
+      <h4>What to Watch</h4>
+      <p>If unemployment starts rising toward 4.5–5%, that would likely accelerate Fed rate cuts. If it stays below 4.2%, the Fed can afford patience. The next jobs report drops in early May and will be closely watched as a signal for the Fed's June meeting.</p>
+    `
   },
 ];
 
@@ -713,13 +852,37 @@ const PERSONAL_STORIES = [
     cat:'Personal Finance',catClass:'tag-personal',time:'Today',
     title:'How to Open Your First Brokerage Account at 17',
     summary:'You can start investing before 18 with a custodial account — a brokerage account a parent opens on your behalf. Fidelity and Charles Schwab both offer these for free. Here is exactly how to do it step by step.',
-    mins:'5 min read',featured:false
+    mins:'5 min read',featured:false,
+    fullContent:`
+      <p>One of the most common questions from high school investors: "Can I even invest if I'm under 18?" The answer is yes — and starting now gives you a massive advantage over people who wait until college or their first job.</p>
+      <h4>What's a Custodial Account?</h4>
+      <p>A custodial account (also called a UGMA or UTMA account) is a brokerage account that a parent or guardian opens and manages on your behalf. You're the beneficiary — it's your money — but a legal adult controls it until you turn 18 (or 21 in some states). Once you hit that age, the account transfers fully to you.</p>
+      <div class="highlight">Fidelity's Youth Account is actually different — it lets teens 13–17 open and manage their own account directly, with parental oversight. It's one of the best options available right now and takes about 10 minutes to set up.</div>
+      <h4>Step-by-Step: Opening a Fidelity Youth Account</h4>
+      <p>First, have a parent go to fidelity.com and search for "Youth Account." They'll create an account if they don't already have one. Then they invite you via the app. You download the Fidelity app, create your profile, and get approved — usually within a day. You can start with as little as $1 and buy fractional shares of any stock.</p>
+      <h4>What Should You Buy First?</h4>
+      <p>Most financial experts recommend starting with a broad market index fund like VTI (Vanguard Total Stock Market ETF) or VOO (Vanguard S&P 500 ETF). These give you instant exposure to hundreds of companies with a single purchase, charge almost zero fees, and historically return around 7–10% annually over long periods. Once you understand how those work, you can add individual stocks if you want.</p>
+      <h4>The Most Important Thing</h4>
+      <p>Starting at 17 instead of 22 isn't just a five-year head start. Thanks to compound interest, those five extra years can be worth more than the next twenty years of investing combined. Time in the market is the most valuable resource you have right now.</p>
+    `
   },
   {
     cat:'Personal Finance',catClass:'tag-personal',time:'Today',
     title:'The Roth IRA: The Best Tax Hack Teenagers Have Access To',
     summary:'If you have a part-time job, you can contribute to a Roth IRA — money grows tax-free for life. Starting at 16 vs 25 can mean $200,000+ more at retirement. This is the single best financial move a teenager can make.',
-    mins:'4 min read',featured:false
+    mins:'4 min read',featured:false,
+    fullContent:`
+      <p>If you have any earned income — a part-time job, babysitting, lawn mowing, freelance work — you are eligible to contribute to a Roth IRA. And contributing to one as a teenager is one of the most powerful financial moves available to any human being.</p>
+      <h4>What Is a Roth IRA?</h4>
+      <p>A Roth IRA is a retirement account where you contribute money you've already paid taxes on, and then everything inside it grows completely tax-free — forever. When you withdraw at retirement (after age 59½), you pay zero taxes on any of the gains. Compare that to a traditional 401k, where you pay taxes when you withdraw, potentially on decades of growth.</p>
+      <div class="highlight">You can contribute up to $7,000 per year to a Roth IRA in 2026, but only up to the amount you actually earned. If you made $3,000 working this summer, you can contribute up to $3,000.</div>
+      <h4>Why Teenagers Have an Unfair Advantage</h4>
+      <p>Compound interest rewards time more than anything else. $1,000 contributed at age 16 and left to grow at 7% annually becomes roughly $29,000 by age 65. The same $1,000 contributed at age 35 only becomes about $7,600. Your youth is worth a 4x multiplier — and most adults your age have no idea.</p>
+      <h4>How to Open One</h4>
+      <p>Since you're under 18, you need a parent to open a "Custodial Roth IRA" on your behalf. Fidelity, Vanguard, and Charles Schwab all offer them with no minimums and no annual fees. The account transfers fully to you when you turn 18. Inside it, you'd typically invest in the same low-cost index funds mentioned in the brokerage account article — VOO or VTI are solid starting points.</p>
+      <h4>The Numbers That Should Motivate You</h4>
+      <p>If you contribute $3,000 per year from age 16 to 22 (just 6 years, using summer job money), then stop contributing entirely, you'll have more at retirement than someone who contributes $3,000 per year from age 22 to 65 without stopping. That's 43 years of contributions versus 6 — and the early starter wins. That's the power of starting now.</p>
+    `
   },
 ];
 
@@ -728,19 +891,49 @@ const TECH_STORIES = [
     cat:'Tech',catClass:'tag-tech',time:'3h ago',
     title:'Nvidia\'s AI Chips Are Behind Everything Right Now',
     summary:'From ChatGPT to self-driving cars, Nvidia\'s GPUs power most modern AI. The company\'s market cap just crossed $2 trillion again — meaning investors bet AI is here to stay. Understanding why helps you understand the whole tech market.',
-    mins:'3 min read',featured:false
+    mins:'3 min read',featured:false,
+    fullContent:`
+      <p>Nvidia's market capitalization crossed $2 trillion again this week, making it one of the most valuable companies on Earth. For context: that's larger than the entire GDP of most countries. So what exactly does Nvidia make, and why does the market value it so astronomically?</p>
+      <h4>GPUs: The Engine of the AI Revolution</h4>
+      <p>Nvidia makes Graphics Processing Units — GPUs. Originally designed to render video game graphics, GPUs turned out to be extraordinarily good at the kind of parallel math calculations that AI systems require. Training a large language model like GPT-4 requires running billions of calculations simultaneously. GPUs do this far better than traditional CPUs.</p>
+      <div class="highlight">Nvidia's H100 chip — their flagship AI accelerator — costs around $30,000–40,000 per unit. Microsoft, Google, Amazon, and Meta are each buying tens of thousands of them. The waiting list has stretched to months.</div>
+      <h4>The "Picks and Shovels" Business Model</h4>
+      <p>There's a famous saying about the California Gold Rush: the people who got rich weren't the miners, they were the ones selling picks and shovels. Nvidia is the picks-and-shovels play on AI. Regardless of which AI company wins — OpenAI, Google, Anthropic, or someone we haven't heard of yet — they all need Nvidia's chips to build and run their models.</p>
+      <h4>The Risk</h4>
+      <p>At $2 trillion, Nvidia is priced for perfection. Several competitors — AMD, Intel, and custom chips from Google and Amazon — are working to eat into Nvidia's market share. If any of them succeed, or if AI investment slows, the stock could fall dramatically. Understanding the upside and downside of dominant tech companies is essential for any serious investor.</p>
+    `
   },
   {
     cat:'Tech',catClass:'tag-tech',time:'5h ago',
     title:'Apple\'s AI Strategy Is Finally Taking Shape',
     summary:'Apple Intelligence rolled out globally this quarter, integrating AI into every iPhone. Unlike Nvidia which sells the "picks and shovels" of AI, Apple bets on AI as a reason to buy new hardware. Two very different business models.',
-    mins:'3 min read',featured:false
+    mins:'3 min read',featured:false,
+    fullContent:`
+      <p>Apple Intelligence — the company's suite of on-device AI features — finished its global rollout this quarter, reaching over 100 countries after a phased launch that began in late 2024. For Apple, AI isn't a standalone product. It's a hardware upgrade cycle driver.</p>
+      <h4>What Apple Intelligence Actually Does</h4>
+      <p>The features span several categories: writing tools that clean up and rewrite emails, a redesigned Siri that can actually understand context and complete tasks across apps, photo editing that can remove objects from images, and notification summaries. Many features require an iPhone 15 Pro or newer — which is by design.</p>
+      <div class="highlight">Apple processes most AI features directly on-device rather than sending your data to remote servers. This is their key privacy differentiator versus Google and Microsoft, whose AI products largely run in the cloud.</div>
+      <h4>The Upgrade Cycle Bet</h4>
+      <p>Apple's strategy is simple: make AI features compelling enough that people on older iPhones feel the need to upgrade. The company's biggest growth challenge is that iPhones last longer than ever, and upgrade cycles have stretched from 2–3 years to 4–5. AI features that require newer chips give people a real reason to upgrade. If this works, it could be the most significant catalyst for iPhone sales since the shift to 5G.</p>
+      <h4>Apple vs Nvidia: Two Ways to Win on AI</h4>
+      <p>Nvidia profits by selling infrastructure — the shovels every AI company needs. Apple profits by using AI to sell consumer devices. Both can win simultaneously. Understanding the difference between infrastructure plays and application plays is one of the most useful frameworks for analyzing any tech investment.</p>
+    `
   },
   {
     cat:'Tech',catClass:'tag-tech',time:'7h ago',
     title:'What Is a Valuation — And Why Does Every Startup Claim Billions?',
     summary:'When a startup says it\'s "valued at $10 billion," that number comes from the last funding round, not actual revenue. Valuation is what investors agree a company is worth — and it can be wildly wrong in both directions.',
-    mins:'2 min read',featured:false
+    mins:'2 min read',featured:false,
+    fullContent:`
+      <p>Every week, a headline announces a startup has achieved "unicorn" status — a valuation of $1 billion or more. But what does that actually mean? And why do so many of these companies seem to have no revenue to justify the number?</p>
+      <h4>How Startup Valuations Work</h4>
+      <p>When a startup raises money from venture capital investors, both sides negotiate a valuation as part of the deal. If a VC firm invests $10 million for a 10% stake in a company, the implied valuation is $100 million (because 10% = $10M means 100% = $100M). That number isn't based on revenue or profit — it's based on what both parties agreed the company could be worth in the future.</p>
+      <div class="highlight">This is called a "paper valuation" — it only becomes real money when the company goes public (IPO) or gets acquired. Many unicorn valuations evaporate entirely before that happens.</div>
+      <h4>Why Valuations Can Be Misleading</h4>
+      <p>Startup valuations during bull markets in venture capital (like 2020–2021) were notoriously inflated. Companies that raised at $10B valuations later IPO'd at $2B or went bankrupt entirely. The most famous example: WeWork was valued at $47 billion in 2019 and nearly went bankrupt in 2019. It eventually went public at a fraction of that and later filed for bankruptcy in 2023.</p>
+      <h4>The Metric That Actually Matters</h4>
+      <p>For most businesses, what ultimately matters is revenue growth, path to profitability, and unit economics — how much it costs to acquire each customer versus how much that customer is worth over time. A company with $10M in revenue growing 200% year-over-year might justify a $500M valuation. A company with $10M in revenue growing 10% probably doesn't. Learning to ask "what justifies this valuation?" is one of the most important skills in investing.</p>
+    `
   },
 ];
 
@@ -762,6 +955,30 @@ const WATCHLIST = [
   {sym:'TSLA',name:'Tesla',price:'$175',chg:'-0.88%',up:false,spark:[80,75,70,72,68,65,67,63,60,58]},
   {sym:'META',name:'Meta',price:'$560',chg:'+1.02%',up:true,spark:[50,53,55,52,57,60,58,62,64,67]},
 ];
+
+// ── MODAL ───────────────────────────────────────────────────────────────────
+
+function openModal(story) {
+  document.getElementById('modalTitle').textContent = story.title;
+  document.getElementById('modalTime').textContent = story.time + ' · ' + story.mins;
+  document.getElementById('modalMeta').innerHTML =
+    `<span class="card-cat sec-tag ${story.catClass}">${story.cat}</span>`;
+  document.getElementById('modalBody').innerHTML = story.fullContent;
+  document.getElementById('articleModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('articleModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOnOverlay(e) {
+  if (e.target === document.getElementById('articleModal')) closeModal();
+}
+
+// Close on Escape key
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 // ── RENDER ──────────────────────────────────────────────────────────────────
 
@@ -790,10 +1007,10 @@ function buildMarketGrid(){
   `).join('');
 }
 
-function buildStories(elId,stories,wide){
-  const el=document.getElementById(elId);
-  el.innerHTML=stories.map((s,i)=>`
-    <div class="story-card${s.featured?' featured':''}">
+function buildStories(elId, stories) {
+  const el = document.getElementById(elId);
+  el.innerHTML = stories.map((s, i) => `
+    <div class="story-card${s.featured?' featured':''}" onclick="openModal(window._stories_${elId}[${i}])">
       <div class="card-top">
         <span class="card-cat sec-tag ${s.catClass}">${s.cat}</span>
         <span class="card-time">${s.time}</span>
@@ -809,6 +1026,8 @@ function buildStories(elId,stories,wide){
       </div>
     </div>
   `).join('');
+  // Store story data so onclick can reference it
+  window[`_stories_${elId}`] = stories;
 }
 
 function buildQuiz(){
@@ -876,8 +1095,6 @@ function toggleNav(){
 }
 
 // ── CONTENT.JSON LOADER ─────────────────────────────────────────────────────
-// In production (GitHub Pages), this fetches today's AI-generated content.
-// Falls back to hardcoded data if content.json is unavailable.
 
 function applyContent(data){
   if(data.breaking_news){
@@ -892,10 +1109,10 @@ function applyContent(data){
       }
     });
   }
-  if(data.market_stories) buildStories('marketStories',data.market_stories,true);
-  if(data.world_stories)  buildStories('worldStories',data.world_stories,false);
-  if(data.personal_stories) buildStories('personalStories',data.personal_stories,false);
-  if(data.tech_stories)   buildStories('techStories',data.tech_stories,false);
+  if(data.market_stories) buildStories('marketStories',data.market_stories);
+  if(data.world_stories)  buildStories('worldStories',data.world_stories);
+  if(data.personal_stories) buildStories('personalStories',data.personal_stories);
+  if(data.tech_stories)   buildStories('techStories',data.tech_stories);
   if(data.word_of_day){
     const w=data.word_of_day;
     document.getElementById('wodWord').textContent=w.word;
@@ -916,15 +1133,14 @@ function applyContent(data){
 // ── INIT ────────────────────────────────────────────────────────────────────
 buildTicker();
 buildMarketGrid();
-buildStories('marketStories',MARKET_STORIES,true);
-buildStories('worldStories',WORLD_STORIES,false);
-buildStories('personalStories',PERSONAL_STORIES,false);
-buildStories('techStories',TECH_STORIES,false);
+buildStories('marketStories',MARKET_STORIES);
+buildStories('worldStories',WORLD_STORIES);
+buildStories('personalStories',PERSONAL_STORIES);
+buildStories('techStories',TECH_STORIES);
 buildQuiz();
 buildWatchlist();
 setDate();
 
-// Attempt to load AI-generated content from content.json
 fetch('content.json')
   .then(r=>r.ok?r.json():null)
   .then(data=>{if(data)applyContent(data);})
