@@ -1,44 +1,33 @@
 # .github/workflows/daily-update.yml
 # This runs every weekday at 6:30 AM Pacific Time (13:30 UTC)
-# It calls the Gemini AI, updates content.json, and rebuilds the site
-
+# It calls the Groq AI, updates content.json, and rebuilds the site
 name: Daily AI Content Update
-
 on:
   schedule:
     - cron: '30 13 * * 1-5'   # 6:30 AM PT, Mon-Fri
   workflow_dispatch:             # Also lets you trigger it manually anytime
-
 permissions:
   contents: write
-
 jobs:
   update-content:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install dependencies
         run: pip install groq
-
       - name: Run AI content updater
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python update_content.py
-
       - name: Commit and push updated content
         run: |
           git config --global user.name "Bull Brief Bot"
           git config --global user.email "bot@bullbrief.com"
-          git fetch --all
-          git reset --hard origin/main
           git add content.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Daily content update: $(date +'%B %d, %Y')"
-          git push --force
+          git diff --staged --quiet || git commit -m "Daily content update: $(date +'%B %d, %Y')"
+          git push
