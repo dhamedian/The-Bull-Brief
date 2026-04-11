@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -678,6 +679,7 @@ footer{
   <div class="portfolio-strip" id="watchlist"></div>
 
   <!-- SUBSCRIBE -->
+<!-- SUBSCRIBE -->
   <div class="sub-banner" id="subscribe">
     <div class="sub-left">
       <h2>Don't miss tomorrow's brief.</h2>
@@ -690,8 +692,13 @@ footer{
       </div>
     </div>
     <div class="sub-form">
-      <input type="email" class="sub-input" placeholder="your@email.com" id="subEmail"/>
-      <button class="sub-btn" onclick="handleSub()">Subscribe Free →</button>
+      <form id="sib-form" method="POST" action="https://79d15b39.sibforms.com/serve/MUIFAFFTdI_xeBefV499_y6nkx_a7unlQCYCFwwsRgSFz7s_DEdQKdpNaWF1L03vZXbemXpfeMa8vX2q3F_qWH3YbVUkVmIFGC-7K-7UGzbVFuxFagQZR8P8dBThkKM2NaXIZ2iSvL-FBXJqNi2zUsYkC8O1tXCBf2POR52rzmh1K9_3tlGdTmkkVz0MZ1pCc08CrqCNUK7DR9vbzg==" data-type="subscription" target="_blank">
+        <input type="text" name="EMAIL" class="sub-input" placeholder="your@email.com" required />
+        <button type="submit" class="sub-btn">Subscribe Free →</button>
+        <input type="text" name="email_address_check" value="" style="display:none">
+        <input type="hidden" name="locale" value="en">
+      </form>
+      <div id="sub-success" style="display:none;font-family:var(--mono);font-size:12px;color:var(--accent);margin-top:8px;">✓ You're subscribed! See you tomorrow morning.</div>
     </div>
   </div>
 
@@ -1081,14 +1088,13 @@ function setDate(){
     `<span style="width:20px;height:1px;background:var(--accent);display:inline-block;vertical-align:middle;margin-right:8px"></span>${d.toLocaleDateString('en-US',opts)}`;
 }
 
-function handleSub(){
-  const e=document.getElementById('subEmail');
-  if(!e.value||!e.value.includes('@')){e.focus();return;}
-  e.value='';
-  e.placeholder='You\'re subscribed! See you tomorrow morning.';
-  document.querySelector('.sub-btn').textContent='Subscribed ✓';
-  document.querySelector('.sub-btn').style.background='var(--accent2)';
-}
+function handleSub(){}
+document.getElementById('sib-form').addEventListener('submit', function(){
+  setTimeout(function(){
+    document.getElementById('sib-form').style.display = 'none';
+    document.getElementById('sub-success').style.display = 'block';
+  }, 1000);
+});
 function toggleNav(){
   document.getElementById('nav').classList.toggle('open');
 }
