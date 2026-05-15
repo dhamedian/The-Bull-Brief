@@ -1,7 +1,7 @@
 {
-  "date": "May 14, 2026",
+  "date": "May 15, 2026",
   "breaking_news": {
-    "text": "The Dow Jones Industrial Average surged over 200 points today as investors reacted to the latest jobs report showing a stronger-than-expected labor market.",
+    "text": "The Dow Jones Industrial Average surged over 200 points today after the Federal Reserve announced it would keep interest rates steady, boosting investor confidence in the market.",
     "is_breaking": true
   },
   "market_stories": [
@@ -9,9 +9,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "2h ago",
-      "title": "Dow Jones Surges on Strong Jobs Report",
-      "summary": "The Dow Jones Industrial Average, a stock market index that measures the performance of 30 large US companies, rose over 200 points today after the Labor Department released its latest jobs report. The report showed that the US economy added 250,000 new jobs in April, exceeding expectations. This news is significant because a strong labor market can lead to higher consumer spending, which can boost economic growth. As a student, this means that a strong economy can lead to more job opportunities and higher paying jobs after graduation.",
-      "fullContent": "<p>The latest jobs report from the Labor Department showed that the US economy added 250,000 new jobs in April, exceeding expectations of 200,000. This news sent the Dow Jones Industrial Average surging over 200 points, with investors reacting positively to the strong labor market. A strong labor market is important because it can lead to higher consumer spending, which can boost economic growth. When people have jobs, they have more money to spend on goods and services, which can lead to higher demand and economic growth.</p><h4>What is the Dow Jones Industrial Average?</h4><p>The Dow Jones Industrial Average, also known as the Dow, is a stock market index that measures the performance of 30 large US companies. It is one of the most widely followed stock market indices in the world and is often seen as a benchmark for the overall health of the US economy. The Dow is calculated by adding up the stock prices of the 30 companies in the index and dividing by a divisor, which is adjusted for stock splits and other changes.</p><div class='highlight'>The Dow has risen over 10% so far this year, driven by strong earnings from US companies and a rebound in the technology sector.</div><h4>What This Means For You</h4><p>A strong labor market and a rising stock market can have a positive impact on your future. With more job opportunities and higher paying jobs available, you may have more options after graduation. Additionally, a strong economy can lead to higher returns on investments, such as 401(k) or IRA accounts, which can help you save for retirement or other long-term goals.</p>",
+      "title": "Dow Jones Surges After Fed Keeps Interest Rates Steady",
+      "summary": "The Dow Jones Industrial Average rose by over 200 points today after the Federal Reserve, also known as the 'Fed', decided to keep interest rates steady. This move is significant because interest rates affect how much it costs to borrow money, which in turn affects the overall economy. As a result, investors are feeling more confident about putting their money into the stock market. This matters to you because if you're planning to save for college or a car, a strong stock market can help your savings grow over time.",
+      "fullContent": "<p>The Federal Reserve, the central bank of the United States, is responsible for setting interest rates. When interest rates are low, it's cheaper for people and businesses to borrow money, which can help stimulate economic growth. On the other hand, high interest rates can slow down the economy by making borrowing more expensive. Today, the Fed decided to keep interest rates steady, which means that borrowing costs will remain the same for now.</p><h4>What Are Interest Rates?</h4><p>Interest rates are essentially the cost of borrowing money. When you take out a loan or use a credit card, you have to pay back the amount you borrowed plus some extra money, which is the interest. Think of it like renting a bike - you have to pay a fee to use the bike for a day, and that fee is like the interest on a loan.</p><div class='highlight'>The current interest rate is 4.5%, which means that for every $100 you borrow, you'll have to pay back $104.50.</div><h4>What This Means For You</h4><p>If you're planning to take out a loan for college or a car, a steady interest rate can help you predict how much you'll have to pay back. Additionally, a strong stock market can help your savings grow over time, which can be beneficial if you're saving for a big purchase or a long-term goal like retirement.</p>",
       "mins": "3 min read",
       "featured": true
     },
@@ -19,9 +19,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "3h ago",
-      "title": "Federal Reserve Keeps Interest Rates Steady",
-      "summary": "The Federal Reserve, the central bank of the US, decided to keep interest rates steady at its latest meeting. This decision was expected by many economists, as the Fed has been trying to balance the need to control inflation with the need to support economic growth. As a student, this means that borrowing costs for things like student loans and credit cards may remain low, making it easier to borrow money for college or other expenses.",
-      "fullContent": "<p>The Federal Reserve, also known as the Fed, decided to keep interest rates steady at its latest meeting. This decision was expected by many economists, as the Fed has been trying to balance the need to control inflation with the need to support economic growth. The Fed sets interest rates to influence the overall direction of the economy, with higher interest rates used to slow down the economy and lower interest rates used to stimulate it.</p><h4>How do interest rates affect you?</h4><p>Interest rates can have a big impact on your personal finances. When interest rates are low, it can be cheaper to borrow money for things like student loans or credit cards. This can make it easier to pay for college or other expenses. On the other hand, low interest rates can also mean that savings accounts and other investments earn lower returns, making it harder to save money.</p><div class='highlight'>The current interest rate on federal student loans is 4.53%, which is relatively low compared to historical rates.</div><h4>What This Means For You</h4><p>With interest rates remaining steady, you may be able to borrow money at relatively low costs. This can be beneficial if you need to take out student loans or use a credit card for expenses. However, it's also important to remember that borrowing money should be done responsibly and with a plan to pay it back. Make sure to consider the interest rate and repayment terms before borrowing money.</p>",
+      "title": "Tech Stocks Lead the Charge in Today's Market Rally",
+      "summary": "Tech stocks like Apple and Amazon led the charge in today's market rally, with many investors betting on the continued growth of the tech industry. This matters to you because if you're interested in pursuing a career in tech, a strong tech industry can mean more job opportunities and higher salaries.",
+      "fullContent": "<p>Tech stocks have been on a tear lately, with many investors betting on the continued growth of the tech industry. Companies like Apple and Amazon have been leading the charge, with their stocks rising by over 2% today. This is significant because the tech industry is a major driver of economic growth, and a strong tech industry can create new job opportunities and drive innovation.</p><h4>What's Behind the Tech Rally?</h4><p>One reason for the tech rally is the growing demand for cloud computing and artificial intelligence. Many companies are investing heavily in these technologies, which is driving up the stock prices of companies that specialize in these areas. Additionally, the recent announcement of new iPhone models has helped boost Apple's stock price.</p><div class='highlight'>The tech industry is expected to grow by 10% in the next year, which is faster than the overall economy.</div><h4>What This Means For You</h4><p>If you're interested in pursuing a career in tech, a strong tech industry can mean more job opportunities and higher salaries. Additionally, if you're saving for college or a car, a strong stock market can help your savings grow over time.</p>",
       "mins": "2 min read",
       "featured": false
     },
@@ -29,9 +29,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "4h ago",
-      "title": "Tech Stocks Lead Market Gains",
-      "summary": "Tech stocks, including companies like Apple and Google, led the market gains today after a strong earnings report from Microsoft. The tech sector has been a key driver of the market's gains this year, with many investors betting on the growth of cloud computing and artificial intelligence. As a student, this means that companies in the tech sector may be hiring more workers, including recent graduates, to support their growth.",
-      "fullContent": "<p>Tech stocks, including companies like Apple and Google, led the market gains today after a strong earnings report from Microsoft. The tech sector has been a key driver of the market's gains this year, with many investors betting on the growth of cloud computing and artificial intelligence. Cloud computing refers to the practice of storing and processing data over the internet, rather than on local computers or servers. Artificial intelligence, or AI, refers to the development of computer systems that can perform tasks that would typically require human intelligence, such as learning and problem-solving.</p><h4>Why are tech stocks important?</h4><p>Tech stocks are important because they can be a key driver of economic growth and job creation. Many tech companies are leaders in innovation and are creating new products and services that can disrupt traditional industries. As a result, they can create new job opportunities for workers with skills in areas like programming, data analysis, and digital marketing.</p><div class='highlight'>The tech sector has added over 100,000 new jobs in the past year, with many of those jobs going to recent graduates.</div><h4>What This Means For You</h4><p>With the tech sector leading the market gains, you may have more job opportunities available to you after graduation. Many tech companies are looking for workers with skills in areas like programming, data analysis, and digital marketing. Consider taking courses or getting experience in these areas to increase your chances of getting hired by a tech company.</p>",
+      "title": "Oil Prices Rise After OPEC Meeting",
+      "summary": "Oil prices rose by over 1% today after the Organization of the Petroleum Exporting Countries (OPEC) announced that it would maintain its current production levels. This matters to you because higher oil prices can lead to higher gas prices, which can affect your daily commute or road trips.",
+      "fullContent": "<p>OPEC, which is a group of oil-producing countries, met today to discuss its production levels. The group decided to maintain its current production levels, which is significant because it can affect the global supply of oil. When the supply of oil is low, prices tend to rise, which is what happened today.</p><h4>What Is OPEC?</h4><p>OPEC is a group of 14 oil-producing countries that work together to coordinate their oil production levels. The group is responsible for producing over 40% of the world's oil, which gives it a significant amount of influence over the global oil market.</p><div class='highlight'>The current price of oil is $60 per barrel, which is up from $50 per barrel last year.</div><h4>What This Means For You</h4><p>If you drive a car or take road trips, higher oil prices can lead to higher gas prices, which can affect your daily commute or road trips. Additionally, higher oil prices can also lead to higher prices for other goods and services, such as food and clothing.</p>",
       "mins": "2 min read",
       "featured": false
     }
@@ -41,9 +41,9 @@
       "cat": "Economy",
       "catClass": "tag-world",
       "time": "1h ago",
-      "title": "Global Economy Shows Signs of Slowdown",
-      "summary": "The global economy is showing signs of a slowdown, with many countries experiencing slower economic growth. This slowdown is being driven by a combination of factors, including trade tensions and a decline in business investment. As a student, this means that you may face a more challenging job market after graduation, with fewer job opportunities available.",
-      "fullContent": "<p>The global economy is showing signs of a slowdown, with many countries experiencing slower economic growth. This slowdown is being driven by a combination of factors, including trade tensions and a decline in business investment. Trade tensions refer to the conflicts between countries over trade policies, such as tariffs and quotas. A decline in business investment can make it harder for companies to grow and create new jobs.</p><h4>What is the impact of a global economic slowdown?</h4><p>A global economic slowdown can have a significant impact on your life and career. With slower economic growth, companies may be less likely to hire new workers, making it harder to find a job after graduation. Additionally, a slowdown can lead to lower economic growth, which can make it harder to save money and achieve your long-term financial goals.</p><div class='highlight'>The International Monetary Fund (IMF) has forecast that the global economy will grow at a rate of 3.3% this year, down from 3.8% last year.</div><h4>What This Means For You</h4><p>A global economic slowdown can make it more challenging to find a job after graduation. However, there are still many things you can do to prepare and increase your chances of success. Consider taking courses or getting experience in areas like programming, data analysis, and digital marketing, which are in high demand and can be less affected by economic downturns.</p>",
+      "title": "Global Economy Expected to Grow by 3.5% This Year",
+      "summary": "The global economy is expected to grow by 3.5% this year, according to a recent report from the International Monetary Fund (IMF). This matters to you because a strong global economy can create new job opportunities and drive economic growth in the US.",
+      "fullContent": "<p>The IMF, which is an international organization that works to promote global economic stability, released a report today that predicts the global economy will grow by 3.5% this year. This is significant because it's faster than the growth rate of the US economy, which is expected to grow by 2.5% this year.</p><h4>What's Behind the Global Growth?</h4><p>One reason for the global growth is the strong performance of emerging markets, such as China and India. These countries are experiencing rapid economic growth, which is driving up demand for goods and services and creating new job opportunities.</p><div class='highlight'>The global economy is expected to grow by 4% in the next year, which is faster than the overall economy.</div><h4>What This Means For You</h4><p>A strong global economy can create new job opportunities and drive economic growth in the US. Additionally, if you're saving for college or a car, a strong global economy can help your savings grow over time.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -51,9 +51,9 @@
       "cat": "Global",
       "catClass": "tag-world",
       "time": "5h ago",
-      "title": "US and China Reach Trade Deal",
-      "summary": "The US and China have reached a trade deal, which is expected to reduce trade tensions between the two countries. The deal includes provisions to increase US exports to China and to reduce Chinese tariffs on US goods. As a student, this means that you may see lower prices on goods imported from China, such as electronics and clothing.",
-      "fullContent": "<p>The US and China have reached a trade deal, which is expected to reduce trade tensions between the two countries. The deal includes provisions to increase US exports to China and to reduce Chinese tariffs on US goods. A tariff is a tax on imported goods, which can make them more expensive for consumers. By reducing tariffs, the deal can make goods imported from China cheaper for US consumers.</p><h4>What is the impact of the trade deal?</h4><p>The trade deal can have a significant impact on your life and career. With lower tariffs on imported goods, you may see lower prices on goods like electronics and clothing. Additionally, the deal can lead to increased trade between the US and China, which can create new job opportunities for workers in industries like manufacturing and logistics.</p><div class='highlight'>The deal is expected to increase US exports to China by over $20 billion per year.</div><h4>What This Means For You</h4><p>The trade deal can make goods imported from China cheaper for you, which can be beneficial if you are looking to buy electronics or clothing. Additionally, the deal can lead to increased job opportunities in industries like manufacturing and logistics, which can be a good option for you after graduation.</p>",
+      "title": "China and US Reach Trade Deal",
+      "summary": "China and the US reached a trade deal today, which is expected to reduce tariffs and increase trade between the two countries. This matters to you because a trade deal can lead to lower prices for goods and services, which can affect your daily life.",
+      "fullContent": "<p>China and the US have been negotiating a trade deal for months, and today they finally reached an agreement. The deal is expected to reduce tariffs, which are taxes on imported goods, and increase trade between the two countries.</p><h4>What's in the Deal?</h4><p>The deal includes a number of provisions, such as reducing tariffs on certain goods and increasing access to the Chinese market for US companies. This is significant because it can lead to lower prices for goods and services, which can affect your daily life.</p><div class='highlight'>The deal is expected to increase trade between the two countries by 10% in the next year.</div><h4>What This Means For You</h4><p>A trade deal can lead to lower prices for goods and services, which can affect your daily life. Additionally, if you're saving for college or a car, a strong trade deal can help your savings grow over time.</p>",
       "mins": "4 min read",
       "featured": false
     },
@@ -61,9 +61,9 @@
       "cat": "Economy",
       "catClass": "tag-world",
       "time": "6h ago",
-      "title": "European Central Bank Cuts Interest Rates",
-      "summary": "The European Central Bank (ECB) has cut interest rates to stimulus economic growth in the eurozone. The ECB is the central bank for the eurozone, which is a group of European countries that use the euro as their currency. As a student, this means that you may see lower borrowing costs for things like student loans or credit cards if you are studying or working in Europe.",
-      "fullContent": "<p>The European Central Bank (ECB) has cut interest rates to stimulus economic growth in the eurozone. The ECB is the central bank for the eurozone, which is a group of European countries that use the euro as their currency. By cutting interest rates, the ECB is trying to make borrowing cheaper and to stimulate economic growth. This can be beneficial for students who are studying or working in Europe, as it can make it easier to borrow money for things like tuition or living expenses.</p><h4>What is the impact of lower interest rates?</h4><p>Lower interest rates can have a significant impact on your personal finances. With lower borrowing costs, you may be able to borrow money at a lower interest rate, which can make it easier to pay back loans or credit cards. Additionally, lower interest rates can lead to higher economic growth, which can create new job opportunities and increase wages.</p><div class='highlight'>The ECB has cut interest rates to -0.5%, which is a record low.</div><h4>What This Means For You</h4><p>With lower interest rates in the eurozone, you may see lower borrowing costs for things like student loans or credit cards if you are studying or working in Europe. This can be beneficial if you need to borrow money for tuition or living expenses. Additionally, lower interest rates can lead to higher economic growth, which can create new job opportunities and increase wages.</p>",
+      "title": "Eurozone Economy Grows by 1.5% in First Quarter",
+      "summary": "The Eurozone economy grew by 1.5% in the first quarter, according to a recent report from the European Central Bank (ECB). This matters to you because a strong Eurozone economy can create new job opportunities and drive economic growth in the US.",
+      "fullContent": "<p>The ECB, which is the central bank of the Eurozone, released a report today that showed the Eurozone economy grew by 1.5% in the first quarter. This is significant because it's faster than the growth rate of the US economy, which is expected to grow by 2.5% this year.</p><h4>What's Behind the Eurozone Growth?</h4><p>One reason for the Eurozone growth is the strong performance of countries like Germany and France. These countries are experiencing rapid economic growth, which is driving up demand for goods and services and creating new job opportunities.</p><div class='highlight'>The Eurozone economy is expected to grow by 2% in the next year, which is faster than the overall economy.</div><h4>What This Means For You</h4><p>A strong Eurozone economy can create new job opportunities and drive economic growth in the US. Additionally, if you're saving for college or a car, a strong Eurozone economy can help your savings grow over time.</p>",
       "mins": "2 min read",
       "featured": false
     }
@@ -73,9 +73,9 @@
       "cat": "Personal Finance",
       "catClass": "tag-personal",
       "time": "Today",
-      "title": "How to Save Money for College",
-      "summary": "Saving money for college can be challenging, but there are several strategies you can use to make it easier. One strategy is to start saving early, using a savings account or a 529 college savings plan. You can also consider applying for scholarships or financial aid to help pay for tuition. As a student, this means that you can take control of your financial future and make smart decisions about saving and borrowing money for college.",
-      "fullContent": "<p>Saving money for college can be challenging, but there are several strategies you can use to make it easier. One strategy is to start saving early, using a savings account or a 529 college savings plan. A 529 plan is a type of savings plan that is designed to help families save for college. It allows you to contribute money to a savings account, which can then be used to pay for tuition and other college expenses.</p><h4>What are the benefits of a 529 plan?</h4><p>A 529 plan can be a great way to save for college, as it allows you to contribute money to a savings account and earn interest on your contributions. Additionally, the money in a 529 plan can be used to pay for tuition and other college expenses, such as room and board. Many states also offer tax benefits for contributions to a 529 plan, which can make it an even more attractive option for saving for college.</p><div class='highlight'>You can contribute up to $300,000 per year to a 529 plan, and the money can be used to pay for tuition and other college expenses.</div><h4>What This Means For You</h4><p>By starting to save for college early, you can take control of your financial future and make smart decisions about saving and borrowing money for college. Consider using a savings account or a 529 college savings plan to start saving, and look into applying for scholarships or financial aid to help pay for tuition.</p>",
+      "title": "How to Start Saving for College",
+      "summary": "Starting to save for college can seem overwhelming, but it's easier than you think. By setting up a savings plan and taking advantage of tax-advantaged accounts, you can make saving for college a breeze.",
+      "fullContent": "<p>Saving for college is one of the most important things you can do to secure your financial future. By starting to save early, you can take advantage of compound interest and make your money grow over time.</p><h4>What's the Best Way to Save for College?</h4><p>One of the best ways to save for college is to use a tax-advantaged account, such as a 529 plan. These plans allow you to save money for college and avoid paying taxes on the earnings.</p><div class='highlight'>By saving just $100 per month, you can accumulate over $10,000 in 10 years.</div><h4>What This Means For You</h4><p>Starting to save for college can seem overwhelming, but it's easier than you think. By setting up a savings plan and taking advantage of tax-advantaged accounts, you can make saving for college a breeze. Additionally, saving for college can help you avoid taking on too much student loan debt, which can affect your financial future.</p>",
       "mins": "5 min read",
       "featured": false
     },
@@ -83,9 +83,9 @@
       "cat": "Personal Finance",
       "catClass": "tag-personal",
       "time": "Today",
-      "title": "How to Manage Your Credit Score",
-      "summary": "Your credit score is an important number that can affect your ability to borrow money and get credit. To manage your credit score, you should make on-time payments, keep credit utilization low, and monitor your credit report for errors. As a student, this means that you can take control of your credit score and make smart decisions about borrowing and credit.",
-      "fullContent": "<p>Your credit score is an important number that can affect your ability to borrow money and get credit. It is calculated based on your credit history, including your payment history, credit utilization, and length of credit history. To manage your credit score, you should make on-time payments, keep credit utilization low, and monitor your credit report for errors.</p><h4>What is credit utilization?</h4><p>Credit utilization refers to the amount of credit you are using compared to the amount of credit available to you. For example, if you have a credit card with a limit of $1,000 and you have a balance of $300, your credit utilization is 30%. Keeping credit utilization low can help improve your credit score, as it shows that you are able to manage your credit responsibly.</p><div class='highlight'>You can check your credit report for free once a year from each of the three major credit reporting agencies: Equifax, Experian, and TransUnion.</div><h4>What This Means For You</h4><p>By managing your credit score, you can take control of your financial future and make smart decisions about borrowing and credit. Consider making on-time payments, keeping credit utilization low, and monitoring your credit report for errors to improve your credit score and increase your access to credit.</p>",
+      "title": "How to Create a Budget That Works for You",
+      "summary": "Creating a budget can seem like a daunting task, but it's easier than you think. By tracking your expenses and setting financial goals, you can create a budget that works for you.",
+      "fullContent": "<p>Creating a budget is one of the most important things you can do to take control of your finances. By tracking your expenses and setting financial goals, you can create a budget that works for you and helps you achieve your financial goals.</p><h4>What's the Best Way to Create a Budget?</h4><p>One of the best ways to create a budget is to use the 50/30/20 rule. This rule suggests that you allocate 50% of your income towards necessary expenses, such as rent and utilities, 30% towards discretionary spending, and 20% towards saving and debt repayment.</p><div class='highlight'>By following the 50/30/20 rule, you can create a budget that works for you and helps you achieve your financial goals.</div><h4>What This Means For You</h4><p>Creating a budget can seem like a daunting task, but it's easier than you think. By tracking your expenses and setting financial goals, you can create a budget that works for you and helps you achieve your financial goals. Additionally, creating a budget can help you avoid overspending and make smart financial decisions.</p>",
       "mins": "4 min read",
       "featured": false
     }
@@ -95,9 +95,9 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "3h ago",
-      "title": "The Future of Artificial Intelligence",
-      "summary": "Artificial intelligence (AI) is a rapidly growing field that is expected to have a significant impact on many industries, including healthcare, finance, and transportation. AI refers to the development of computer systems that can perform tasks that would typically require human intelligence, such as learning and problem-solving. As a student, this means that you may have the opportunity to work in a field that is at the forefront of technological innovation and has the potential to transform many aspects of our lives.",
-      "fullContent": "<p>Artificial intelligence (AI) is a rapidly growing field that is expected to have a significant impact on many industries, including healthcare, finance, and transportation. AI refers to the development of computer systems that can perform tasks that would typically require human intelligence, such as learning and problem-solving. This can include things like speech recognition, image recognition, and natural language processing.</p><h4>What are the applications of AI?</h4><p>The applications of AI are vast and varied. In healthcare, AI can be used to analyze medical images and diagnose diseases. In finance, AI can be used to analyze market trends and make investment decisions. In transportation, AI can be used to develop self-driving cars and improve traffic flow. As a student, you may have the opportunity to work in one of these fields and contribute to the development of AI technology.</p><div class='highlight'>The global AI market is expected to grow to over $150 billion by 2025, with many companies investing heavily in AI research and development.</div><h4>What This Means For You</h4><p>With the rapid growth of AI, you may have the opportunity to work in a field that is at the forefront of technological innovation and has the potential to transform many aspects of our lives. Consider taking courses or getting experience in areas like programming, data analysis, and machine learning to increase your chances of working in the AI field.</p>",
+      "title": "New iPhone Models Announced",
+      "summary": "Apple announced new iPhone models today, which are expected to be released later this year. The new models feature improved cameras and faster processors, which can enhance your mobile experience.",
+      "fullContent": "<p>Apple announced new iPhone models today, which are expected to be released later this year. The new models feature improved cameras and faster processors, which can enhance your mobile experience.</p><h4>What's New in the New iPhone Models?</h4><p>The new iPhone models feature a number of improvements, including improved cameras and faster processors. The new cameras are expected to take better photos and videos, while the faster processors will make your iPhone run more smoothly.</p><div class='highlight'>The new iPhone models are expected to start at $599, which is $100 less than the current models.</div><h4>What This Means For You</h4><p>The new iPhone models can enhance your mobile experience and make it easier to stay connected with friends and family. Additionally, the improved cameras and faster processors can make it easier to take photos and videos, and to use your iPhone for work or school.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -105,9 +105,9 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "5h ago",
-      "title": "The Impact of 5G on Mobile Devices",
-      "summary": "The rollout of 5G technology is expected to have a significant impact on mobile devices, with faster data speeds and lower latency. 5G refers to the fifth generation of wireless technology, which is designed to provide faster and more reliable connections than previous generations. As a student, this means that you may be able to access faster and more reliable internet on your mobile device, which can be beneficial for streaming, gaming, and other online activities.",
-      "fullContent": "<p>The rollout of 5G technology is expected to have a significant impact on mobile devices, with faster data speeds and lower latency. 5G refers to the fifth generation of wireless technology, which is designed to provide faster and more reliable connections than previous generations. This can include things like faster download speeds, lower latency, and greater connectivity.</p><h4>What are the benefits of 5G?</h4><p>The benefits of 5G are numerous. With faster data speeds, you can stream videos and music more quickly and reliably. With lower latency, you can play online games and use virtual reality applications more smoothly. Additionally, 5G can provide greater connectivity, which can enable new applications like smart cities and IoT devices.</p><div class='highlight'>The first 5G devices are expected to be available in the market by the end of this year, with many companies investing heavily in 5G research and development.</div><h4>What This Means For You</h4><p>With the rollout of 5G technology, you may be able to access faster and more reliable internet on your mobile device, which can be beneficial for streaming, gaming, and other online activities. Consider upgrading to a 5G device to take advantage of these benefits and stay connected on the go.</p>",
+      "title": "Google Announces New AI Technology",
+      "summary": "Google announced new AI technology today, which is expected to improve the way you interact with your devices. The new technology uses machine learning to make your devices more intelligent and responsive.",
+      "fullContent": "<p>Google announced new AI technology today, which is expected to improve the way you interact with your devices. The new technology uses machine learning to make your devices more intelligent and responsive.</p><h4>What's New in the New AI Technology?</h4><p>The new AI technology uses machine learning to make your devices more intelligent and responsive. This means that your devices will be able to learn your habits and preferences, and make recommendations based on that information.</p><div class='highlight'>The new AI technology is expected to be integrated into a number of Google products, including Google Assistant and Google Search.</div><h4>What This Means For You</h4><p>The new AI technology can make it easier to use your devices and get the information you need. Additionally, the new technology can help you stay organized and focused, and make it easier to communicate with friends and family.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -115,62 +115,62 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "7h ago",
-      "title": "The Rise of Cybersecurity Threats",
-      "summary": "Cybersecurity threats are becoming increasingly common, with many companies and individuals falling victim to hacking and data breaches. As a student, this means that you need to be aware of the risks and take steps to protect yourself and your personal data. This can include using strong passwords, keeping software up to date, and being cautious when clicking on links or downloading attachments.",
-      "fullContent": "<p>Cybersecurity threats are becoming increasingly common, with many companies and individuals falling victim to hacking and data breaches. As a student, you need to be aware of the risks and take steps to protect yourself and your personal data. This can include using strong passwords, keeping software up to date, and being cautious when clicking on links or downloading attachments.</p><h4>What are the types of cybersecurity threats?</h4><p>There are many types of cybersecurity threats, including malware, phishing, and ransomware. Malware refers to software that is designed to harm or exploit a computer system. Phishing refers to the practice of sending fake emails or messages that appear to be from a legitimate source. Ransomware refers to software that encrypts a victim's files and demands a ransom in exchange for the decryption key.</p><div class='highlight'>The average cost of a data breach is over $3 million, with many companies investing heavily in cybersecurity measures to protect themselves.</div><h4>What This Means For You</h4><p>With the rise of cybersecurity threats, you need to be aware of the risks and take steps to protect yourself and your personal data. Consider using strong passwords, keeping software up to date, and being cautious when clicking on links or downloading attachments to stay safe online.</p>",
+      "title": "Facebook Announces New Virtual Reality Technology",
+      "summary": "Facebook announced new virtual reality technology today, which is expected to change the way you interact with your devices. The new technology uses virtual reality to create immersive experiences, which can enhance your entertainment and education.",
+      "fullContent": "<p>Facebook announced new virtual reality technology today, which is expected to change the way you interact with your devices. The new technology uses virtual reality to create immersive experiences, which can enhance your entertainment and education.</p><h4>What's New in the New Virtual Reality Technology?</h4><p>The new virtual reality technology uses advanced sensors and software to create immersive experiences. This means that you'll be able to explore virtual worlds and interact with virtual objects in a more realistic way.</p><div class='highlight'>The new virtual reality technology is expected to be integrated into a number of Facebook products, including Facebook and Instagram.</div><h4>What This Means For You</h4><p>The new virtual reality technology can enhance your entertainment and education, and make it easier to connect with friends and family. Additionally, the new technology can help you stay organized and focused, and make it easier to communicate with others.</p>",
       "mins": "2 min read",
       "featured": false
     }
   ],
   "word_of_day": {
-    "word": "Inflation",
+    "word": "Compound Interest",
     "type": "noun / finance",
-    "definition": "Inflation refers to the rate at which prices for goods and services are rising. It is measured as an annual percentage increase in the cost of living, and can have a significant impact on the purchasing power of consumers. As a student, understanding inflation can help you make smart decisions about saving and spending money.",
-    "example": "The recent surge in inflation has made it harder for students to afford living expenses, with many having to adjust their budgets to account for higher prices.",
+    "definition": "Compound interest is the interest earned on both the principal amount and any accrued interest over time. It's a powerful tool for growing your savings and investments, as it can help your money grow exponentially over time. For example, if you save $1,000 and earn 5% interest per year, you'll have $1,050 after one year. In the second year, you'll earn 5% interest on the new total of $1,050, which is $52.50, making your total $1,102.50.",
+    "example": "By taking advantage of compound interest, you can turn a small savings into a significant nest egg over time, as seen in the example of a savings account that earns 5% interest per year.",
     "tags": [
-      "economy",
-      "finance",
-      "inflation"
+      "savings",
+      "investing",
+      "finance"
     ]
   },
   "quiz": {
-    "question": "What is the main reason for the recent surge in the Dow Jones Industrial Average?",
+    "question": "What is the main reason why the Federal Reserve keeps interest rates steady?",
     "options": [
       {
-        "text": "A. Strong earnings from US companies",
+        "text": "A. To stimulate economic growth",
+        "correct": false
+      },
+      {
+        "text": "B. To control inflation",
         "correct": true
       },
       {
-        "text": "B. Increased trade tensions with China",
+        "text": "C. To reduce unemployment",
         "correct": false
       },
       {
-        "text": "C. Lower interest rates from the Federal Reserve",
-        "correct": false
-      },
-      {
-        "text": "D. Higher oil prices",
+        "text": "D. To increase trade",
         "correct": false
       }
     ],
-    "explanation": "The recent surge in the Dow Jones Industrial Average is mainly due to strong earnings from US companies, which has led to increased investor confidence and a rise in stock prices. This is a positive sign for the economy, as it indicates that companies are performing well and are likely to continue to grow and create jobs."
+    "explanation": "The Federal Reserve keeps interest rates steady to control inflation, which is the rate at which prices for goods and services are rising. When interest rates are low, it's cheaper for people and businesses to borrow money, which can stimulate economic growth but also lead to higher inflation. By keeping interest rates steady, the Fed can help keep inflation in check and maintain a stable economy."
   },
   "explainer_strip": [
     {
       "term": "Today's Context",
-      "def": "The US economy is experiencing a period of growth, with low unemployment and rising stock prices"
+      "def": "The current economic situation, including the steady interest rates and the growing global economy, which can affect your savings and investments"
     },
     {
       "term": "Why It Matters",
-      "def": "A strong economy can lead to more job opportunities and higher paying jobs, which can benefit students after graduation"
+      "def": "Understanding the current economic situation can help you make informed decisions about your finances, such as saving for college or investing in the stock market"
     },
     {
       "term": "Key Number",
-      "def": "The Dow Jones Industrial Average has risen over 10% so far this year, driven by strong earnings from US companies"
+      "def": "The current interest rate of 4.5%, which can affect the cost of borrowing money and the growth of your savings"
     },
     {
       "term": "Quick Tip",
-      "def": "Consider starting to save for college or other long-term goals, as a strong economy can lead to higher returns on investments"
+      "def": "Start saving early and take advantage of compound interest to grow your savings over time, and consider using tax-advantaged accounts such as 529 plans to save for college"
     }
   ]
 }
