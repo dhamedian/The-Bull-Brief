@@ -1,16 +1,15 @@
 {
   "quiz_questions": [
     "What is the primary reason behind the surge in EOG Resources' performance in Q1?",
-    "What is the primary factor driving the increase in gas prices this summer, according to forecasts?"
+    "What is the primary factor driving the increase in gas prices this summer, according to forecasts?",
+    "What is the main reason for the recent surge in Momentus' stock price?"
   ],
   "words_of_day": [
     "Hedge",
-    "Market Capitalization"
+    "Market Capitalization",
+    "Dividend"
   ],
   "story_titles": [
-    "Lowe's Sounds the Alarm as Customers Change Their Tune",
-    "ConocoPhillips: A Natural Hedge During Uncertainties?",
-    "EOG Resources Surges in Q1: What's Behind the Surge?",
     "Impact of Iran Peace Hopes on Global Markets",
     "S&P 500 Profit Growth: The Fastest in Nearly 5 Years",
     "Is the Stock Market Open Today? Understanding Holiday Schedules",
@@ -29,6 +28,17 @@
     "Understanding CD Rates for Savings",
     "The Role of Data Storage in Tech",
     "The Future of Tech Careers",
-    "Micron's Success in the Tech Sector"
+    "Micron's Success in the Tech Sector",
+    "Momentus' Stock Nearly Triples in 2 Days After Raising More Cash",
+    "Freeport-McMoRan: A Potential Investment Opportunity in Metals Mining",
+    "Modine Manufacturing: A Data Center Play with Potential for Growth",
+    "US-Iran Talks: A Potential Impact on Global Oil Prices",
+    "Cancer Treatment Costs: A Growing Concern for Patients and Investors",
+    "Tony Robbins on the AI Stock Bubble and Grocery Store Inflation",
+    "How to Start Investing in the Stock Market as a Teenager",
+    "The Importance of Emergency Funds for Teenagers",
+    "Jamie Dimon Warns of the Rise of AI in Finance",
+    "The Rise of Micron and the Memory-Chip Rally",
+    "The Future of Tech: Emerging Trends and Opportunities"
   ]
 }
