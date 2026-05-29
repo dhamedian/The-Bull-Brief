@@ -6,491 +6,699 @@
 <title>The Bull Brief — Finance for the Next Generation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0a0e1a;
-  --bg2:#0f1525;
-  --bg3:#141c2e;
-  --card:#151e33;
-  --card2:#1a2440;
-  --border:#1e2d4a;
-  --border2:#253558;
-  --accent:#00d68f;
-  --accent2:#00b87a;
-  --accent-glow:rgba(0,214,143,0.15);
-  --red:#ff5e5e;
-  --red-dim:#3a1a1a;
-  --gold:#f5c842;
-  --blue:#4d9fff;
-  --blue-dim:#0d1e3a;
-  --text:#e8edf8;
-  --text2:#8a9bc0;
-  --text3:#4a5a80;
-  --display:'Playfair Display',Georgia,serif;
+  /* Core palette — Glassmorphism Dark Fintech */
+  --bg:#060912;
+  --bg2:#0b0f1e;
+  --bg3:#0f1528;
+  --surface:#111827;
+  --surface2:#161d30;
+  --surface3:#1c2540;
+  --glass:rgba(255,255,255,0.04);
+  --glass-border:rgba(255,255,255,0.08);
+  --glass-hover:rgba(255,255,255,0.07);
+
+  /* Brand */
+  --accent:#00e5a0;
+  --accent2:#00c48a;
+  --accent3:#00a375;
+  --accent-glow:rgba(0,229,160,0.15);
+  --accent-glow2:rgba(0,229,160,0.08);
+
+  /* Semantic */
+  --red:#ff4d6d;
+  --red-dim:rgba(255,77,109,0.12);
+  --gold:#fbbf24;
+  --gold-dim:rgba(251,191,36,0.12);
+  --blue:#60a5fa;
+  --blue-dim:rgba(96,165,250,0.12);
+  --purple:#a78bfa;
+  --purple-dim:rgba(167,139,250,0.12);
+
+  /* Text */
+  --text:#f1f5f9;
+  --text2:#94a3b8;
+  --text3:#475569;
+  --text4:#2d3f5c;
+
+  /* Typography */
+  --display:'Space Grotesk',sans-serif;
   --body:'DM Sans',sans-serif;
   --mono:'JetBrains Mono',monospace;
+
+  /* Radii */
+  --r-sm:8px;
+  --r-md:12px;
+  --r-lg:16px;
+  --r-xl:20px;
+  --r-2xl:24px;
+
+  /* Shadows */
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg:0 8px 32px rgba(0,0,0,0.6);
+  --shadow-glow:0 0 32px rgba(0,229,160,0.12);
 }
+
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--body);
+  font-size:15px;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
 
 /* SCROLLBAR */
-::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+::-webkit-scrollbar-thumb{background:var(--surface3);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent3)}
 
-/* NOISE TEXTURE OVERLAY */
+/* BACKGROUND MESH */
 body::before{
   content:'';position:fixed;inset:0;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events:none;z-index:1000;opacity:0.4;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%,rgba(0,229,160,0.06) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 40% at 90% 100%,rgba(96,165,250,0.05) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 60% at 50% 50%,rgba(167,139,250,0.03) 0%,transparent 70%);
+  pointer-events:none;z-index:0;
 }
 
-/* TICKER BAR */
+/* TICKER */
 .ticker-bar{
-  background:var(--bg2);border-bottom:1px solid var(--border);
-  padding:8px 0;overflow:hidden;position:sticky;top:0;z-index:100;
+  background:rgba(11,15,30,0.9);
+  border-bottom:1px solid var(--glass-border);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  padding:9px 0;overflow:hidden;
+  position:sticky;top:0;z-index:200;
 }
 .ticker-track{
-  display:flex;gap:40px;white-space:nowrap;
-  animation:ticker 45s linear infinite;
+  display:flex;gap:48px;white-space:nowrap;
+  animation:ticker 50s linear infinite;
 }
 .ticker-track:hover{animation-play-state:paused}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .tick{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px}
-.tick-sym{color:var(--text);font-weight:500;letter-spacing:.03em}
+.tick-sym{color:var(--text);font-weight:600;letter-spacing:.04em}
 .tick-val{color:var(--text2)}
 .tick-up{color:var(--accent)}
 .tick-dn{color:var(--red)}
-.tick-dot{width:3px;height:3px;border-radius:50%;background:var(--border2)}
+.tick-sep{width:1px;height:14px;background:var(--surface3)}
 
 /* HEADER */
 header{
-  border-bottom:1px solid var(--border);
-  background:var(--bg);
+  background:rgba(6,9,18,0.85);
+  border-bottom:1px solid var(--glass-border);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  position:relative;z-index:100;
 }
 .header-inner{
-  max-width:1200px;margin:0 auto;padding:20px 24px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  max-width:1280px;margin:0 auto;padding:18px 32px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
 }
-.logo-block{}
 .logo{
-  font-family:var(--display);font-size:32px;font-weight:900;
-  letter-spacing:-.5px;line-height:1;color:var(--text);
+  font-family:var(--display);font-size:26px;font-weight:700;
+  color:var(--text);letter-spacing:-.5px;line-height:1;
+  display:flex;align-items:center;gap:2px;
 }
-.logo em{color:var(--accent);font-style:normal}
+.logo-bull{color:var(--accent)}
 .logo-sub{
-  font-family:var(--mono);font-size:10px;color:var(--text3);
-  letter-spacing:.15em;text-transform:uppercase;margin-top:3px;
+  font-family:var(--mono);font-size:9px;color:var(--text3);
+  letter-spacing:.18em;text-transform:uppercase;margin-top:4px;
 }
-nav{display:flex;align-items:center;gap:4px}
+nav{display:flex;align-items:center;gap:2px}
 nav a{
-  padding:7px 14px;border-radius:6px;font-size:13px;font-weight:500;
-  color:var(--text2);text-decoration:none;transition:all .2s;
+  padding:8px 14px;border-radius:var(--r-sm);font-size:13px;font-weight:500;
+  color:var(--text2);text-decoration:none;
+  transition:color .2s,background .2s;letter-spacing:.01em;
 }
-nav a:hover{color:var(--text);background:var(--bg3)}
+nav a:hover{color:var(--text);background:var(--glass)}
 .nav-cta{
   background:var(--accent)!important;color:#001a0e!important;
-  font-weight:600!important;margin-left:8px;
+  font-weight:600!important;margin-left:6px;
+  box-shadow:0 0 20px var(--accent-glow);
 }
-.nav-cta:hover{background:var(--accent2)!important;transform:translateY(-1px)}
-.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:8px}
-.hamburger span{display:block;width:22px;height:2px;background:var(--text2);border-radius:2px;transition:.3s}
+.nav-cta:hover{background:var(--accent2)!important;transform:translateY(-1px);box-shadow:0 0 28px var(--accent-glow)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:20px;height:1.5px;background:var(--text2);border-radius:2px;transition:.3s}
+
+/* BREAKING BANNER */
+.breaking{
+  background:linear-gradient(90deg,rgba(255,77,109,0.1),rgba(255,77,109,0.05));
+  border-bottom:1px solid rgba(255,77,109,0.2);
+  padding:9px 32px;display:flex;align-items:center;gap:14px;
+  position:relative;z-index:99;
+}
+.breaking-label{
+  background:var(--red);color:white;font-family:var(--mono);font-size:9px;
+  letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:4px;
+  flex-shrink:0;font-weight:600;animation:blink 2s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.7}}
+.breaking-text{font-size:13px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-family:var(--body)}
+.breaking-text strong{color:var(--text);font-weight:600}
 
 /* HERO */
 .hero{
-  max-width:1200px;margin:0 auto;padding:48px 24px 40px;
-  display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:start;
+  max-width:1280px;margin:0 auto;
+  padding:64px 32px 48px;
+  display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:start;
+  position:relative;z-index:1;
 }
-.hero-date{
-  font-family:var(--mono);font-size:11px;color:var(--accent);
-  letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;
-  display:flex;align-items:center;gap:8px;
+.hero-eyebrow{
+  display:flex;align-items:center;gap:10px;margin-bottom:20px;
 }
-.hero-date::before{content:'';width:20px;height:1px;background:var(--accent)}
+.hero-eyebrow-line{width:32px;height:1px;background:var(--accent)}
+.hero-eyebrow-text{
+  font-family:var(--mono);font-size:10px;color:var(--accent);
+  letter-spacing:.15em;text-transform:uppercase;
+}
 .hero-headline{
-  font-family:var(--display);font-size:48px;font-weight:900;
-  line-height:1.08;letter-spacing:-.5px;color:var(--text);
-  margin-bottom:18px;
+  font-family:var(--display);font-size:52px;font-weight:700;
+  line-height:1.05;letter-spacing:-.8px;color:var(--text);
+  margin-bottom:20px;
 }
 .hero-headline .hl{
-  background:linear-gradient(90deg,var(--accent),var(--blue));
+  background:linear-gradient(135deg,var(--accent) 0%,var(--blue) 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
   background-clip:text;
 }
 .hero-deck{
-  font-size:16px;color:var(--text2);line-height:1.7;max-width:560px;margin-bottom:28px;
+  font-size:16px;color:var(--text2);line-height:1.75;
+  max-width:540px;margin-bottom:32px;font-weight:400;
 }
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .btn-primary{
-  background:var(--accent);color:#001a0e;padding:12px 24px;border-radius:8px;
+  background:var(--accent);color:#001a0e;padding:13px 26px;border-radius:var(--r-md);
   font-weight:600;font-size:14px;border:none;cursor:pointer;text-decoration:none;
-  display:inline-block;transition:all .2s;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:all .2s;letter-spacing:.01em;
+  box-shadow:0 0 24px var(--accent-glow);
 }
-.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 8px 24px var(--accent-glow)}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 0 36px var(--accent-glow)}
 .btn-ghost{
-  background:transparent;color:var(--text2);padding:12px 24px;border-radius:8px;
-  font-weight:500;font-size:14px;border:1px solid var(--border2);cursor:pointer;
-  text-decoration:none;display:inline-block;transition:all .2s;
+  background:var(--glass);color:var(--text2);padding:13px 26px;border-radius:var(--r-md);
+  font-weight:500;font-size:14px;border:1px solid var(--glass-border);cursor:pointer;
+  text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+  transition:all .2s;backdrop-filter:blur(8px);
 }
-.btn-ghost:hover{color:var(--text);border-color:var(--text2)}
+.btn-ghost:hover{color:var(--text);border-color:rgba(255,255,255,0.15);background:var(--glass-hover)}
+.hero-stats{display:flex;gap:28px;margin-top:28px;padding-top:28px;border-top:1px solid var(--glass-border)}
+.hero-stat-num{font-family:var(--display);font-size:22px;font-weight:700;color:var(--text)}
+.hero-stat-label{font-size:11px;color:var(--text3);margin-top:2px;font-family:var(--mono);letter-spacing:.05em;text-transform:uppercase}
 
-/* MARKET SNAPSHOT HERO CARD */
+/* MARKET CARD */
 .market-card{
-  background:var(--card);border:1px solid var(--border);border-radius:16px;
-  padding:20px;
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-xl);
+  padding:24px;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:var(--shadow-md);
+  position:sticky;top:80px;
+}
+.market-card-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:20px;
 }
 .market-card-title{
   font-family:var(--mono);font-size:10px;color:var(--text3);
-  letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;
-  display:flex;align-items:center;justify-content:space-between;
+  letter-spacing:.14em;text-transform:uppercase;
 }
-.live-dot{
-  display:flex;align-items:center;gap:5px;color:var(--accent);font-size:10px;
+.live-badge{
+  display:flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:10px;color:var(--accent);
+  background:rgba(0,229,160,0.1);padding:3px 8px;border-radius:20px;
 }
-.live-dot::before{
-  content:'';width:6px;height:6px;border-radius:50%;
+.live-badge::before{
+  content:'';width:5px;height:5px;border-radius:50%;
   background:var(--accent);animation:pulse 2s infinite;
 }
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.mkt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+.mkt-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .mkt-item{
-  background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-md);padding:12px;
+  transition:background .2s;
 }
-.mkt-item-name{font-size:11px;color:var(--text3);font-family:var(--mono);margin-bottom:4px}
-.mkt-item-val{font-family:var(--mono);font-size:16px;font-weight:500;color:var(--text);margin-bottom:2px}
-.mkt-item-chg{font-family:var(--mono);font-size:12px}
+.mkt-item:hover{background:rgba(255,255,255,0.05)}
+.mkt-item-name{font-size:10px;color:var(--text3);font-family:var(--mono);margin-bottom:4px;letter-spacing:.04em}
+.mkt-item-val{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--text);margin-bottom:2px}
+.mkt-item-chg{font-family:var(--mono);font-size:11px;font-weight:500}
 .up{color:var(--accent)}
 .dn{color:var(--red)}
-.mkt-divider{grid-column:1/-1;height:1px;background:var(--border);margin:4px 0}
-.fear-bar{margin-top:14px}
+.mkt-divider{grid-column:1/-1;height:1px;background:var(--glass-border);margin:4px 0}
+
+/* FEAR/GREED */
+.fear-bar{margin-top:16px;padding-top:16px;border-top:1px solid var(--glass-border)}
 .fear-label{
-  display:flex;justify-content:space-between;
-  font-family:var(--mono);font-size:10px;color:var(--text3);margin-bottom:6px;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:10px;color:var(--text3);margin-bottom:8px;
 }
-.fear-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.fear-value{color:var(--gold);font-weight:600}
+.fear-track{
+  height:5px;background:var(--surface3);border-radius:3px;overflow:hidden;
+  position:relative;
+}
 .fear-fill{
   height:100%;border-radius:3px;width:42%;
-  background:linear-gradient(90deg,var(--accent),var(--gold));
-  transition:width .8s ease;
+  background:linear-gradient(90deg,var(--red),var(--gold),var(--accent));
+  transition:width 1s ease;
 }
 
-/* MAIN LAYOUT */
-.page{max-width:1200px;margin:0 auto;padding:0 24px 60px}
+/* MAIN */
+.page{max-width:1280px;margin:0 auto;padding:0 32px 80px;position:relative;z-index:1}
 
 /* SECTION HEADER */
 .sec-head{
-  display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;
-  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:20px;padding-bottom:14px;
+  border-bottom:1px solid var(--glass-border);
 }
-.sec-head h2{font-family:var(--display);font-size:22px;font-weight:700;color:var(--text)}
+.sec-head h2{
+  font-family:var(--display);font-size:20px;font-weight:700;
+  color:var(--text);letter-spacing:-.2px;
+}
 .sec-tag{
-  font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-  padding:3px 10px;border-radius:4px;
+  font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 10px;border-radius:20px;font-weight:600;
 }
-.tag-market{background:rgba(0,214,143,.12);color:var(--accent)}
-.tag-tech{background:rgba(77,159,255,.12);color:var(--blue)}
-.tag-personal{background:rgba(245,200,66,.12);color:var(--gold)}
-.tag-world{background:rgba(255,94,94,.12);color:var(--red)}
-.tag-ai{background:rgba(160,100,255,.12);color:#b07fff}
-.sec-more{margin-left:auto;font-size:12px;color:var(--text3);text-decoration:none;font-weight:500;transition:.2s}
+.tag-market{background:rgba(0,229,160,0.1);color:var(--accent);border:1px solid rgba(0,229,160,0.2)}
+.tag-tech{background:var(--blue-dim);color:var(--blue);border:1px solid rgba(96,165,250,0.2)}
+.tag-personal{background:var(--gold-dim);color:var(--gold);border:1px solid rgba(251,191,36,0.2)}
+.tag-world{background:var(--red-dim);color:var(--red);border:1px solid rgba(255,77,109,0.2)}
+.tag-ai{background:var(--purple-dim);color:var(--purple);border:1px solid rgba(167,139,250,0.2)}
+.sec-more{
+  margin-left:auto;font-size:12px;color:var(--text3);
+  text-decoration:none;font-weight:500;
+  transition:.2s;font-family:var(--mono);letter-spacing:.04em;
+  display:flex;align-items:center;gap:4px;
+}
 .sec-more:hover{color:var(--accent)}
-
-/* CONTENT GRID */
-.content-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:40px}
-.content-grid.two-col{grid-template-columns:1fr 1fr}
-.content-grid.wide{grid-template-columns:2fr 1fr 1fr}
-
-/* STORY CARD */
-.story-card{
-  background:var(--card);border:1px solid var(--border);border-radius:12px;
-  padding:20px;display:flex;flex-direction:column;gap:10px;
-  transition:all .25s;cursor:pointer;
-  animation:fadeUp .5s ease both;
-}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.story-card:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.4)}
-.story-card.featured{
-  background:linear-gradient(135deg,var(--card) 60%,rgba(0,214,143,.06));
-  border-color:rgba(0,214,143,.25);
-}
-.card-top{display:flex;align-items:center;justify-content:space-between}
-.card-cat{
-  font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-  padding:3px 8px;border-radius:4px;font-weight:500;
-}
-.card-time{font-family:var(--mono);font-size:10px;color:var(--text3)}
-.card-title{
-  font-family:var(--display);font-size:17px;font-weight:700;color:var(--text);
-  line-height:1.35;
-}
-.story-card.featured .card-title{font-size:21px}
-.card-summary{font-size:13px;color:var(--text2);line-height:1.65;flex:1}
-.card-footer{
-  display:flex;align-items:center;justify-content:space-between;
-  padding-top:10px;border-top:1px solid var(--border);
-}
-.card-read{font-size:12px;color:var(--accent);font-weight:500}
-.card-mins{font-family:var(--mono);font-size:10px;color:var(--text3)}
-.ai-tag{
-  display:inline-flex;align-items:center;gap:4px;
-  font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;
-  background:rgba(0,214,143,.1);color:var(--accent);padding:2px 7px;border-radius:3px;
-}
-.ai-tag::before{content:'✦'}
 
 /* EXPLAINER STRIP */
 .explainer-strip{
-  background:var(--card2);border:1px solid var(--border);border-radius:12px;
-  padding:24px;margin-bottom:40px;
-  display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-xl);
+  padding:24px 32px;margin-bottom:48px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  backdrop-filter:blur(12px);
 }
 .explain-item{
-  padding:0 20px;border-right:1px solid var(--border);
+  padding:0 24px;
+  border-right:1px solid var(--glass-border);
 }
 .explain-item:first-child{padding-left:0}
 .explain-item:last-child{border-right:none;padding-right:0}
 .explain-term{
-  font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--text3);margin-bottom:6px;
+  font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text3);margin-bottom:8px;
 }
-.explain-def{font-size:13px;color:var(--text2);line-height:1.6}
+.explain-def{font-size:13px;color:var(--text2);line-height:1.65}
 .explain-def strong{color:var(--accent);font-weight:600}
 
-/* QUIZ SECTION */
-.quiz-section{
-  background:var(--card);border:1px solid var(--border);border-radius:16px;
-  padding:28px;margin-bottom:40px;
+/* STORY CARDS */
+.content-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:48px}
+.content-grid.two-col{grid-template-columns:1fr 1fr}
+.content-grid.wide{grid-template-columns:2fr 1fr 1fr}
+
+.story-card{
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-lg);
+  padding:22px;display:flex;flex-direction:column;gap:12px;
+  transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;
+  animation:fadeUp .5s ease both;
+  backdrop-filter:blur(8px);
+  position:relative;overflow:hidden;
 }
-.quiz-header{margin-bottom:20px}
-.quiz-header h3{font-family:var(--display);font-size:24px;font-weight:700;margin-bottom:8px}
+.story-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,0.02) 0%,transparent 60%);
+  pointer-events:none;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.story-card:hover{
+  border-color:rgba(255,255,255,0.14);
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-lg);
+  background:var(--glass-hover);
+}
+.story-card.featured{
+  background:linear-gradient(135deg,rgba(0,229,160,0.06) 0%,rgba(96,165,250,0.04) 100%);
+  border-color:rgba(0,229,160,0.2);
+}
+.story-card.featured::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--blue));
+  border-radius:var(--r-lg) var(--r-lg) 0 0;
+}
+.card-top{display:flex;align-items:center;justify-content:space-between}
+.card-cat{
+  font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 8px;border-radius:20px;font-weight:600;
+}
+.card-time{font-family:var(--mono);font-size:10px;color:var(--text3)}
+.card-title{
+  font-family:var(--display);font-size:16px;font-weight:600;color:var(--text);
+  line-height:1.4;letter-spacing:-.1px;
+}
+.story-card.featured .card-title{font-size:20px;font-weight:700;letter-spacing:-.3px}
+.card-summary{font-size:13px;color:var(--text2);line-height:1.7;flex:1}
+.card-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:12px;border-top:1px solid var(--glass-border);
+  margin-top:auto;
+}
+.card-read{
+  font-size:12px;color:var(--accent);font-weight:600;
+  display:flex;align-items:center;gap:4px;font-family:var(--mono);
+  letter-spacing:.04em;
+}
+.card-mins{font-family:var(--mono);font-size:10px;color:var(--text3)}
+.ai-tag{
+  display:inline-flex;align-items:center;gap:4px;
+  font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;
+  background:rgba(0,229,160,0.08);color:var(--accent);
+  padding:2px 7px;border-radius:4px;border:1px solid rgba(0,229,160,0.15);
+}
+.ai-tag::before{content:'✦';font-size:8px}
+
+/* STAGGER */
+.story-card:nth-child(2){animation-delay:.08s}
+.story-card:nth-child(3){animation-delay:.16s}
+.story-card:nth-child(4){animation-delay:.24s}
+.story-card:nth-child(5){animation-delay:.32s}
+.story-card:nth-child(6){animation-delay:.4s}
+
+/* WORD OF DAY */
+.wod-card{
+  background:linear-gradient(135deg,rgba(0,229,160,0.06) 0%,rgba(96,165,250,0.04) 50%,rgba(167,139,250,0.04) 100%);
+  border:1px solid rgba(0,229,160,0.15);
+  border-radius:var(--r-xl);
+  padding:32px;margin-bottom:48px;
+  display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.wod-card::before{
+  content:'';position:absolute;top:-60px;right:-60px;
+  width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,229,160,0.06),transparent 70%);
+  pointer-events:none;
+}
+.wod-eyebrow{
+  font-family:var(--mono);font-size:9px;color:var(--accent);
+  letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px;
+  display:flex;align-items:center;gap:8px;
+}
+.wod-eyebrow::before{content:'';width:16px;height:1px;background:var(--accent)}
+.wod-word{
+  font-family:var(--display);font-size:44px;font-weight:700;color:var(--text);
+  line-height:1;margin-bottom:6px;letter-spacing:-1px;
+}
+.wod-type{font-family:var(--mono);font-size:10px;color:var(--text3);margin-bottom:16px;letter-spacing:.06em}
+.wod-def{font-size:14px;color:var(--text2);line-height:1.75}
+.wod-example{
+  background:rgba(255,255,255,0.03);
+  border-radius:var(--r-lg);padding:20px;
+  border-left:3px solid var(--accent);
+}
+.wod-ex-label{
+  font-family:var(--mono);font-size:9px;color:var(--text3);
+  margin-bottom:10px;letter-spacing:.1em;text-transform:uppercase;
+}
+.wod-ex-text{font-size:14px;color:var(--text2);line-height:1.75;font-style:italic}
+.wod-related{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px}
+.wod-tag{
+  background:rgba(255,255,255,0.04);border:1px solid var(--glass-border);
+  border-radius:6px;font-family:var(--mono);font-size:9px;
+  color:var(--text3);padding:4px 10px;letter-spacing:.04em;
+}
+
+/* QUIZ */
+.quiz-section{
+  background:var(--glass);border:1px solid var(--glass-border);
+  border-radius:var(--r-xl);padding:32px;margin-bottom:48px;
+  backdrop-filter:blur(8px);
+}
+.quiz-header{margin-bottom:24px}
+.quiz-header h3{
+  font-family:var(--display);font-size:22px;font-weight:700;
+  margin-bottom:8px;color:var(--text);letter-spacing:-.2px;
+}
 .quiz-header p{font-size:14px;color:var(--text2)}
 .quiz-q-text{
-  font-size:16px;font-weight:500;color:var(--text);margin-bottom:16px;line-height:1.55;
+  font-size:16px;font-weight:500;color:var(--text);
+  margin-bottom:20px;line-height:1.6;font-family:var(--display);
 }
 .quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .quiz-opt{
-  background:var(--bg2);border:1px solid var(--border);border-radius:8px;
-  padding:12px 16px;font-size:13px;color:var(--text2);cursor:pointer;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-md);
+  padding:14px 16px;font-size:13px;color:var(--text2);cursor:pointer;
   transition:all .2s;text-align:left;font-family:var(--body);
+  position:relative;
 }
-.quiz-opt:hover{border-color:var(--border2);color:var(--text);background:var(--bg3)}
-.quiz-opt.correct{background:rgba(0,214,143,.1);border-color:var(--accent);color:var(--accent)}
-.quiz-opt.wrong{background:rgba(255,94,94,.1);border-color:var(--red);color:var(--red)}
+.quiz-opt:hover{border-color:rgba(255,255,255,0.15);color:var(--text);background:rgba(255,255,255,0.05)}
+.quiz-opt.correct{background:rgba(0,229,160,0.1);border-color:var(--accent);color:var(--accent)}
+.quiz-opt.wrong{background:rgba(255,77,109,0.1);border-color:var(--red);color:var(--red)}
 .quiz-explanation{
-  margin-top:16px;padding:14px;background:var(--bg2);border-radius:8px;
-  font-size:13px;color:var(--text2);line-height:1.65;display:none;
+  margin-top:16px;padding:16px;
+  background:rgba(0,229,160,0.05);
+  border-radius:var(--r-md);
+  font-size:13px;color:var(--text2);line-height:1.7;display:none;
   border-left:3px solid var(--accent);
 }
 .quiz-explanation.show{display:block}
 .quiz-score{
-  margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--text3);
-  text-align:right;
+  margin-top:12px;font-family:var(--mono);font-size:11px;
+  color:var(--text3);text-align:right;
 }
 
-/* WORD OF DAY */
-.wod-card{
-  background:linear-gradient(135deg,#0a1a12,#0d1f2e);
-  border:1px solid rgba(0,214,143,.2);border-radius:16px;
-  padding:28px;margin-bottom:40px;
-  display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;
-}
-.wod-left{}
-.wod-eyebrow{
-  font-family:var(--mono);font-size:10px;color:var(--accent);
-  letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;
-}
-.wod-word{
-  font-family:var(--display);font-size:42px;font-weight:900;color:var(--text);
-  line-height:1;margin-bottom:8px;
-}
-.wod-type{font-family:var(--mono);font-size:11px;color:var(--text3);margin-bottom:14px}
-.wod-def{font-size:15px;color:var(--text2);line-height:1.7}
-.wod-right{}
-.wod-example{
-  background:var(--bg2);border-radius:10px;padding:16px;
-  border-left:3px solid var(--accent);
-}
-.wod-ex-label{font-family:var(--mono);font-size:10px;color:var(--text3);margin-bottom:8px;letter-spacing:.08em;text-transform:uppercase}
-.wod-ex-text{font-size:14px;color:var(--text2);line-height:1.65;font-style:italic}
-.wod-related{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
-.wod-tag{
-  background:var(--bg3);border:1px solid var(--border);border-radius:4px;
-  font-family:var(--mono);font-size:10px;color:var(--text3);padding:3px 8px;
-}
-
-/* PORTFOLIO TRACKER TEASER */
+/* WATCHLIST */
 .portfolio-strip{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:40px;
+  display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:48px;
 }
 .port-item{
-  background:var(--card);border:1px solid var(--border);border-radius:10px;
-  padding:14px;text-align:center;transition:.2s;cursor:pointer;
+  background:var(--glass);border:1px solid var(--glass-border);
+  border-radius:var(--r-lg);padding:16px;text-align:center;
+  transition:all .25s;cursor:pointer;backdrop-filter:blur(8px);
 }
-.port-item:hover{border-color:var(--border2);transform:translateY(-2px)}
-.port-sym{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--text);margin-bottom:4px}
-.port-name{font-size:10px;color:var(--text3);margin-bottom:8px}
-.port-price{font-family:var(--mono);font-size:15px;font-weight:500;margin-bottom:2px}
-.port-chg{font-family:var(--mono);font-size:11px}
-.sparkline{height:28px;margin-top:6px}
+.port-item:hover{
+  border-color:rgba(255,255,255,0.14);
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+}
+.port-sym{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px}
+.port-name{font-size:10px;color:var(--text3);margin-bottom:10px;font-family:var(--mono)}
+.port-price{font-family:var(--mono);font-size:15px;font-weight:600;margin-bottom:2px}
+.port-chg{font-family:var(--mono);font-size:11px;font-weight:500}
+.sparkline{height:32px;margin-top:8px}
 .sparkline svg{width:100%;height:100%}
 
-/* SUBSCRIBE BANNER */
+/* SUBSCRIBE */
 .sub-banner{
-  background:linear-gradient(135deg,#071c12,#071525);
-  border:1px solid rgba(0,214,143,.15);border-radius:20px;
-  padding:44px 48px;margin-bottom:40px;
-  display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;
+  background:linear-gradient(135deg,rgba(0,229,160,0.07) 0%,rgba(96,165,250,0.05) 50%,rgba(167,139,250,0.05) 100%);
+  border:1px solid rgba(0,229,160,0.15);
+  border-radius:var(--r-2xl);
+  padding:48px 56px;margin-bottom:48px;
+  display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.sub-banner::before{
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,229,160,0.07),transparent 70%);
+  pointer-events:none;
 }
 .sub-left h2{
-  font-family:var(--display);font-size:32px;font-weight:900;
-  color:var(--text);margin-bottom:10px;
+  font-family:var(--display);font-size:30px;font-weight:700;
+  color:var(--text);margin-bottom:12px;letter-spacing:-.4px;
 }
-.sub-left p{font-size:15px;color:var(--text2);line-height:1.65;max-width:500px}
-.sub-form{display:flex;gap:10px;flex-direction:column;min-width:280px}
+.sub-left p{font-size:15px;color:var(--text2);line-height:1.7;max-width:480px}
+.sub-form{display:flex;gap:10px;flex-direction:column;min-width:300px}
 .sub-input{
-  background:var(--bg2);border:1px solid var(--border2);border-radius:8px;
-  padding:12px 16px;font-size:14px;color:var(--text);font-family:var(--body);
-  outline:none;transition:.2s;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-md);
+  padding:13px 16px;font-size:14px;color:var(--text);
+  font-family:var(--body);outline:none;transition:.2s;
 }
-.sub-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+.sub-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow2)}
 .sub-input::placeholder{color:var(--text3)}
 .sub-btn{
-  background:var(--accent);color:#001a0e;border:none;border-radius:8px;
-  padding:13px 24px;font-size:14px;font-weight:700;cursor:pointer;
-  transition:all .2s;font-family:var(--body);
+  background:var(--accent);color:#001a0e;border:none;border-radius:var(--r-md);
+  padding:14px 24px;font-size:14px;font-weight:700;cursor:pointer;
+  transition:all .2s;font-family:var(--display);letter-spacing:.01em;
+  box-shadow:0 0 20px var(--accent-glow);
 }
-.sub-btn:hover{background:var(--accent2);transform:translateY(-1px)}
-.sub-features{display:flex;gap:20px;margin-top:14px;flex-wrap:wrap}
+.sub-btn:hover{background:var(--accent2);transform:translateY(-1px);box-shadow:0 0 28px var(--accent-glow)}
+.sub-features{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap}
 .sub-feat{
-  font-family:var(--mono);font-size:11px;color:var(--text3);
-  display:flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:10px;color:var(--text3);
+  display:flex;align-items:center;gap:5px;letter-spacing:.04em;
 }
-.sub-feat::before{content:'✓';color:var(--accent);font-weight:600}
+.sub-feat::before{content:'✓';color:var(--accent);font-weight:700}
 
-/* FOOTER */
-footer{
-  background:var(--bg2);border-top:1px solid var(--border);
-  padding:32px 24px;text-align:center;
-}
-.footer-inner{max-width:1200px;margin:0 auto}
-.footer-logo{font-family:var(--display);font-size:22px;font-weight:900;color:var(--text);margin-bottom:8px}
-.footer-logo em{color:var(--accent);font-style:normal}
-.footer-sub{font-size:12px;color:var(--text3);margin-bottom:16px}
-.footer-links{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:16px}
-.footer-links a{font-size:12px;color:var(--text3);text-decoration:none;transition:.2s}
-.footer-links a:hover{color:var(--accent)}
-.footer-copy{font-family:var(--mono);font-size:10px;color:var(--text3)}
-
-/* BREAKING BANNER */
-.breaking{
-  background:var(--red-dim);border-bottom:1px solid rgba(255,94,94,.3);
-  padding:8px 24px;display:flex;align-items:center;gap:12px;
-}
-.breaking-label{
-  background:var(--red);color:white;font-family:var(--mono);font-size:9px;
-  letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;
-  flex-shrink:0;font-weight:600;
-}
-.breaking-text{font-size:13px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.breaking-text strong{color:var(--text)}
-
-/* STAGGER ANIMATION */
-.story-card:nth-child(2){animation-delay:.1s}
-.story-card:nth-child(3){animation-delay:.2s}
-.story-card:nth-child(4){animation-delay:.3s}
-.story-card:nth-child(5){animation-delay:.4s}
-.story-card:nth-child(6){animation-delay:.5s}
-
-/* ── ARTICLE MODAL ─────────────────────────────────────────────────────── */
+/* MODAL */
 .modal-overlay{
-  position:fixed;inset:0;background:rgba(5,8,18,.85);
-  backdrop-filter:blur(6px);z-index:2000;
+  position:fixed;inset:0;
+  background:rgba(6,9,18,0.85);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  z-index:2000;
   display:flex;align-items:center;justify-content:center;
-  padding:24px;opacity:0;pointer-events:none;transition:opacity .25s;
+  padding:24px;opacity:0;pointer-events:none;
+  transition:opacity .25s;
 }
 .modal-overlay.open{opacity:1;pointer-events:all}
 .modal-box{
-  background:var(--bg2);border:1px solid var(--border2);border-radius:20px;
-  max-width:680px;width:100%;max-height:85vh;overflow-y:auto;
-  transform:translateY(20px);transition:transform .3s;
+  background:var(--surface);
+  border:1px solid var(--glass-border);
+  border-radius:var(--r-2xl);
+  max-width:700px;width:100%;max-height:88vh;overflow-y:auto;
+  transform:translateY(24px) scale(.97);
+  transition:transform .3s cubic-bezier(.4,0,.2,1);
   position:relative;
+  box-shadow:var(--shadow-lg),0 0 60px rgba(0,0,0,0.5);
 }
-.modal-overlay.open .modal-box{transform:translateY(0)}
+.modal-overlay.open .modal-box{transform:translateY(0) scale(1)}
 .modal-header{
-  padding:28px 28px 20px;border-bottom:1px solid var(--border);
-  position:sticky;top:0;background:var(--bg2);z-index:1;border-radius:20px 20px 0 0;
+  padding:28px 32px 20px;
+  border-bottom:1px solid var(--glass-border);
+  position:sticky;top:0;
+  background:var(--surface);z-index:1;
+  border-radius:var(--r-2xl) var(--r-2xl) 0 0;
 }
 .modal-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .modal-meta{display:flex;align-items:center;gap:8px}
 .modal-close{
-  background:var(--bg3);border:1px solid var(--border);color:var(--text2);
-  width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;transition:all .2s;
-  flex-shrink:0;
+  background:rgba(255,255,255,0.06);
+  border:1px solid var(--glass-border);
+  color:var(--text2);width:32px;height:32px;
+  border-radius:50%;font-size:14px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;flex-shrink:0;
 }
 .modal-close:hover{background:var(--red-dim);border-color:var(--red);color:var(--red)}
 .modal-title{
-  font-family:var(--display);font-size:26px;font-weight:900;
-  color:var(--text);line-height:1.25;
+  font-family:var(--display);font-size:24px;font-weight:700;
+  color:var(--text);line-height:1.25;letter-spacing:-.3px;
 }
-.modal-body{padding:24px 28px 32px}
-.modal-body p{
-  font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px;
-}
+.modal-body{padding:24px 32px 32px}
+.modal-body p{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px}
 .modal-body p:last-child{margin-bottom:0}
 .modal-body h4{
-  font-family:var(--display);font-size:17px;font-weight:700;
-  color:var(--text);margin:24px 0 10px;
+  font-family:var(--display);font-size:16px;font-weight:700;
+  color:var(--text);margin:24px 0 10px;letter-spacing:-.1px;
 }
 .modal-body .highlight{
-  background:var(--bg3);border-left:3px solid var(--accent);
-  border-radius:0 8px 8px 0;padding:14px 16px;margin:16px 0;
-  font-size:14px;color:var(--text2);line-height:1.7;
+  background:rgba(0,229,160,0.06);
+  border-left:3px solid var(--accent);
+  border-radius:0 var(--r-md) var(--r-md) 0;
+  padding:14px 18px;margin:16px 0;
+  font-size:13px;color:var(--text2);line-height:1.7;
 }
 .modal-footer{
-  padding:16px 28px 28px;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 32px 28px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--glass-border);
 }
 .modal-ai-badge{
   display:inline-flex;align-items:center;gap:5px;
-  font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
-  background:rgba(0,214,143,.1);color:var(--accent);padding:4px 10px;border-radius:4px;
+  font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(0,229,160,0.08);color:var(--accent);
+  padding:4px 10px;border-radius:4px;border:1px solid rgba(0,229,160,0.15);
 }
-.modal-ai-badge::before{content:'✦'}
-.modal-time-badge{font-family:var(--mono);font-size:11px;color:var(--text3)}
+.modal-ai-badge::before{content:'✦';font-size:8px}
+.modal-time-badge{font-family:var(--mono);font-size:10px;color:var(--text3)}
+
+/* FOOTER */
+footer{
+  background:var(--bg2);
+  border-top:1px solid var(--glass-border);
+  padding:40px 32px;text-align:center;
+  position:relative;z-index:1;
+}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-logo{
+  font-family:var(--display);font-size:22px;font-weight:700;
+  color:var(--text);margin-bottom:8px;letter-spacing:-.3px;
+}
+.footer-logo em{color:var(--accent);font-style:normal}
+.footer-sub{font-size:12px;color:var(--text3);margin-bottom:20px;font-family:var(--mono);letter-spacing:.03em}
+.footer-links{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:20px}
+.footer-links a{
+  font-size:12px;color:var(--text3);text-decoration:none;
+  transition:.2s;font-family:var(--mono);letter-spacing:.04em;
+}
+.footer-links a:hover{color:var(--accent)}
+.footer-copy{font-family:var(--mono);font-size:10px;color:var(--text4);letter-spacing:.04em}
 
 /* RESPONSIVE */
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr;gap:24px}
-  .hero-headline{font-size:36px}
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;gap:32px}
+  .hero-headline{font-size:42px}
+  .market-card{position:static}
   .content-grid{grid-template-columns:1fr 1fr}
   .content-grid.wide{grid-template-columns:1fr 1fr}
-  .explainer-strip{grid-template-columns:1fr 1fr}
-  .explain-item{border-right:none;border-bottom:1px solid var(--border);padding:12px 0}
+  .explainer-strip{grid-template-columns:1fr 1fr;gap:16px}
+  .explain-item{border-right:none;border-bottom:1px solid var(--glass-border);padding:12px 0}
+  .explain-item:nth-child(2n){border-right:none}
   .explain-item:last-child{border-bottom:none}
-  .quiz-opts{grid-template-columns:1fr}
-  .wod-card{grid-template-columns:1fr}
   .portfolio-strip{grid-template-columns:repeat(3,1fr)}
-  .sub-banner{grid-template-columns:1fr}
-  nav{display:none}
-  nav.open{display:flex;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px;gap:4px;z-index:200}
-  .hamburger{display:flex}
-  .header-inner{position:relative}
-  .modal-box{max-height:92vh}
-  .modal-title{font-size:21px}
+  .sub-banner{grid-template-columns:1fr;padding:36px 32px}
 }
-@media(max-width:600px){
-  .hero-headline{font-size:28px}
+@media(max-width:768px){
+  .header-inner{padding:16px 20px}
+  .hero{padding:40px 20px 32px}
+  .hero-headline{font-size:34px}
+  .page{padding:0 20px 60px}
   .content-grid{grid-template-columns:1fr}
   .content-grid.wide{grid-template-columns:1fr}
-  .explainer-strip{grid-template-columns:1fr}
+  .explainer-strip{grid-template-columns:1fr;padding:20px}
+  .quiz-opts{grid-template-columns:1fr}
+  .wod-card{grid-template-columns:1fr;padding:24px}
   .portfolio-strip{grid-template-columns:repeat(2,1fr)}
-  .sub-banner{padding:28px 20px}
+  .sub-banner{padding:28px 24px}
   .sub-left h2{font-size:24px}
-  .modal-header{padding:20px 20px 16px}
+  .breaking{padding:9px 20px}
+  nav{display:none}
+  nav.open{
+    display:flex;flex-direction:column;
+    position:absolute;top:72px;left:0;right:0;
+    background:rgba(11,15,30,0.98);
+    border-bottom:1px solid var(--glass-border);
+    padding:12px;gap:4px;z-index:300;
+    backdrop-filter:blur(20px);
+  }
+  .hamburger{display:flex}
+  .header-inner{position:relative}
+  .modal-box{max-height:92vh;border-radius:var(--r-xl)}
+  .modal-header{padding:20px 20px 16px;border-radius:var(--r-xl) var(--r-xl) 0 0}
   .modal-body{padding:20px 20px 24px}
-  .modal-footer{padding:12px 20px 24px}
+  .modal-footer{padding:12px 20px 20px}
+  .modal-title{font-size:20px}
+  .hero-stats{flex-wrap:wrap;gap:20px}
+}
+@media(max-width:480px){
+  .hero-headline{font-size:28px}
+  .portfolio-strip{grid-template-columns:1fr 1fr}
+  .sub-banner{padding:24px 16px}
+  .sub-form{min-width:unset;width:100%}
 }
 </style>
 </head>
@@ -514,7 +722,7 @@ footer{
   </div>
 </div>
 
-<!-- BREAKING NEWS BANNER -->
+<!-- BREAKING -->
 <div class="breaking">
   <span class="breaking-label">Breaking</span>
   <span class="breaking-text"><strong>Fed holds rates steady for third consecutive meeting</strong> — Chair signals data-dependent approach through Q2 2026</span>
@@ -522,23 +730,21 @@ footer{
 
 <!-- TICKER -->
 <div class="ticker-bar">
-  <div class="ticker-track" id="ticker">
-    <!-- filled by JS -->
-  </div>
+  <div class="ticker-track" id="ticker"></div>
 </div>
 
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <div class="logo-block">
-      <div class="logo">The <em>Bull</em> Brief</div>
+    <div>
+      <div class="logo">The <span class="logo-bull">Bull</span> Brief</div>
       <div class="logo-sub">Finance for the next generation</div>
     </div>
     <nav id="nav">
       <a href="#">Markets</a>
-      <a href="#">Explained</a>
+      <a href="#">Economy</a>
       <a href="#">Personal Finance</a>
-      <a href="#">Glossary</a>
+      <a href="#">Tech</a>
       <a href="#subscribe" class="nav-cta">Subscribe Free</a>
     </nav>
     <div class="hamburger" onclick="toggleNav()">
@@ -550,57 +756,72 @@ footer{
 <!-- HERO -->
 <div class="hero">
   <div>
-    <div class="hero-date" id="hero-date">Loading date...</div>
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <div class="hero-eyebrow-text" id="hero-date">Loading date...</div>
+    </div>
     <h1 class="hero-headline">
       The financial world,<br>
       <span class="hl">explained for you.</span>
     </h1>
     <p class="hero-deck">
-      Daily AI-powered finance news written specifically for high schoolers. No jargon, no fluff — just what's happening in markets, the economy, and your financial future. Updated every morning before first period.
+      Daily AI-powered finance news written for high schoolers. No jargon, no fluff — just what's moving markets, the economy, and your financial future. Updated every morning before first period.
     </p>
     <div class="hero-actions">
-      <a href="https://the-bull-brief-newsletter-f34f41.beehiiv.com/" class="btn-primary">Get Daily Emails Free</a>
-      <a href="#today" class="btn-ghost">Today's News ↓</a>
+      <a href="https://the-bull-brief-newsletter-f34f41.beehiiv.com/" class="btn-primary">Get Daily Emails Free →</a>
+      <a href="#today" class="btn-ghost">Today's Brief ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">100%</div>
+        <div class="hero-stat-label">Free Forever</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">5 min</div>
+        <div class="hero-stat-label">Daily Read</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">AI</div>
+        <div class="hero-stat-label">Powered Daily</div>
+      </div>
     </div>
   </div>
   <div class="market-card">
-    <div class="market-card-title">
-      <span>Market Snapshot</span>
-      <span class="live-dot">Live</span>
+    <div class="market-card-header">
+      <span class="market-card-title">Market Snapshot</span>
+      <span class="live-badge">Live</span>
     </div>
-    <div class="mkt-grid" id="mktGrid">
-      <!-- filled by JS -->
-    </div>
+    <div class="mkt-grid" id="mktGrid"></div>
     <div class="fear-bar">
       <div class="fear-label">
-        <span>Fear & Greed Index</span>
-        <span id="fearVal">42 — Fear</span>
+        <span>Fear &amp; Greed Index</span>
+        <span class="fear-value" id="fearVal">42 — Fear</span>
       </div>
       <div class="fear-track"><div class="fear-fill" id="fearFill"></div></div>
     </div>
   </div>
 </div>
 
-<!-- MAIN PAGE -->
+<!-- MAIN -->
 <main class="page" id="today">
 
-  <!-- TODAY'S GLOSSARY EXPLAINER STRIP -->
+  <!-- EXPLAINER STRIP -->
   <div class="explainer-strip">
     <div class="explain-item">
       <div class="explain-term">Today's Context</div>
-      <div class="explain-def">The <strong>S&P 500</strong> is a basket of 500 large US companies. When it rises, it means most big businesses are doing well.</div>
+      <div class="explain-def">The <strong>S&P 500</strong> tracks 500 large US companies. When it rises, most major businesses are doing well.</div>
     </div>
     <div class="explain-item">
       <div class="explain-term">Why It Matters</div>
-      <div class="explain-def"><strong>Interest rates</strong> affect everything — your future mortgage, student loans, and how much banks pay you to save money.</div>
+      <div class="explain-def"><strong>Interest rates</strong> affect your future mortgage, student loans, and how much banks pay you to save.</div>
     </div>
     <div class="explain-item">
       <div class="explain-term">Key Number</div>
-      <div class="explain-def">US inflation sits at <strong>2.8%</strong> — meaning something that cost $100 last year now costs $102.80. The Fed's goal is 2%.</div>
+      <div class="explain-def">US inflation at <strong>2.8%</strong> — $100 last year costs $102.80 today. The Fed's target is 2%.</div>
     </div>
     <div class="explain-item">
       <div class="explain-term">Quick Tip</div>
-      <div class="explain-def">If you invest <strong>$100/month</strong> starting at 17 at a 7% return, you will have ~$525,000 by age 65. That's compound interest.</div>
+      <div class="explain-def">Invest <strong>$100/month</strong> starting at 17 at 7% return → ~$525,000 by 65. That's compound interest.</div>
     </div>
   </div>
 
@@ -618,7 +839,7 @@ footer{
       <div class="wod-eyebrow">Word of the Day</div>
       <div class="wod-word" id="wodWord">Yield Curve</div>
       <div class="wod-type" id="wodType">noun / economics</div>
-      <div class="wod-def" id="wodDef">A graph showing interest rates on US government bonds at different maturity lengths. When short-term rates are higher than long-term ones (inverted), it has historically predicted recessions.</div>
+      <div class="wod-def" id="wodDef">A graph showing interest rates on US government bonds at different maturity lengths. When short-term rates exceed long-term ones (inverted), it has historically predicted recessions.</div>
       <div class="wod-related" id="wodTags">
         <span class="wod-tag">bonds</span>
         <span class="wod-tag">interest rates</span>
@@ -629,14 +850,14 @@ footer{
     <div class="wod-right">
       <div class="wod-example">
         <div class="wod-ex-label">Used in context</div>
-        <div class="wod-ex-text" id="wodExample">"Analysts pointed to the inverted yield curve as a warning sign, noting that short-term Treasury bills were paying more than 10-year bonds — a pattern that preceded each of the last seven US recessions."</div>
+        <div class="wod-ex-text" id="wodExample">"Analysts pointed to the inverted yield curve as a warning sign — short-term Treasury bills paying more than 10-year bonds, a pattern preceding each of the last seven US recessions."</div>
       </div>
     </div>
   </div>
 
   <!-- ECONOMY & WORLD -->
   <div class="sec-head">
-    <h2>Economy & World</h2>
+    <h2>Economy &amp; World</h2>
     <span class="sec-tag tag-world">Global</span>
     <a href="#" class="sec-more">See all →</a>
   </div>
@@ -650,27 +871,27 @@ footer{
   </div>
   <div class="content-grid two-col" id="personalStories"></div>
 
-  <!-- TECH & INNOVATION -->
+  <!-- TECH -->
   <div class="sec-head">
-    <h2>Tech & Innovation</h2>
+    <h2>Tech &amp; Innovation</h2>
     <span class="sec-tag tag-tech">Future</span>
     <a href="#" class="sec-more">See all →</a>
   </div>
   <div class="content-grid" id="techStories"></div>
 
-  <!-- DAILY QUIZ -->
+  <!-- QUIZ -->
   <div class="quiz-section">
     <div class="quiz-header">
       <h3>Daily Knowledge Check</h3>
       <p>Test what you learned today. No grades, just growth.</p>
     </div>
-    <div class="quiz-q-text" id="quizQ">If the Federal Reserve raises interest rates, what typically happens to the stock market?</div>
+    <div class="quiz-q-text" id="quizQ"></div>
     <div class="quiz-opts" id="quizOpts"></div>
     <div class="quiz-explanation" id="quizExp"></div>
     <div class="quiz-score" id="quizScore"></div>
   </div>
 
-  <!-- STOCKS WATCHLIST -->
+  <!-- WATCHLIST -->
   <div class="sec-head">
     <h2>Stocks to Watch</h2>
     <span class="sec-tag tag-ai">AI Curated</span>
@@ -681,7 +902,7 @@ footer{
   <div class="sub-banner" id="subscribe">
     <div class="sub-left">
       <h2>Don't miss tomorrow's brief.</h2>
-      <p>Every school morning, get today's most important financial news explained in plain English — plus a word of the day, a quiz, and one actionable personal finance tip. Built for high schoolers, by high schoolers.</p>
+      <p>Every school morning, get the most important financial news explained in plain English — plus a word of the day, a quiz, and one actionable personal finance tip. Built for high schoolers, by a high schooler.</p>
       <div class="sub-features">
         <span class="sub-feat">Free forever</span>
         <span class="sub-feat">No spam</span>
@@ -705,7 +926,7 @@ footer{
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">The <em>Bull</em> Brief</div>
-    <div class="footer-sub">AI-generated financial news, reviewed by student editors. For educational purposes only — not financial advice.</div>
+    <div class="footer-sub">AI-generated financial news · Student edited · Not financial advice</div>
     <div class="footer-links">
       <a href="#">About</a>
       <a href="#">Archive</a>
@@ -713,247 +934,68 @@ footer{
       <a href="#">Contact</a>
       <a href="#">Privacy</a>
     </div>
-    <div class="footer-copy">© 2026 The Bull Brief · Updated daily by AI · Not financial advice</div>
+    <div class="footer-copy">© 2026 The Bull Brief · Updated daily by AI · Granite Bay, CA</div>
   </div>
 </footer>
 
 <script>
 // ── DATA ────────────────────────────────────────────────────────────────────
-
-const TICKER_DATA = [
-  {sym:'S&P 500',val:'5,611',chg:'+0.42%',up:true},
-  {sym:'NASDAQ',val:'17,432',chg:'+0.61%',up:true},
-  {sym:'DOW',val:'41,583',chg:'-0.11%',up:false},
-  {sym:'AAPL',val:'$214.50',chg:'-0.23%',up:false},
-  {sym:'NVDA',val:'$881',chg:'+1.12%',up:true},
-  {sym:'TSLA',val:'$175',chg:'-0.88%',up:false},
-  {sym:'MSFT',val:'$418',chg:'+0.34%',up:true},
-  {sym:'AMZN',val:'$196',chg:'+0.77%',up:true},
-  {sym:'META',val:'$560',chg:'+1.02%',up:true},
-  {sym:'GOOGL',val:'$169',chg:'+0.45%',up:true},
-  {sym:'BTC',val:'$84,200',chg:'+2.3%',up:true},
-  {sym:'ETH',val:'$1,920',chg:'+1.8%',up:true},
-  {sym:'GOLD',val:'$3,090',chg:'+0.78%',up:true},
-  {sym:'OIL',val:'$69.40',chg:'-0.52%',up:false},
-  {sym:'EUR/USD',val:'1.082',chg:'-0.21%',up:false},
-  {sym:'VIX',val:'21.4',chg:'-4.2%',up:false},
+const TICKER_DATA=[
+  {sym:'S&P 500',val:'5,611',chg:'+0.42%',up:true},{sym:'NASDAQ',val:'17,432',chg:'+0.61%',up:true},
+  {sym:'DOW',val:'41,583',chg:'-0.11%',up:false},{sym:'AAPL',val:'$214.50',chg:'-0.23%',up:false},
+  {sym:'NVDA',val:'$881',chg:'+1.12%',up:true},{sym:'TSLA',val:'$175',chg:'-0.88%',up:false},
+  {sym:'MSFT',val:'$418',chg:'+0.34%',up:true},{sym:'AMZN',val:'$196',chg:'+0.77%',up:true},
+  {sym:'META',val:'$560',chg:'+1.02%',up:true},{sym:'GOOGL',val:'$169',chg:'+0.45%',up:true},
+  {sym:'BTC',val:'$84,200',chg:'+2.3%',up:true},{sym:'ETH',val:'$1,920',chg:'+1.8%',up:true},
+  {sym:'GOLD',val:'$3,090',chg:'+0.78%',up:true},{sym:'OIL',val:'$69.40',chg:'-0.52%',up:false},
+  {sym:'EUR/USD',val:'1.082',chg:'-0.21%',up:false},{sym:'VIX',val:'21.4',chg:'-4.2%',up:false},
   {sym:'10Y UST',val:'4.31%',chg:'+0.04%',up:true},
 ];
 
-const MARKET_DATA = [
-  {name:'S&P 500',sub:'US Large Cap',val:'5,611.24',chg:'+23.61',pct:'+0.42%',up:true},
-  {name:'NASDAQ',sub:'US Tech',val:'17,432.80',chg:'+105.40',pct:'+0.61%',up:true},
-  {name:'DOW JONES',sub:'US Blue Chip',val:'41,583.90',chg:'-45.23',pct:'-0.11%',up:false},
-  {name:'Bitcoin',sub:'Crypto',val:'$84,200',chg:'+1,904',pct:'+2.31%',up:true},
-  {name:'Gold',sub:'Commodity',val:'$3,090',chg:'+23.90',pct:'+0.78%',up:true},
-  {name:'10Y Treasury',sub:'Bond Yield',val:'4.31%',chg:'+0.04',pct:'',up:true},
+const MARKET_DATA=[
+  {name:'S&P 500',val:'5,611.24',chg:'+23.61',pct:'+0.42%',up:true},
+  {name:'NASDAQ',val:'17,432.80',chg:'+105.40',pct:'+0.61%',up:true},
+  {name:'DOW JONES',val:'41,583.90',chg:'-45.23',pct:'-0.11%',up:false},
+  {name:'Bitcoin',val:'$84,200',chg:'+1,904',pct:'+2.31%',up:true},
+  {name:'Gold',val:'$3,090',chg:'+23.90',pct:'+0.78%',up:true},
+  {name:'10Y Treasury',val:'4.31%',chg:'+0.04',pct:'',up:true},
 ];
 
-const MARKET_STORIES = [
-  {
-    cat:'Markets',catClass:'tag-market',time:'2h ago',
-    title:'Fed Holds Rates — Third Meeting in a Row',
-    summary:'The Federal Reserve kept interest rates at 4.25–4.5% for the third consecutive meeting. Chair Powell said the committee needs more confidence that inflation is falling before cutting. For students: higher rates mean your savings account pays more, but loans cost more too.',
-    mins:'3 min read',featured:true,
-    fullContent:`
-      <p>The Federal Reserve held its benchmark interest rate at 4.25–4.5% on Wednesday, marking the third consecutive meeting where policymakers opted to stay put rather than cut borrowing costs.</p>
-      <h4>What Did the Fed Actually Say?</h4>
-      <p>Chair Jerome Powell emphasized a "data-dependent" approach, meaning the Fed won't move until the economic numbers tell them it's safe to do so. Specifically, they're watching two things: inflation coming down closer to their 2% target, and the job market staying healthy without overheating.</p>
-      <div class="highlight">The federal funds rate currently sits at 4.25–4.5%. That's the rate banks charge each other for overnight loans — but it ripples into every loan you'll ever take out, from car loans to mortgages to student debt.</div>
-      <h4>Why Does This Matter to You?</h4>
-      <p>High interest rates are a double-edged sword for young people. On the plus side, high-yield savings accounts are paying 4–5% annually right now — meaning your money actually grows if you park it somewhere smart. On the downside, when you eventually take out a car loan or mortgage, you'll pay significantly more in interest than someone borrowing at 2–3% rates a few years ago.</p>
-      <h4>When Will Rates Come Down?</h4>
-      <p>Markets are currently pricing in two rate cuts by the end of 2026, but that forecast has shifted dramatically in recent months. As recently as January, traders expected four cuts this year. The Fed's caution signals that inflation is proving stickier than hoped — which means the era of cheap borrowing isn't coming back as quickly as many had predicted.</p>
-      <p>For investors, this environment rewards patience and cash-generating assets over speculative bets. Understanding the Fed's rate decisions is one of the most important skills in financial literacy — it affects literally everything.</p>
-    `
-  },
-  {
-    cat:'Markets',catClass:'tag-market',time:'3h ago',
-    title:'Why Gold Just Hit an All-Time High',
-    summary:'Gold crossed $3,090 per ounce — a record. When investors get nervous about the economy, they buy gold as a "safe haven." That surge tells you a lot about current market anxiety.',
-    mins:'2 min read',featured:false,
-    fullContent:`
-      <p>Gold broke above $3,090 per ounce this week, setting a new all-time high and extending a rally that has now seen the precious metal gain over 15% this year alone.</p>
-      <h4>Why Does Gold Go Up When People Are Scared?</h4>
-      <p>Gold is considered a "store of value" — it doesn't rot, doesn't default, and can't be printed by a government. When investors worry about inflation, currency devaluation, geopolitical instability, or a stock market crash, they move money into gold as a defensive play. It's essentially the financial world's version of hiding cash under the mattress, except it's also an asset that historically holds its purchasing power over centuries.</p>
-      <div class="highlight">Gold has been used as money for over 5,000 years. The US dollar only became untethered from gold in 1971, when President Nixon ended the Bretton Woods system. Before that, every dollar was technically backed by a fixed amount of gold.</div>
-      <h4>What's Driving This Particular Rally?</h4>
-      <p>Several things are happening simultaneously: concerns about US deficit spending, uncertainty around Federal Reserve policy, central banks worldwide buying more gold to diversify away from US dollars, and general investor anxiety about a slowing global economy. When all of these line up, gold tends to surge.</p>
-      <h4>Should You Buy Gold?</h4>
-      <p>For most young investors, gold serves a small portfolio role at best — typically 5–10% as a hedge. It generates no income (no dividends, no interest), so it's purely a bet on price appreciation driven by fear. For most high schoolers just starting out, understanding why gold moves is more valuable than actually buying it right now.</p>
-    `
-  },
-  {
-    cat:'Markets',catClass:'tag-market',time:'4h ago',
-    title:'VIX Drops 4% — What the "Fear Index" Is Telling Us',
-    summary:'The VIX measures expected market volatility. When it falls, it means traders feel calmer. This week\'s drop suggests investors are less panicked than last week, even with rate uncertainty.',
-    mins:'2 min read',featured:false,
-    fullContent:`
-      <p>The CBOE Volatility Index — universally known as the VIX — fell roughly 4% this week to 21.4, pulling back from the elevated levels seen during last month's market turbulence.</p>
-      <h4>What Exactly Is the VIX?</h4>
-      <p>The VIX measures how much volatility options traders expect in the S&P 500 over the next 30 days. It's calculated from the prices of S&P 500 options contracts — when traders are buying lots of "protection" (put options) against a market drop, those contracts get expensive, and the VIX rises. When everyone's calm and nobody feels the need to hedge, the VIX falls.</p>
-      <div class="highlight">A VIX below 15 is generally considered calm. Between 15–25 signals moderate uncertainty. Above 30 is fear territory. During the COVID crash in March 2020, the VIX hit 82.69 — an all-time record.</div>
-      <h4>What Does 21.4 Mean Right Now?</h4>
-      <p>At 21.4, the market is in a mild fear zone — not panic, but not complacency either. Investors are uncertain about Fed policy, inflation data, and the global economic slowdown, but they're not running for the exits. The drop this week suggests the immediate anxiety from last week's headlines has faded slightly.</p>
-      <h4>Why Should You Track This?</h4>
-      <p>The VIX is one of the best real-time sentiment gauges available for free. When the VIX spikes, it often signals a potential buying opportunity for long-term investors — historically, markets tend to recover after fear peaks. Many professional investors use VIX spikes as a contrarian signal: when everyone is most scared, it's sometimes the best time to buy.</p>
-    `
-  },
+const MARKET_STORIES=[
+  {cat:'Markets',catClass:'tag-market',time:'2h ago',title:'Fed Holds Rates — Third Meeting in a Row',summary:'The Federal Reserve kept interest rates at 4.25–4.5% for the third consecutive meeting. Chair Powell said the committee needs more confidence that inflation is falling before cutting. Higher rates mean your savings account pays more, but loans cost more too.',mins:'3 min read',featured:true,fullContent:`<p>The Federal Reserve held its benchmark interest rate at 4.25–4.5% on Wednesday, marking the third consecutive meeting where policymakers opted to stay put rather than cut borrowing costs.</p><h4>What Did the Fed Actually Say?</h4><p>Chair Jerome Powell emphasized a "data-dependent" approach, meaning the Fed won't move until the economic numbers tell them it's safe to do so. They're watching two things: inflation coming down closer to their 2% target, and the job market staying healthy without overheating.</p><div class="highlight">The federal funds rate currently sits at 4.25–4.5%. That's the rate banks charge each other for overnight loans — but it ripples into every loan you'll ever take out, from car loans to mortgages to student debt.</div><h4>Why Does This Matter to You?</h4><p>High interest rates are a double-edged sword for young people. High-yield savings accounts are paying 4–5% annually right now. But when you eventually take out a car loan or mortgage, you'll pay significantly more in interest than someone borrowing at 2–3% rates a few years ago.</p><h4>When Will Rates Come Down?</h4><p>Markets are currently pricing in two rate cuts by end of 2026, but that forecast has shifted dramatically. The Fed's caution signals that inflation is proving stickier than hoped — the era of cheap borrowing isn't coming back as quickly as many predicted.</p>`},
+  {cat:'Markets',catClass:'tag-market',time:'3h ago',title:'Why Gold Just Hit an All-Time High',summary:'Gold crossed $3,090 per ounce — a record. When investors get nervous about the economy, they buy gold as a safe haven. That surge tells you a lot about current market anxiety.',mins:'2 min read',featured:false,fullContent:`<p>Gold broke above $3,090 per ounce this week, setting a new all-time high and extending a rally that has seen the precious metal gain over 15% this year alone.</p><h4>Why Does Gold Go Up When People Are Scared?</h4><p>Gold is considered a "store of value" — it doesn't rot, doesn't default, and can't be printed by a government. When investors worry about inflation, currency devaluation, or a stock market crash, they move money into gold as a defensive play.</p><div class="highlight">Gold has been used as money for over 5,000 years. The US dollar only became untethered from gold in 1971, when President Nixon ended the Bretton Woods system.</div><h4>Should You Buy Gold?</h4><p>For most young investors, gold serves a small portfolio role at best — typically 5–10% as a hedge. It generates no income, so it's purely a bet on price appreciation driven by fear. Understanding why gold moves is more valuable than actually buying it right now.</p>`},
+  {cat:'Markets',catClass:'tag-market',time:'4h ago',title:'VIX Drops 4% — What the Fear Index Is Telling Us',summary:'The VIX measures expected market volatility. When it falls, traders feel calmer. This week\'s drop suggests investors are less panicked than last week, even with rate uncertainty.',mins:'2 min read',featured:false,fullContent:`<p>The CBOE Volatility Index — universally known as the VIX — fell roughly 4% this week to 21.4, pulling back from elevated levels seen during last month's market turbulence.</p><h4>What Exactly Is the VIX?</h4><p>The VIX measures how much volatility options traders expect in the S&P 500 over the next 30 days. When traders buy lots of protection against a market drop, those contracts get expensive and the VIX rises.</p><div class="highlight">A VIX below 15 is calm. Between 15–25 signals moderate uncertainty. Above 30 is fear territory. During the COVID crash in March 2020, the VIX hit 82.69 — an all-time record.</div><h4>Why Should You Track This?</h4><p>The VIX is one of the best real-time sentiment gauges available for free. When it spikes, it often signals a potential buying opportunity — markets tend to recover after fear peaks. Many professional investors use VIX spikes as a contrarian signal.</p>`},
 ];
 
-const WORLD_STORIES = [
-  {
-    cat:'Economy',catClass:'tag-world',time:'1h ago',
-    title:'New Tariffs on Steel: What It Means for Prices',
-    summary:'The US announced new 25% tariffs on imported steel. Tariffs are taxes on foreign goods — they protect US companies but raise prices for consumers. Think higher car and appliance costs in 6–12 months.',
-    mins:'3 min read',featured:false,
-    fullContent:`
-      <p>The Biden administration announced this week that 25% tariffs on imported steel will take effect next month, targeting imports primarily from China, Brazil, and South Korea.</p>
-      <h4>What's a Tariff, Simply?</h4>
-      <p>A tariff is a tax that your government charges on goods imported from other countries. When a company wants to bring $1 million worth of steel into the US, it now has to pay an extra $250,000 in taxes. That cost almost always gets passed on to whoever buys the steel — which means manufacturers, which means eventually you.</p>
-      <div class="highlight">The logic behind tariffs: protect American steel workers by making foreign steel more expensive, so buyers prefer domestic steel. The counterargument: it raises costs for every industry that uses steel — cars, appliances, construction, and more.</div>
-      <h4>What Gets More Expensive?</h4>
-      <p>Steel is an input in thousands of products. Car manufacturers use massive amounts of it. Appliance makers need it for refrigerators and washing machines. Construction relies on steel beams. Analysts estimate these tariffs could add $200–800 to the price of a new car within 12 months, depending on the vehicle.</p>
-      <h4>The Bigger Economic Picture</h4>
-      <p>Tariffs are fundamentally inflationary — they raise prices. At a moment when the Federal Reserve is already battling 2.8% inflation, new tariffs could complicate the path to rate cuts. If tariffs push inflation back up, the Fed may have to keep rates elevated longer, which affects everything from mortgage rates to student loans.</p>
-    `
-  },
-  {
-    cat:'Global',catClass:'tag-world',time:'5h ago',
-    title:'China\'s Economy Is Slowing — Should You Care?',
-    summary:'China\'s GDP growth fell to 4.5%, below the 5% target. Since China makes a massive share of global goods, a slowdown there ripples into supply chains, tech hardware, and commodity prices worldwide.',
-    mins:'4 min read',featured:false,
-    fullContent:`
-      <p>China's National Bureau of Statistics reported this week that the country's GDP grew at 4.5% in the most recent quarter, missing the government's official 5% target and marking the slowest pace of expansion in three years.</p>
-      <h4>Why China's Growth Rate Matters Globally</h4>
-      <p>China is the world's second-largest economy and the planet's largest manufacturer. When Chinese factories slow down, it affects supply chains from semiconductors to solar panels to consumer electronics. Apple makes most of its iPhones in China. Nike manufactures shoes there. The list goes on across virtually every consumer product category.</p>
-      <div class="highlight">China produces roughly 30% of global manufactured goods — more than the US, Germany, and Japan combined. A slowdown there doesn't stay in China.</div>
-      <h4>What's Causing the Slowdown?</h4>
-      <p>Several factors are converging. China's real estate sector — which historically accounted for about 25% of its GDP — remains in crisis after the Evergrande collapse. Youth unemployment sits above 15%, dampening consumer spending. And Western countries are actively reducing their dependence on Chinese manufacturing, a trend accelerated by COVID supply chain disruptions.</p>
-      <h4>How This Affects US Investors</h4>
-      <p>A slowing China typically means lower demand for commodities like oil, copper, and iron ore — which can push those prices down globally. It also puts pressure on multinational companies that generate significant revenue in China. For stock investors, this is a real risk factor for tech companies with heavy China exposure like Apple and Qualcomm.</p>
-    `
-  },
-  {
-    cat:'Economy',catClass:'tag-world',time:'6h ago',
-    title:'US Unemployment Holds at 4.1% — Is That Good?',
-    summary:'The job market remains resilient despite high rates. Full employment is typically considered around 4–5%. The key question: if jobs stay strong, will the Fed feel pressure to cut rates at all?',
-    mins:'2 min read',featured:false,
-    fullContent:`
-      <p>The Bureau of Labor Statistics reported Friday that US unemployment remained at 4.1% in March, essentially unchanged from the previous month and broadly in line with what economists consider "full employment."</p>
-      <h4>What Does 4.1% Actually Mean?</h4>
-      <p>Economists generally consider 4–5% unemployment to represent full employment — not because everyone has a job, but because some level of unemployment is normal and healthy. People quit jobs, move cities, graduate from school, or change careers. The people in that 4% are mostly between jobs, not permanently unemployed.</p>
-      <div class="highlight">At 4.1%, there are roughly 6.8 million unemployed Americans. That sounds like a lot — but in a workforce of 168 million people, it represents a historically strong labor market.</div>
-      <h4>The Fed's Dilemma</h4>
-      <p>Here's the complication: the Fed cuts rates when the economy needs help, typically when unemployment rises and growth slows. If jobs remain strong at 4.1%, the Fed has less urgency to cut. A strong labor market means people have money to spend, which can keep inflation elevated. This is why a "too good" jobs report can sometimes actually send stock markets lower — traders interpret it as meaning rate cuts are further off.</p>
-      <h4>What to Watch</h4>
-      <p>If unemployment starts rising toward 4.5–5%, that would likely accelerate Fed rate cuts. If it stays below 4.2%, the Fed can afford patience. The next jobs report drops in early May and will be closely watched as a signal for the Fed's June meeting.</p>
-    `
-  },
+const WORLD_STORIES=[
+  {cat:'Economy',catClass:'tag-world',time:'1h ago',title:'New Tariffs on Steel: What It Means for Prices',summary:'The US announced new 25% tariffs on imported steel. Tariffs are taxes on foreign goods — they protect US companies but raise prices for consumers. Think higher car and appliance costs in 6–12 months.',mins:'3 min read',featured:false,fullContent:`<p>The administration announced this week that 25% tariffs on imported steel will take effect next month, targeting imports primarily from China, Brazil, and South Korea.</p><h4>What's a Tariff, Simply?</h4><p>A tariff is a tax your government charges on goods imported from other countries. That cost almost always gets passed on to whoever buys the steel — which means manufacturers, which means eventually you.</p><div class="highlight">Protect American steel workers by making foreign steel more expensive. The counterargument: it raises costs for every industry that uses steel — cars, appliances, construction, and more.</div><h4>The Bigger Economic Picture</h4><p>Tariffs are fundamentally inflationary — they raise prices. At a moment when the Federal Reserve is already battling 2.8% inflation, new tariffs could complicate the path to rate cuts.</p>`},
+  {cat:'Global',catClass:'tag-world',time:'5h ago',title:"China's Economy Is Slowing — Should You Care?",summary:"China's GDP growth fell to 4.5%, below the 5% target. Since China makes a massive share of global goods, a slowdown there ripples into supply chains, tech hardware, and commodity prices worldwide.",mins:'4 min read',featured:false,fullContent:`<p>China's National Bureau of Statistics reported this week that GDP grew at 4.5% in the most recent quarter, missing the government's official 5% target and marking the slowest expansion in three years.</p><h4>Why China's Growth Rate Matters Globally</h4><p>China is the world's second-largest economy and the planet's largest manufacturer. When Chinese factories slow down, it affects supply chains from semiconductors to solar panels to consumer electronics.</p><div class="highlight">China produces roughly 30% of global manufactured goods — more than the US, Germany, and Japan combined. A slowdown there doesn't stay in China.</div><h4>How This Affects US Investors</h4><p>A slowing China typically means lower demand for commodities like oil, copper, and iron ore. It also puts pressure on multinational companies with heavy China exposure like Apple and Qualcomm.</p>`},
+  {cat:'Economy',catClass:'tag-world',time:'6h ago',title:'US Unemployment Holds at 4.1% — Is That Good?',summary:'The job market remains resilient despite high rates. Full employment is typically considered around 4–5%. The key question: if jobs stay strong, will the Fed feel pressure to cut rates at all?',mins:'2 min read',featured:false,fullContent:`<p>The Bureau of Labor Statistics reported Friday that US unemployment remained at 4.1% in March, essentially unchanged from the previous month and broadly in line with what economists consider "full employment."</p><h4>What Does 4.1% Actually Mean?</h4><p>Economists consider 4–5% unemployment to represent full employment — not because everyone has a job, but because some level of unemployment is normal and healthy. People quit jobs, move cities, graduate, or change careers.</p><div class="highlight">At 4.1%, there are roughly 6.8 million unemployed Americans. In a workforce of 168 million, that represents a historically strong labor market.</div><h4>The Fed's Dilemma</h4><p>If jobs remain strong at 4.1%, the Fed has less urgency to cut rates. A strong labor market means people have money to spend, which can keep inflation elevated. This is why a "too good" jobs report can sometimes send stock markets lower.</p>`},
 ];
 
-const PERSONAL_STORIES = [
-  {
-    cat:'Personal Finance',catClass:'tag-personal',time:'Today',
-    title:'How to Open Your First Brokerage Account at 17',
-    summary:'You can start investing before 18 with a custodial account — a brokerage account a parent opens on your behalf. Fidelity and Charles Schwab both offer these for free. Here is exactly how to do it step by step.',
-    mins:'5 min read',featured:false,
-    fullContent:`
-      <p>One of the most common questions from high school investors: "Can I even invest if I'm under 18?" The answer is yes — and starting now gives you a massive advantage over people who wait until college or their first job.</p>
-      <h4>What's a Custodial Account?</h4>
-      <p>A custodial account (also called a UGMA or UTMA account) is a brokerage account that a parent or guardian opens and manages on your behalf. You're the beneficiary — it's your money — but a legal adult controls it until you turn 18 (or 21 in some states). Once you hit that age, the account transfers fully to you.</p>
-      <div class="highlight">Fidelity's Youth Account is actually different — it lets teens 13–17 open and manage their own account directly, with parental oversight. It's one of the best options available right now and takes about 10 minutes to set up.</div>
-      <h4>Step-by-Step: Opening a Fidelity Youth Account</h4>
-      <p>First, have a parent go to fidelity.com and search for "Youth Account." They'll create an account if they don't already have one. Then they invite you via the app. You download the Fidelity app, create your profile, and get approved — usually within a day. You can start with as little as $1 and buy fractional shares of any stock.</p>
-      <h4>What Should You Buy First?</h4>
-      <p>Most financial experts recommend starting with a broad market index fund like VTI (Vanguard Total Stock Market ETF) or VOO (Vanguard S&P 500 ETF). These give you instant exposure to hundreds of companies with a single purchase, charge almost zero fees, and historically return around 7–10% annually over long periods. Once you understand how those work, you can add individual stocks if you want.</p>
-      <h4>The Most Important Thing</h4>
-      <p>Starting at 17 instead of 22 isn't just a five-year head start. Thanks to compound interest, those five extra years can be worth more than the next twenty years of investing combined. Time in the market is the most valuable resource you have right now.</p>
-    `
-  },
-  {
-    cat:'Personal Finance',catClass:'tag-personal',time:'Today',
-    title:'The Roth IRA: The Best Tax Hack Teenagers Have Access To',
-    summary:'If you have a part-time job, you can contribute to a Roth IRA — money grows tax-free for life. Starting at 16 vs 25 can mean $200,000+ more at retirement. This is the single best financial move a teenager can make.',
-    mins:'4 min read',featured:false,
-    fullContent:`
-      <p>If you have any earned income — a part-time job, babysitting, lawn mowing, freelance work — you are eligible to contribute to a Roth IRA. And contributing to one as a teenager is one of the most powerful financial moves available to any human being.</p>
-      <h4>What Is a Roth IRA?</h4>
-      <p>A Roth IRA is a retirement account where you contribute money you've already paid taxes on, and then everything inside it grows completely tax-free — forever. When you withdraw at retirement (after age 59½), you pay zero taxes on any of the gains. Compare that to a traditional 401k, where you pay taxes when you withdraw, potentially on decades of growth.</p>
-      <div class="highlight">You can contribute up to $7,000 per year to a Roth IRA in 2026, but only up to the amount you actually earned. If you made $3,000 working this summer, you can contribute up to $3,000.</div>
-      <h4>Why Teenagers Have an Unfair Advantage</h4>
-      <p>Compound interest rewards time more than anything else. $1,000 contributed at age 16 and left to grow at 7% annually becomes roughly $29,000 by age 65. The same $1,000 contributed at age 35 only becomes about $7,600. Your youth is worth a 4x multiplier — and most adults your age have no idea.</p>
-      <h4>How to Open One</h4>
-      <p>Since you're under 18, you need a parent to open a "Custodial Roth IRA" on your behalf. Fidelity, Vanguard, and Charles Schwab all offer them with no minimums and no annual fees. The account transfers fully to you when you turn 18. Inside it, you'd typically invest in the same low-cost index funds mentioned in the brokerage account article — VOO or VTI are solid starting points.</p>
-      <h4>The Numbers That Should Motivate You</h4>
-      <p>If you contribute $3,000 per year from age 16 to 22 (just 6 years, using summer job money), then stop contributing entirely, you'll have more at retirement than someone who contributes $3,000 per year from age 22 to 65 without stopping. That's 43 years of contributions versus 6 — and the early starter wins. That's the power of starting now.</p>
-    `
-  },
+const PERSONAL_STORIES=[
+  {cat:'Personal Finance',catClass:'tag-personal',time:'Today',title:'How to Open Your First Brokerage Account at 17',summary:'You can start investing before 18 with a custodial account — a brokerage account a parent opens on your behalf. Fidelity and Charles Schwab both offer these for free. Here is exactly how to do it.',mins:'5 min read',featured:false,fullContent:`<p>One of the most common questions from high school investors: "Can I even invest if I'm under 18?" The answer is yes — and starting now gives you a massive advantage.</p><h4>What's a Custodial Account?</h4><p>A custodial account is a brokerage account that a parent or guardian opens on your behalf. You're the beneficiary — it's your money — but a legal adult controls it until you turn 18.</p><div class="highlight">Fidelity's Youth Account lets teens 13–17 open and manage their own account directly, with parental oversight. It's one of the best options available and takes about 10 minutes to set up.</div><h4>What Should You Buy First?</h4><p>Most financial experts recommend starting with a broad market index fund like VTI or VOO. These give you instant exposure to hundreds of companies with a single purchase, charge almost zero fees, and historically return around 7–10% annually.</p>`},
+  {cat:'Personal Finance',catClass:'tag-personal',time:'Today',title:'The Roth IRA: The Best Tax Hack Teenagers Have Access To',summary:'If you have a part-time job, you can contribute to a Roth IRA — money grows tax-free for life. Starting at 16 vs 25 can mean $200,000+ more at retirement. This is the single best financial move a teenager can make.',mins:'4 min read',featured:false,fullContent:`<p>If you have any earned income — a part-time job, babysitting, lawn mowing, freelance work — you are eligible to contribute to a Roth IRA. Contributing as a teenager is one of the most powerful financial moves available.</p><h4>What Is a Roth IRA?</h4><p>A Roth IRA is a retirement account where you contribute money you've already paid taxes on, and then everything inside it grows completely tax-free — forever. When you withdraw at retirement, you pay zero taxes on any of the gains.</p><div class="highlight">You can contribute up to $7,000 per year to a Roth IRA in 2026, but only up to the amount you actually earned. If you made $3,000 working this summer, you can contribute up to $3,000.</div><h4>The Numbers That Should Motivate You</h4><p>If you contribute $3,000 per year from age 16 to 22 then stop, you'll have more at retirement than someone who contributes $3,000 per year from age 22 to 65 without stopping. That's the power of starting now.</p>`},
 ];
 
-const TECH_STORIES = [
-  {
-    cat:'Tech',catClass:'tag-tech',time:'3h ago',
-    title:'Nvidia\'s AI Chips Are Behind Everything Right Now',
-    summary:'From ChatGPT to self-driving cars, Nvidia\'s GPUs power most modern AI. The company\'s market cap just crossed $2 trillion again — meaning investors bet AI is here to stay. Understanding why helps you understand the whole tech market.',
-    mins:'3 min read',featured:false,
-    fullContent:`
-      <p>Nvidia's market capitalization crossed $2 trillion again this week, making it one of the most valuable companies on Earth. For context: that's larger than the entire GDP of most countries. So what exactly does Nvidia make, and why does the market value it so astronomically?</p>
-      <h4>GPUs: The Engine of the AI Revolution</h4>
-      <p>Nvidia makes Graphics Processing Units — GPUs. Originally designed to render video game graphics, GPUs turned out to be extraordinarily good at the kind of parallel math calculations that AI systems require. Training a large language model like GPT-4 requires running billions of calculations simultaneously. GPUs do this far better than traditional CPUs.</p>
-      <div class="highlight">Nvidia's H100 chip — their flagship AI accelerator — costs around $30,000–40,000 per unit. Microsoft, Google, Amazon, and Meta are each buying tens of thousands of them. The waiting list has stretched to months.</div>
-      <h4>The "Picks and Shovels" Business Model</h4>
-      <p>There's a famous saying about the California Gold Rush: the people who got rich weren't the miners, they were the ones selling picks and shovels. Nvidia is the picks-and-shovels play on AI. Regardless of which AI company wins — OpenAI, Google, Anthropic, or someone we haven't heard of yet — they all need Nvidia's chips to build and run their models.</p>
-      <h4>The Risk</h4>
-      <p>At $2 trillion, Nvidia is priced for perfection. Several competitors — AMD, Intel, and custom chips from Google and Amazon — are working to eat into Nvidia's market share. If any of them succeed, or if AI investment slows, the stock could fall dramatically. Understanding the upside and downside of dominant tech companies is essential for any serious investor.</p>
-    `
-  },
-  {
-    cat:'Tech',catClass:'tag-tech',time:'5h ago',
-    title:'Apple\'s AI Strategy Is Finally Taking Shape',
-    summary:'Apple Intelligence rolled out globally this quarter, integrating AI into every iPhone. Unlike Nvidia which sells the "picks and shovels" of AI, Apple bets on AI as a reason to buy new hardware. Two very different business models.',
-    mins:'3 min read',featured:false,
-    fullContent:`
-      <p>Apple Intelligence — the company's suite of on-device AI features — finished its global rollout this quarter, reaching over 100 countries after a phased launch that began in late 2024. For Apple, AI isn't a standalone product. It's a hardware upgrade cycle driver.</p>
-      <h4>What Apple Intelligence Actually Does</h4>
-      <p>The features span several categories: writing tools that clean up and rewrite emails, a redesigned Siri that can actually understand context and complete tasks across apps, photo editing that can remove objects from images, and notification summaries. Many features require an iPhone 15 Pro or newer — which is by design.</p>
-      <div class="highlight">Apple processes most AI features directly on-device rather than sending your data to remote servers. This is their key privacy differentiator versus Google and Microsoft, whose AI products largely run in the cloud.</div>
-      <h4>The Upgrade Cycle Bet</h4>
-      <p>Apple's strategy is simple: make AI features compelling enough that people on older iPhones feel the need to upgrade. The company's biggest growth challenge is that iPhones last longer than ever, and upgrade cycles have stretched from 2–3 years to 4–5. AI features that require newer chips give people a real reason to upgrade. If this works, it could be the most significant catalyst for iPhone sales since the shift to 5G.</p>
-      <h4>Apple vs Nvidia: Two Ways to Win on AI</h4>
-      <p>Nvidia profits by selling infrastructure — the shovels every AI company needs. Apple profits by using AI to sell consumer devices. Both can win simultaneously. Understanding the difference between infrastructure plays and application plays is one of the most useful frameworks for analyzing any tech investment.</p>
-    `
-  },
-  {
-    cat:'Tech',catClass:'tag-tech',time:'7h ago',
-    title:'What Is a Valuation — And Why Does Every Startup Claim Billions?',
-    summary:'When a startup says it\'s "valued at $10 billion," that number comes from the last funding round, not actual revenue. Valuation is what investors agree a company is worth — and it can be wildly wrong in both directions.',
-    mins:'2 min read',featured:false,
-    fullContent:`
-      <p>Every week, a headline announces a startup has achieved "unicorn" status — a valuation of $1 billion or more. But what does that actually mean? And why do so many of these companies seem to have no revenue to justify the number?</p>
-      <h4>How Startup Valuations Work</h4>
-      <p>When a startup raises money from venture capital investors, both sides negotiate a valuation as part of the deal. If a VC firm invests $10 million for a 10% stake in a company, the implied valuation is $100 million (because 10% = $10M means 100% = $100M). That number isn't based on revenue or profit — it's based on what both parties agreed the company could be worth in the future.</p>
-      <div class="highlight">This is called a "paper valuation" — it only becomes real money when the company goes public (IPO) or gets acquired. Many unicorn valuations evaporate entirely before that happens.</div>
-      <h4>Why Valuations Can Be Misleading</h4>
-      <p>Startup valuations during bull markets in venture capital (like 2020–2021) were notoriously inflated. Companies that raised at $10B valuations later IPO'd at $2B or went bankrupt entirely. The most famous example: WeWork was valued at $47 billion in 2019 and nearly went bankrupt in 2019. It eventually went public at a fraction of that and later filed for bankruptcy in 2023.</p>
-      <h4>The Metric That Actually Matters</h4>
-      <p>For most businesses, what ultimately matters is revenue growth, path to profitability, and unit economics — how much it costs to acquire each customer versus how much that customer is worth over time. A company with $10M in revenue growing 200% year-over-year might justify a $500M valuation. A company with $10M in revenue growing 10% probably doesn't. Learning to ask "what justifies this valuation?" is one of the most important skills in investing.</p>
-    `
-  },
+const TECH_STORIES=[
+  {cat:'Tech',catClass:'tag-tech',time:'3h ago',title:"Nvidia's AI Chips Are Behind Everything Right Now",summary:"From ChatGPT to self-driving cars, Nvidia's GPUs power most modern AI. The company's market cap just crossed $2 trillion again — meaning investors bet AI is here to stay.",mins:'3 min read',featured:false,fullContent:`<p>Nvidia's market capitalization crossed $2 trillion again this week, making it one of the most valuable companies on Earth — larger than the entire GDP of most countries.</p><h4>GPUs: The Engine of the AI Revolution</h4><p>Nvidia makes Graphics Processing Units — GPUs. Originally designed to render video game graphics, GPUs turned out to be extraordinarily good at the parallel math calculations that AI systems require.</p><div class="highlight">Nvidia's H100 chip costs around $30,000–40,000 per unit. Microsoft, Google, Amazon, and Meta are each buying tens of thousands of them. The waiting list has stretched to months.</div><h4>The Risk</h4><p>At $2 trillion, Nvidia is priced for perfection. Several competitors — AMD, Intel, and custom chips from Google and Amazon — are working to eat into Nvidia's market share. If any succeed, or if AI investment slows, the stock could fall dramatically.</p>`},
+  {cat:'Tech',catClass:'tag-tech',time:'5h ago',title:"Apple's AI Strategy Is Finally Taking Shape",summary:"Apple Intelligence rolled out globally this quarter, integrating AI into every iPhone. Unlike Nvidia which sells the infrastructure of AI, Apple bets on AI as a reason to buy new hardware.",mins:'3 min read',featured:false,fullContent:`<p>Apple Intelligence finished its global rollout this quarter, reaching over 100 countries after a phased launch that began in late 2024. For Apple, AI isn't a standalone product — it's a hardware upgrade cycle driver.</p><h4>What Apple Intelligence Actually Does</h4><p>The features span writing tools that clean up emails, a redesigned Siri that understands context, photo editing that can remove objects from images, and notification summaries. Many features require an iPhone 15 Pro or newer — which is by design.</p><div class="highlight">Apple processes most AI features directly on-device rather than sending your data to remote servers. This is their key privacy differentiator versus Google and Microsoft.</div><h4>Apple vs Nvidia: Two Ways to Win on AI</h4><p>Nvidia profits by selling infrastructure — the shovels every AI company needs. Apple profits by using AI to sell consumer devices. Both can win simultaneously. Understanding the difference between infrastructure plays and application plays is one of the most useful frameworks for analyzing any tech investment.</p>`},
+  {cat:'Tech',catClass:'tag-tech',time:'7h ago',title:'What Is a Valuation — And Why Does Every Startup Claim Billions?',summary:"When a startup says it's valued at $10 billion, that number comes from the last funding round, not actual revenue. Valuation is what investors agree a company is worth — and it can be wildly wrong.",mins:'2 min read',featured:false,fullContent:`<p>Every week, a headline announces a startup has achieved "unicorn" status — a valuation of $1 billion or more. But what does that actually mean?</p><h4>How Startup Valuations Work</h4><p>When a startup raises money from venture capital investors, both sides negotiate a valuation as part of the deal. That number isn't based on revenue or profit — it's based on what both parties agreed the company could be worth in the future.</p><div class="highlight">This is called a "paper valuation" — it only becomes real money when the company goes public (IPO) or gets acquired. Many unicorn valuations evaporate entirely before that happens.</div><h4>The Metric That Actually Matters</h4><p>For most businesses, what ultimately matters is revenue growth, path to profitability, and unit economics — how much it costs to acquire each customer versus how much that customer is worth over time. Learning to ask "what justifies this valuation?" is one of the most important skills in investing.</p>`},
 ];
 
-const QUIZ = {
-  q: 'If the Federal Reserve raises interest rates, what typically happens to the stock market?',
-  opts: [
-    {text:'A. Stocks usually go up immediately', correct:false},
-    {text:'B. Stocks often fall because borrowing becomes more expensive for companies', correct:true},
-    {text:'C. Nothing — rates and stocks are unrelated', correct:false},
-    {text:'D. The stock market closes for the day', correct:false},
+const QUIZ={
+  q:'If the Federal Reserve raises interest rates, what typically happens to the stock market?',
+  opts:[
+    {text:'A. Stocks usually go up immediately',correct:false},
+    {text:'B. Stocks often fall because borrowing becomes more expensive for companies',correct:true},
+    {text:'C. Nothing — rates and stocks are unrelated',correct:false},
+    {text:'D. The stock market closes for the day',correct:false},
   ],
-  exp: 'When the Fed raises rates, companies pay more to borrow money, which reduces profits. Investors also earn more from "safe" bonds, making risky stocks less attractive. Both effects push stock prices down — though the relationship isn\'t perfectly consistent.'
+  exp:"When the Fed raises rates, companies pay more to borrow money, which reduces profits. Investors also earn more from safe bonds, making risky stocks less attractive. Both effects push stock prices down — though the relationship isn't perfectly consistent."
 };
 
-const WATCHLIST = [
+const WATCHLIST=[
   {sym:'NVDA',name:'Nvidia',price:'$881',chg:'+1.12%',up:true,spark:[60,65,62,70,68,75,80,78,85,88]},
   {sym:'AAPL',name:'Apple',price:'$214',chg:'-0.23%',up:false,spark:[90,88,85,87,84,82,80,83,81,79]},
   {sym:'MSFT',name:'Microsoft',price:'$418',chg:'+0.34%',up:true,spark:[70,72,71,73,74,72,75,74,76,77]},
@@ -962,31 +1004,24 @@ const WATCHLIST = [
 ];
 
 // ── MODAL ───────────────────────────────────────────────────────────────────
-
-function openModal(story) {
-  document.getElementById('modalTitle').textContent = story.title;
-  document.getElementById('modalTime').textContent = story.time + ' · ' + story.mins;
-  document.getElementById('modalMeta').innerHTML =
-    `<span class="card-cat sec-tag ${story.catClass}">${story.cat}</span>`;
-  document.getElementById('modalBody').innerHTML = story.fullContent;
+function openModal(story){
+  document.getElementById('modalTitle').textContent=story.title;
+  document.getElementById('modalTime').textContent=story.time+' · '+story.mins;
+  document.getElementById('modalMeta').innerHTML=`<span class="card-cat sec-tag ${story.catClass}">${story.cat}</span>`;
+  document.getElementById('modalBody').innerHTML=story.fullContent;
   document.getElementById('articleModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow='hidden';
 }
-
-function closeModal() {
+function closeModal(){
   document.getElementById('articleModal').classList.remove('open');
-  document.body.style.overflow = '';
+  document.body.style.overflow='';
 }
-
-function closeModalOnOverlay(e) {
-  if (e.target === document.getElementById('articleModal')) closeModal();
+function closeModalOnOverlay(e){
+  if(e.target===document.getElementById('articleModal'))closeModal();
 }
-
-// Close on Escape key
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 
 // ── RENDER ──────────────────────────────────────────────────────────────────
-
 function buildTicker(){
   const t=document.getElementById('ticker');
   const items=[...TICKER_DATA,...TICKER_DATA];
@@ -996,7 +1031,7 @@ function buildTicker(){
       <span class="tick-val">${d.val}</span>
       <span class="${d.up?'tick-up':'tick-dn'}">${d.chg}</span>
     </div>
-    <div class="tick-dot"></div>
+    <div class="tick-sep"></div>
   `).join('');
 }
 
@@ -1012,9 +1047,9 @@ function buildMarketGrid(){
   `).join('');
 }
 
-function buildStories(elId, stories) {
-  const el = document.getElementById(elId);
-  el.innerHTML = stories.map((s, i) => `
+function buildStories(elId,stories){
+  const el=document.getElementById(elId);
+  el.innerHTML=stories.map((s,i)=>`
     <div class="story-card${s.featured?' featured':''}" onclick="openModal(window._stories_${elId}[${i}])">
       <div class="card-top">
         <span class="card-cat sec-tag ${s.catClass}">${s.cat}</span>
@@ -1031,8 +1066,7 @@ function buildStories(elId, stories) {
       </div>
     </div>
   `).join('');
-  // Store story data so onclick can reference it
-  window[`_stories_${elId}`] = stories;
+  window[`_stories_${elId}`]=stories;
 }
 
 function buildQuiz(){
@@ -1071,7 +1105,7 @@ function buildWatchlist(){
       <div class="sparkline">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none">
           <polyline points="${pts}" fill="none"
-            stroke="${w.up?'#00d68f':'#ff5e5e'}" stroke-width="3"
+            stroke="${w.up?'#00e5a0':'#ff4d6d'}" stroke-width="3"
             stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
@@ -1082,37 +1116,32 @@ function buildWatchlist(){
 function setDate(){
   const d=new Date();
   const opts={weekday:'long',year:'numeric',month:'long',day:'numeric'};
-  document.getElementById('hero-date').innerHTML=
-    `<span style="width:20px;height:1px;background:var(--accent);display:inline-block;vertical-align:middle;margin-right:8px"></span>${d.toLocaleDateString('en-US',opts)}`;
+  document.getElementById('hero-date').textContent=d.toLocaleDateString('en-US',opts);
 }
 
 function handleSub(){}
-document.getElementById('sib-form').addEventListener('submit', function(e){
+document.getElementById('sib-form').addEventListener('submit',function(e){
   e.preventDefault();
-  const email = this.querySelector('input[name="EMAIL"]').value;
-  if(!email || !email.includes('@')) return;
-  const formData = new FormData(this);
-  fetch(this.action, {
-    method: 'POST',
-    body: formData,
-    mode: 'no-cors'
-  }).then(function(){
-    document.getElementById('sib-form').style.display = 'none';
-    document.getElementById('sub-success').style.display = 'block';
-  });
+  const email=this.querySelector('input[name="EMAIL"]').value;
+  if(!email||!email.includes('@'))return;
+  const formData=new FormData(this);
+  fetch(this.action,{method:'POST',body:formData,mode:'no-cors'})
+    .then(function(){
+      document.getElementById('sib-form').style.display='none';
+      document.getElementById('sub-success').style.display='block';
+    });
 });
 
 function toggleNav(){
   document.getElementById('nav').classList.toggle('open');
 }
 
-// ── CONTENT.JSON LOADER ─────────────────────────────────────────────────────
-
+// ── ENRICH & APPLY CONTENT.JSON ─────────────────────────────────────────────
 function enrichStories(stories){
   return stories.map(s=>({
     ...s,
-    catClass: s.catClass || s.cat_class || 'tag-market',
-    fullContent: s.fullContent || `<p>${s.summary}</p>`
+    catClass:s.catClass||s.cat_class||'tag-market',
+    fullContent:s.fullContent||`<p>${s.summary}</p>`
   }));
 }
 
@@ -1129,17 +1158,17 @@ function applyContent(data){
       }
     });
   }
-  if(data.market_stories) buildStories('marketStories',enrichStories(data.market_stories));
-  if(data.world_stories)  buildStories('worldStories',enrichStories(data.world_stories));
-  if(data.personal_stories) buildStories('personalStories',enrichStories(data.personal_stories));
-  if(data.tech_stories)   buildStories('techStories',enrichStories(data.tech_stories));
+  if(data.market_stories)buildStories('marketStories',enrichStories(data.market_stories));
+  if(data.world_stories)buildStories('worldStories',enrichStories(data.world_stories));
+  if(data.personal_stories)buildStories('personalStories',enrichStories(data.personal_stories));
+  if(data.tech_stories)buildStories('techStories',enrichStories(data.tech_stories));
   if(data.word_of_day){
     const w=data.word_of_day;
     document.getElementById('wodWord').textContent=w.word;
     document.getElementById('wodType').textContent=w.type;
     document.getElementById('wodDef').textContent=w.definition;
     document.getElementById('wodExample').textContent=w.example;
-    if(w.tags) document.getElementById('wodTags').innerHTML=
+    if(w.tags)document.getElementById('wodTags').innerHTML=
       w.tags.map(t=>`<span class="wod-tag">${t}</span>`).join('');
   }
   if(data.quiz){
