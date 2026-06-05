@@ -1,7 +1,7 @@
 {
-  "date": "June 04, 2026",
+  "date": "June 05, 2026",
   "breaking_news": {
-    "text": "A 69-year-old furniture store chain has filed for Chapter 11 bankruptcy, marking a significant shift in the retail landscape.",
+    "text": "Stocks fell today as strong jobs data fueled rate hike bets, with the possibility of a rate increase affecting the overall market and potentially your savings.",
     "is_breaking": true
   },
   "market_stories": [
@@ -9,9 +9,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "2h ago",
-      "title": "Dow Jumps, Nasdaq Sinks After Broadcom Earnings Flop",
-      "summary": "The Dow Jones Industrial Average rose by 0.5% today, while the Nasdaq Composite Index fell by 1.2% after Broadcom's earnings report failed to meet expectations. This move affected several tech stocks, including Advanced Micro Devices (AMD), which saw its stock rise by 2.5%. The change in the market could impact your future investments and savings. As a high school student, it's essential to understand how market fluctuations can affect your long-term financial goals.",
-      "fullContent": "<p>The Dow Jones Industrial Average and the Nasdaq Composite Index are two of the most widely followed stock market indexes in the world. The Dow is a price-weighted index, which means that stocks with higher prices have a greater influence on the index's movement. On the other hand, the Nasdaq is a market-capitalization-weighted index, which means that stocks with larger market capitalizations have a greater influence on the index's movement.</p><h4>What is Market Capitalization?</h4><p>Market capitalization, or market cap, refers to the total value of a company's outstanding shares. It's calculated by multiplying the total number of shares outstanding by the current market price of one share. For example, if a company has 10 million shares outstanding and the current market price is $50 per share, the market capitalization would be $500 million.</p><div class='highlight'>The Dow Jones Industrial Average has a total market capitalization of over $10 trillion.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to understand how market fluctuations can affect your long-term financial goals. If you're planning to invest in the stock market, it's crucial to understand the differences between the Dow and the Nasdaq and how they can impact your investments. You can start by researching different types of investments and considering your risk tolerance.</p>",
+      "title": "LQD vs. SCHQ: Bond Fund Performance",
+      "summary": "The LQD and SCHQ bond funds have been compared in terms of performance, with LQD showing higher returns despite being considered riskier. This means that investors who took on more risk were rewarded with higher returns. For example, LQD has returned around 4.5% in the past year, while SCHQ has returned around 3.5%. This difference in returns can affect your investment strategy and potentially your college savings.",
+      "fullContent": "<p>The iShares iBoxx $ Investment Grade Corporate Bond ETF (LQD) and the Schwab U.S. Broad Market ETF (SCHQ) are two popular bond funds. While SCHQ is considered a safer option, LQD has outperformed it in terms of returns. This is because LQD invests in higher-yielding corporate bonds, which come with more risk. However, for investors who are willing to take on this risk, LQD has provided higher returns.</p><h4>Understanding Bond Funds</h4><p>A bond fund is a type of investment that pools money from many investors to invest in a variety of bonds. Bonds are essentially loans made to companies or governments, and they offer regular interest payments in return for the investment. Bond funds can provide a relatively stable source of income and can be less volatile than stocks.</p><div class='highlight'>The LQD fund has around $35 billion in assets, while the SCHQ fund has around $15 billion.</div><h4>What This Means For You</h4><p>As a high school student, you may not be investing in bond funds directly, but understanding how they work can help you make informed decisions about your own savings and investments in the future. If you're considering investing in a bond fund, it's essential to weigh the potential risks and rewards and consider your own financial goals and risk tolerance.</p>",
       "mins": "3 min read",
       "featured": true
     },
@@ -19,9 +19,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "3h ago",
-      "title": "CPU Demand Rapidly Rising Amid Expanding Agentic AI",
-      "summary": "Barclays has raised its price target for Advanced Micro Devices (AMD) to $665 due to the rapidly rising demand for central processing units (CPUs) amid the expansion of agentic AI. This move could impact the tech industry and your future career prospects. As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future.",
-      "fullContent": "<p>Agentic AI refers to artificial intelligence that can perform tasks autonomously. The expansion of agentic AI has led to an increase in demand for CPUs, which are the primary components of computers that perform calculations and execute instructions. AMD is a leading manufacturer of CPUs, and the increase in demand has led to a rise in the company's stock price.</p><h4>What is Agentic AI?</h4><p>Agentic AI is a type of artificial intelligence that can perform tasks autonomously. It's designed to make decisions and take actions without human intervention. Agentic AI has the potential to revolutionize various industries, including healthcare, finance, and transportation.</p><div class='highlight'>The global AI market is expected to reach $190 billion by 2025.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future. If you're interested in pursuing a career in tech, you can start by learning programming languages and exploring different types of AI.</p>",
+      "title": "Reid Hoffman Steps Down from Microsoft's Board",
+      "summary": "Reid Hoffman, co-founder of LinkedIn, has announced that he will step down from Microsoft's board of directors. This move may affect Microsoft's strategy and potentially impact the tech industry as a whole. For instance, Microsoft's recent focus on artificial intelligence could be influenced by Hoffman's departure.",
+      "fullContent": "<p>Reid Hoffman, the co-founder of LinkedIn, has been a member of Microsoft's board of directors since 2014. His decision to step down may have significant implications for Microsoft's future strategy. As a prominent figure in the tech industry, Hoffman's insights and expertise have likely played a role in shaping Microsoft's direction.</p><h4>Microsoft's Recent Developments</h4><p>Microsoft has been investing heavily in artificial intelligence and cloud computing. The company's recent acquisitions, such as GitHub and Nuance Communications, demonstrate its commitment to these areas. Hoffman's departure may lead to changes in Microsoft's approach to these technologies.</p><div class='highlight'>Microsoft's market capitalization is around $2.5 trillion, making it one of the largest companies in the world.</div><h4>What This Means For You</h4><p>As a high school student, you may be interested in pursuing a career in the tech industry. Understanding the dynamics of major tech companies like Microsoft can help you stay informed about the latest developments and trends. Additionally, if you're considering investing in tech stocks, it's essential to stay up-to-date on company news and announcements.</p>",
       "mins": "2 min read",
       "featured": false
     },
@@ -29,9 +29,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "4h ago",
-      "title": "Lumentum Holdings Announces $650.4 Million Private Share Exchange Transaction",
-      "summary": "Lumentum Holdings has announced a $650.4 million private share exchange transaction, which could impact the company's stock price and the broader tech industry. As a high school student, it's essential to understand how mergers and acquisitions can affect the stock market and your investments. You can start by researching different types of transactions and considering their potential impact on the market.",
-      "fullContent": "<p>A private share exchange transaction is a type of transaction in which a company exchanges its shares for other assets or securities. In this case, Lumentum Holdings is exchanging its shares for $650.4 million in cash. The transaction could impact the company's stock price and the broader tech industry.</p><h4>What is a Private Share Exchange Transaction?</h4><p>A private share exchange transaction is a type of transaction that involves the exchange of shares for other assets or securities. It's often used by companies to raise capital or to acquire other businesses.</p><div class='highlight'>The transaction is expected to close in the third quarter of 2026.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to understand how mergers and acquisitions can affect the stock market and your investments. You can start by researching different types of transactions and considering their potential impact on the market. You can also consider investing in a diversified portfolio to minimize risk.</p>",
+      "title": "Software Loses its Throne in the Leveraged Loan Market",
+      "summary": "The software industry has traditionally been a significant player in the leveraged loan market, but recent data suggests that its dominance is waning. This shift may be attributed to changes in the industry and the rise of other sectors. For example, the healthcare sector has seen significant growth in recent years, with companies like UnitedHealth Group and Pfizer issuing large amounts of debt.",
+      "fullContent": "<p>The leveraged loan market has been an essential source of funding for companies in various industries. The software sector has historically been a major player in this market, with companies like Oracle and Microsoft issuing large amounts of debt to finance their operations and expansions. However, recent data indicates that the software industry's share of the leveraged loan market is decreasing.</p><h4>Understanding the Leveraged Loan Market</h4><p>A leveraged loan is a type of loan that is extended to companies with lower credit ratings. These loans typically offer higher yields to compensate for the increased risk. The leveraged loan market has grown significantly in recent years, with many companies using these loans to finance their operations and expansions.</p><div class='highlight'>The leveraged loan market has grown to around $1.5 trillion in size, with the software sector accounting for around 10% of the market.</div><h4>What This Means For You</h4><p>As a high school student, you may not be directly involved in the leveraged loan market, but understanding the trends and shifts in this market can help you stay informed about the overall economy and the industries that are driving growth. If you're considering a career in finance or business, it's essential to stay up-to-date on the latest developments in the leveraged loan market.</p>",
       "mins": "2 min read",
       "featured": false
     }
@@ -41,9 +41,9 @@
       "cat": "Economy",
       "catClass": "tag-world",
       "time": "1h ago",
-      "title": "The Fed Can't Protect Consumers from Supply Shocks and Price Gouging",
-      "summary": "The Federal Reserve has limited power to protect consumers from supply shocks and price gouging, according to recent reports. This could impact your daily life and savings. As a high school student, it's essential to understand how economic policies can affect your daily life and to consider ways to protect your savings.",
-      "fullContent": "<p>The Federal Reserve is the central bank of the United States, and it plays a crucial role in setting monetary policy. However, the Fed has limited power to protect consumers from supply shocks and price gouging. Supply shocks occur when there is a sudden disruption to the supply chain, leading to a shortage of goods and higher prices. Price gouging occurs when companies take advantage of consumers by charging excessively high prices for goods and services.</p><h4>What is the Federal Reserve?</h4><p>The Federal Reserve is the central bank of the United States, and it's responsible for setting monetary policy. The Fed uses various tools, including interest rates and quantitative easing, to promote maximum employment and stable prices.</p><div class='highlight'>The Fed has raised interest rates by 0.25% to combat inflation.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to understand how economic policies can affect your daily life and to consider ways to protect your savings. You can start by researching different types of savings accounts and considering ways to invest your money. You can also consider ways to reduce your expenses and build an emergency fund.</p>",
+      "title": "California's Proposed 'Billionaire Tax'",
+      "summary": "California has proposed a 'billionaire tax' aimed at increasing revenue for the state. The tax would target individuals with net worth exceeding $1 billion, with the goal of generating around $5 billion in revenue annually. This proposal has sparked debate about the effectiveness of such a tax and its potential impact on the economy.",
+      "fullContent": "<p>The proposed 'billionaire tax' in California has been met with both support and criticism. Proponents argue that the tax would help address income inequality and provide much-needed revenue for the state. However, opponents argue that the tax could lead to unintended consequences, such as encouraging wealthy individuals to leave the state or hide their assets.</p><h4>Understanding the Proposed Tax</h4><p>The proposed tax would apply to individuals with a net worth exceeding $1 billion, with a tax rate of around 1%. The revenue generated from the tax would be used to fund various state programs and initiatives. However, the effectiveness of such a tax is still uncertain, and some experts argue that it could lead to a decrease in economic growth.</p><div class='highlight'>The top 1% of earners in California already pay around 40% of the state's income tax revenue.</div><h4>What This Means For You</h4><p>As a high school student, you may not be directly affected by the proposed 'billionaire tax,' but understanding the debate surrounding it can help you stay informed about the economy and the role of taxation in shaping policy. If you're considering a career in economics or finance, it's essential to stay up-to-date on the latest developments in taxation and economic policy.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -51,9 +51,9 @@
       "cat": "Global",
       "catClass": "tag-world",
       "time": "5h ago",
-      "title": "Elon Musk's SpaceX Paid to Secure its Ticker Symbol Ahead of Blockbuster IPO",
-      "summary": "Elon Musk's SpaceX has paid to secure its ticker symbol ahead of its highly anticipated initial public offering (IPO). This move could impact the space industry and your future career prospects. As a high school student, it's essential to stay informed about the latest developments in the space industry and how they can affect your future.",
-      "fullContent": "<p>An initial public offering (IPO) is a type of transaction in which a private company issues stock to the public for the first time. SpaceX is a private company founded by Elon Musk, and it's expected to go public soon. The company has paid to secure its ticker symbol, which is the symbol used to identify the company's stock on the stock exchange.</p><h4>What is an IPO?</h4><p>An IPO is a type of transaction in which a private company issues stock to the public for the first time. It's often used by companies to raise capital and to become publicly traded.</p><div class='highlight'>SpaceX is expected to raise $10 billion in its IPO.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to stay informed about the latest developments in the space industry and how they can affect your future. If you're interested in pursuing a career in the space industry, you can start by researching different types of jobs and considering ways to gain experience. You can also consider investing in a diversified portfolio to minimize risk.</p>",
+      "title": "Strong Jobs Data Fuels Rate Hike Bets",
+      "summary": "Recent jobs data has been strong, with the unemployment rate decreasing to around 3.5%. This has led to increased speculation about a potential rate hike, which could affect the overall economy and your savings.",
+      "fullContent": "<p>The recent jobs data has been positive, with the unemployment rate decreasing to around 3.5%. This has led to increased speculation about a potential rate hike, which could affect the overall economy and your savings. A rate hike would make borrowing more expensive, but it could also help control inflation and prevent the economy from overheating.</p><h4>Understanding the Jobs Market</h4><p>The jobs market is a crucial indicator of the overall economy. A strong jobs market can lead to increased consumer spending and economic growth, but it can also lead to inflation if the economy is growing too quickly. The recent jobs data suggests that the economy is still growing, but at a slower pace than before.</p><div class='highlight'>The labor force participation rate has increased to around 62%, which is a positive sign for the economy.</div><h4>What This Means For You</h4><p>As a high school student, you may not be directly affected by the jobs market, but understanding the trends and shifts in the economy can help you stay informed about the overall economic landscape. If you're considering a career in business or economics, it's essential to stay up-to-date on the latest developments in the jobs market and the economy.</p>",
       "mins": "4 min read",
       "featured": false
     },
@@ -61,9 +61,9 @@
       "cat": "Economy",
       "catClass": "tag-world",
       "time": "6h ago",
-      "title": "Quantinuum's Stock Set to Pop After IPO as Wall Street Buys into the Quantum Boom",
-      "summary": "Quantinuum's stock is set to rise after its highly anticipated IPO, as Wall Street buys into the quantum boom. This move could impact the tech industry and your future career prospects. As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future.",
-      "fullContent": "<p>Quantinuum is a quantum computing company that's expected to go public soon. The company's stock is set to rise after its IPO, as Wall Street buys into the quantum boom. Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations.</p><h4>What is Quantum Computing?</h4><p>Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations. It has the potential to revolutionize various industries, including healthcare, finance, and transportation.</p><div class='highlight'>The global quantum computing market is expected to reach $1.7 billion by 2025.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future. If you're interested in pursuing a career in the tech industry, you can start by learning programming languages and exploring different types of AI. You can also consider investing in a diversified portfolio to minimize risk.</p>",
+      "title": "Service Credit Union Review",
+      "summary": "Service Credit Union has been reviewed for its competitive rates and military-focused banking services. The credit union offers a range of financial products, including checking and savings accounts, loans, and credit cards. This review highlights the importance of considering the specific needs of military personnel and their families when choosing a financial institution.",
+      "fullContent": "<p>Service Credit Union has been recognized for its competitive rates and military-focused banking services. The credit union offers a range of financial products, including checking and savings accounts, loans, and credit cards. These products are designed to meet the specific needs of military personnel and their families, who often face unique financial challenges.</p><h4>Understanding Credit Unions</h4><p>A credit union is a type of financial institution that is owned and controlled by its members. Credit unions often offer more competitive rates and better customer service than traditional banks. They also tend to have more flexible lending terms and lower fees.</p><div class='highlight'>Service Credit Union has around $4 billion in assets and serves over 300,000 members.</div><h4>What This Means For You</h4><p>As a high school student, you may not be directly affected by the services offered by Service Credit Union, but understanding the importance of considering the specific needs of different groups can help you stay informed about the financial industry. If you're considering a career in finance or banking, it's essential to stay up-to-date on the latest developments in the industry and the different types of financial institutions that exist.</p>",
       "mins": "2 min read",
       "featured": false
     }
@@ -73,9 +73,9 @@
       "cat": "Personal Finance",
       "catClass": "tag-personal",
       "time": "Today",
-      "title": "How to Create a Budget That Works for You",
-      "summary": "Creating a budget can help you manage your finances and achieve your long-term goals. As a high school student, it's essential to understand how to create a budget that works for you. You can start by tracking your expenses and considering ways to reduce your spending.",
-      "fullContent": "<p>Creating a budget is an essential step in managing your finances and achieving your long-term goals. A budget is a plan for how you will allocate your income towards different expenses, such as housing, food, and entertainment. To create a budget, you can start by tracking your expenses and considering ways to reduce your spending.</p><h4>What is a Budget?</h4><p>A budget is a plan for how you will allocate your income towards different expenses. It's essential to create a budget that works for you, as it can help you manage your finances and achieve your long-term goals.</p><div class='highlight'>The 50/30/20 rule is a simple way to allocate your income towards different expenses.</div><h4>Action Step</h4><p>One specific thing you can do this week is to track your expenses and consider ways to reduce your spending. You can start by using a budgeting app or spreadsheet to track your income and expenses. You can also consider ways to reduce your expenses, such as by cooking at home instead of eating out or by cancelling subscription services you don't use.</p>",
+      "title": "Building an Emergency Fund",
+      "summary": "Building an emergency fund is an essential step in achieving financial stability. An emergency fund is a pool of money set aside to cover unexpected expenses, such as car repairs or medical bills. Having a solid emergency fund in place can help you avoid debt and ensure that you're prepared for the unexpected.",
+      "fullContent": "<p>Building an emergency fund is a crucial step in achieving financial stability. An emergency fund is a pool of money set aside to cover unexpected expenses, such as car repairs or medical bills. Having a solid emergency fund in place can help you avoid debt and ensure that you're prepared for the unexpected. A general rule of thumb is to aim to save around 3-6 months' worth of living expenses in your emergency fund.</p><h4>Understanding Emergency Funds</h4><p>An emergency fund is not the same as a savings account. While a savings account is meant for long-term savings goals, an emergency fund is meant to be easily accessible and liquid. This means that you should keep your emergency fund in a low-risk investment, such as a high-yield savings account or a money market fund.</p><div class='highlight'>The average American has around $1,000 in emergency savings, which is not enough to cover most unexpected expenses.</div><h4>Action Step</h4><p>Consider setting up an automatic transfer from your checking account to your emergency fund each month. This will help you build your emergency fund over time and ensure that you're prepared for the unexpected.</p>",
       "mins": "5 min read",
       "featured": false
     },
@@ -83,9 +83,9 @@
       "cat": "Personal Finance",
       "catClass": "tag-personal",
       "time": "Today",
-      "title": "The Importance of Emergency Savings",
-      "summary": "Emergency savings can help you cover unexpected expenses and achieve your long-term goals. As a high school student, it's essential to understand the importance of emergency savings and to consider ways to build your savings. You can start by setting aside a portion of your income each month and considering ways to reduce your expenses.",
-      "fullContent": "<p>Emergency savings can help you cover unexpected expenses, such as car repairs or medical bills. It's essential to have a cushion of savings in case of an emergency, as it can help you avoid going into debt and achieve your long-term goals. To build your emergency savings, you can start by setting aside a portion of your income each month and considering ways to reduce your expenses.</p><h4>What is Emergency Savings?</h4><p>Emergency savings is a type of savings that's set aside to cover unexpected expenses. It's essential to have a cushion of savings in case of an emergency, as it can help you avoid going into debt and achieve your long-term goals.</p><div class='highlight'>Aim to save 3-6 months' worth of living expenses in an easily accessible savings account.</div><h4>Action Step</h4><p>One specific thing you can do this week is to set aside a portion of your income each month and consider ways to reduce your expenses. You can start by using a budgeting app or spreadsheet to track your income and expenses. You can also consider ways to reduce your expenses, such as by cooking at home instead of eating out or by cancelling subscription services you don't use.</p>",
+      "title": "Understanding Credit Scores",
+      "summary": "Understanding credit scores is essential for achieving financial stability. A credit score is a three-digit number that represents your creditworthiness and is used by lenders to determine the likelihood of repayment. Having a good credit score can help you qualify for better loan rates and terms.",
+      "fullContent": "<p>Understanding credit scores is essential for achieving financial stability. A credit score is a three-digit number that represents your creditworthiness and is used by lenders to determine the likelihood of repayment. Having a good credit score can help you qualify for better loan rates and terms. A good credit score is typically considered to be above 700, while a poor credit score is below 600.</p><h4>Understanding Credit Reports</h4><p>A credit report is a document that contains information about your credit history, including your payment history, credit utilization, and credit inquiries. Your credit score is based on the information in your credit report, so it's essential to review your credit report regularly to ensure that it's accurate and up-to-date.</p><div class='highlight'>The average credit score in the US is around 710, according to Experian.</div><h4>Action Step</h4><p>Consider checking your credit report and credit score to understand your current credit situation. You can request a free credit report from each of the three major credit bureaus (Experian, TransUnion, and Equifax) once a year.</p>",
       "mins": "4 min read",
       "featured": false
     }
@@ -95,9 +95,9 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "3h ago",
-      "title": "CPU Demand Rapidly Rising Amid Expanding Agentic AI",
-      "summary": "The demand for central processing units (CPUs) is rapidly rising amid the expansion of agentic AI. This move could impact the tech industry and your future career prospects. As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future.",
-      "fullContent": "<p>The demand for CPUs is rapidly rising amid the expansion of agentic AI. Agentic AI refers to artificial intelligence that can perform tasks autonomously. The expansion of agentic AI has led to an increase in demand for CPUs, which are the primary components of computers that perform calculations and execute instructions.</p><h4>What is Agentic AI?</h4><p>Agentic AI is a type of artificial intelligence that can perform tasks autonomously. It's designed to make decisions and take actions without human intervention. Agentic AI has the potential to revolutionize various industries, including healthcare, finance, and transportation.</p><div class='highlight'>The global AI market is expected to reach $190 billion by 2025.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future. If you're interested in pursuing a career in the tech industry, you can start by learning programming languages and exploring different types of AI. You can also consider investing in a diversified portfolio to minimize risk.</p>",
+      "title": "The Rise of Artificial Intelligence",
+      "summary": "Artificial intelligence (AI) has been rapidly advancing in recent years, with many companies investing heavily in AI research and development. AI has the potential to revolutionize various industries, including healthcare, finance, and transportation.",
+      "fullContent": "<p>Artificial intelligence (AI) has been rapidly advancing in recent years, with many companies investing heavily in AI research and development. AI has the potential to revolutionize various industries, including healthcare, finance, and transportation. For example, AI-powered chatbots are being used in customer service to provide 24/7 support, while AI-powered algorithms are being used in finance to detect and prevent fraud.</p><h4>Understanding Artificial Intelligence</h4><p>AI refers to the development of computer systems that can perform tasks that would typically require human intelligence, such as learning, problem-solving, and decision-making. There are many different types of AI, including machine learning, natural language processing, and computer vision.</p><div class='highlight'>The global AI market is expected to reach around $190 billion by 2025, according to a report by MarketsandMarkets.</div><h4>What This Means For You</h4><p>As a high school student, you may be interested in pursuing a career in AI or a related field. Understanding the latest developments in AI can help you stay informed about the latest trends and advances in the industry. Additionally, if you're considering investing in AI stocks, it's essential to stay up-to-date on the latest news and developments in the industry.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -105,9 +105,9 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "5h ago",
-      "title": "Quantinuum's Stock Set to Pop After IPO as Wall Street Buys into the Quantum Boom",
-      "summary": "Quantinuum's stock is set to rise after its highly anticipated IPO, as Wall Street buys into the quantum boom. This move could impact the tech industry and your future career prospects. As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future.",
-      "fullContent": "<p>Quantinuum is a quantum computing company that's expected to go public soon. The company's stock is set to rise after its IPO, as Wall Street buys into the quantum boom. Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations.</p><h4>What is Quantum Computing?</h4><p>Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations. It has the potential to revolutionize various industries, including healthcare, finance, and transportation.</p><div class='highlight'>The global quantum computing market is expected to reach $1.7 billion by 2025.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to stay informed about the latest developments in the tech industry and how they can affect your future. If you're interested in pursuing a career in the tech industry, you can start by learning programming languages and exploring different types of AI. You can also consider investing in a diversified portfolio to minimize risk.</p>",
+      "title": "The Future of Quantum Computing",
+      "summary": "Quantum computing has the potential to revolutionize various industries, including finance, healthcare, and transportation. Quantum computers use quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations that are beyond the capabilities of classical computers.",
+      "fullContent": "<p>Quantum computing has the potential to revolutionize various industries, including finance, healthcare, and transportation. Quantum computers use quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations that are beyond the capabilities of classical computers. For example, quantum computers can be used to simulate complex systems, such as molecules and chemical reactions, which can lead to breakthroughs in fields like medicine and materials science.</p><h4>Understanding Quantum Computing</h4><p>Quantum computing refers to the use of quantum-mechanical phenomena to perform calculations. Quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously, allowing for faster and more efficient processing of information. However, quantum computing is still in its early stages, and many technical challenges need to be overcome before it can be widely adopted.</p><div class='highlight'>Google has announced a new quantum computer that can perform calculations that are beyond the capabilities of classical computers.</div><h4>What This Means For You</h4><p>As a high school student, you may be interested in pursuing a career in quantum computing or a related field. Understanding the latest developments in quantum computing can help you stay informed about the latest trends and advances in the industry. Additionally, if you're considering investing in quantum computing stocks, it's essential to stay up-to-date on the latest news and developments in the industry.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -115,62 +115,62 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "7h ago",
-      "title": "Elon Musk's SpaceX Paid to Secure its Ticker Symbol Ahead of Blockbuster IPO",
-      "summary": "Elon Musk's SpaceX has paid to secure its ticker symbol ahead of its highly anticipated IPO. This move could impact the space industry and your future career prospects. As a high school student, it's essential to stay informed about the latest developments in the space industry and how they can affect your future.",
-      "fullContent": "<p>SpaceX is a private company founded by Elon Musk, and it's expected to go public soon. The company has paid to secure its ticker symbol, which is the symbol used to identify the company's stock on the stock exchange. An initial public offering (IPO) is a type of transaction in which a private company issues stock to the public for the first time.</p><h4>What is an IPO?</h4><p>An IPO is a type of transaction in which a private company issues stock to the public for the first time. It's often used by companies to raise capital and to become publicly traded.</p><div class='highlight'>SpaceX is expected to raise $10 billion in its IPO.</div><h4>What This Means For You</h4><p>As a high school student, it's essential to stay informed about the latest developments in the space industry and how they can affect your future. If you're interested in pursuing a career in the space industry, you can start by researching different types of jobs and considering ways to gain experience. You can also consider investing in a diversified portfolio to minimize risk.</p>",
+      "title": "The Impact of Social Media on Mental Health",
+      "summary": "Social media has been shown to have a significant impact on mental health, with many studies suggesting that excessive social media use can lead to increased symptoms of depression and anxiety.",
+      "fullContent": "<p>Social media has been shown to have a significant impact on mental health, with many studies suggesting that excessive social media use can lead to increased symptoms of depression and anxiety. For example, a study by the Royal Society for Public Health found that social media use is associated with increased feelings of loneliness, anxiety, and depression.</p><h4>Understanding the Impact of Social Media</h4><p>Social media can have both positive and negative effects on mental health. On the one hand, social media can provide a sense of connection and community, which can be beneficial for mental health. On the other hand, excessive social media use can lead to increased symptoms of depression and anxiety, as well as decreased attention span and increased stress levels.</p><div class='highlight'>The average teenager spends around 4 hours per day on social media, according to a report by the Pew Research Center.</div><h4>What This Means For You</h4><p>As a high school student, you may be aware of the potential risks of social media use, but you may not know how to mitigate them. Understanding the impact of social media on mental health can help you make informed decisions about your social media use and take steps to protect your mental health. For example, you can set limits on your social media use, take breaks from social media, and engage in offline activities that promote mental well-being.</p>",
       "mins": "2 min read",
       "featured": false
     }
   ],
   "word_of_day": {
-    "word": "Fiduciary",
+    "word": "Yield",
     "type": "noun / finance",
-    "definition": "A fiduciary is a person or organization that has a legal obligation to act in the best interests of another party, often in a financial or advisory capacity. This means that they must put the needs and interests of their clients or beneficiaries ahead of their own, and make decisions that are in the client's best interest.",
-    "example": "The financial advisor had a fiduciary duty to disclose all potential conflicts of interest to her clients before making any investment recommendations.",
+    "definition": "The yield of a security or investment is the return it generates, typically expressed as a percentage of the investment's value. For example, if you invest $1,000 in a bond with a 5% yield, you can expect to earn $50 in interest per year.",
+    "example": "The yield on the 10-year Treasury bond has been increasing in recent months, making it a more attractive investment option for those seeking a relatively safe and stable return.",
     "tags": [
       "finance",
       "investing",
-      "advisory"
+      "returns"
     ]
   },
   "quiz": {
-    "question": "What is the primary reason for the recent surge in demand for central processing units (CPUs)?",
+    "question": "What is the main reason for the recent decline in the software industry's share of the leveraged loan market?",
     "options": [
       {
-        "text": "A. The rise of quantum computing",
+        "text": "A. Decrease in software company profits",
         "correct": false
       },
       {
-        "text": "B. The expansion of agentic AI",
+        "text": "B. Increase in competition from other industries",
         "correct": true
       },
       {
-        "text": "C. The growth of the gaming industry",
+        "text": "C. Regulatory changes affecting the software industry",
         "correct": false
       },
       {
-        "text": "D. The increase in demand for cloud computing",
+        "text": "D. Economic downturn affecting the software industry",
         "correct": false
       }
     ],
-    "explanation": "The expansion of agentic AI has led to an increase in demand for CPUs, which are the primary components of computers that perform calculations and execute instructions. This is because agentic AI requires powerful computing capabilities to perform tasks autonomously, and CPUs are a key component of these systems. As a result, the demand for CPUs has increased, driving up prices and leading to a surge in demand."
+    "explanation": "The recent decline in the software industry's share of the leveraged loan market is primarily due to an increase in competition from other industries, such as healthcare and finance. This shift in the market is likely due to changes in the economy and the growth of other industries, rather than a decline in the software industry itself."
   },
   "explainer_strip": [
     {
-      "term": "Agentic AI",
-      "def": "A type of artificial intelligence that can perform tasks autonomously, making decisions and taking actions without human intervention"
+      "term": "Leveraged Loan",
+      "def": "A type of loan that is extended to companies with lower credit ratings, often used to finance large projects or acquisitions. For example, a company like Tesla may use a leveraged loan to finance the development of a new electric vehicle model."
     },
     {
-      "term": "CPU Demand",
-      "def": "The increasing demand for central processing units (CPUs) due to the expansion of agentic AI, with companies such as AMD seeing a rise in stock price"
+      "term": "Bond Fund",
+      "def": "A type of investment that pools money from many investors to invest in a variety of bonds, providing a relatively stable source of income. For example, a bond fund like LQD invests in a portfolio of corporate bonds, providing investors with a regular income stream."
     },
     {
-      "term": "Quantum Computing",
-      "def": "A type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations, with the potential to revolutionize various industries"
+      "term": "Yield Curve",
+      "def": "A graph that shows the relationship between the yield of a bond and its maturity date. For example, a yield curve may show that bonds with shorter maturities have lower yields, while bonds with longer maturities have higher yields."
     },
     {
-      "term": "Emergency Fund",
-      "def": "A savings account that holds 3-6 months' worth of living expenses, used to cover unexpected expenses and avoid going into debt"
+      "term": "Credit Score",
+      "def": "A three-digit number that represents an individual's creditworthiness, used by lenders to determine the likelihood of repayment. For example, a credit score of 700 or higher is generally considered good, while a credit score below 600 is considered poor."
     }
   ]
 }
