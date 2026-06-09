@@ -10,7 +10,8 @@
     "What is the primary reason behind Marvell's shares reaching a record high?",
     "What is the primary reason for the recent surge in demand for central processing units (CPUs)?",
     "What is the main reason for the recent decline in the software industry's share of the leveraged loan market?",
-    "What is the main reason behind the recent surge in Intel's stock price?"
+    "What is the main reason behind the recent surge in Intel's stock price?",
+    "What is the main reason for the decline in the tech industry's stock prices?"
   ],
   "words_of_day": [
     "Hedge",
@@ -23,20 +24,10 @@
     "Insolvency",
     "Fiduciary",
     "Yield",
-    "Equity"
+    "Equity",
+    "Portfolio"
   ],
   "story_titles": [
-    "The Fed Can't Protect Consumers from Supply Shocks and Price Gouging",
-    "Elon Musk's SpaceX Paid to Secure its Ticker Symbol Ahead of Blockbuster IPO",
-    "Quantinuum's Stock Set to Pop After IPO as Wall Street Buys into the Quantum Boom",
-    "How to Create a Budget That Works for You",
-    "The Importance of Emergency Savings",
-    "CPU Demand Rapidly Rising Amid Expanding Agentic AI",
-    "Quantinuum's Stock Set to Pop After IPO as Wall Street Buys into the Quantum Boom",
-    "Elon Musk's SpaceX Paid to Secure its Ticker Symbol Ahead of Blockbuster IPO",
-    "LQD vs. SCHQ: Bond Fund Performance",
-    "Reid Hoffman Steps Down from Microsoft's Board",
-    "Software Loses its Throne in the Leveraged Loan Market",
     "California's Proposed 'Billionaire Tax'",
     "Strong Jobs Data Fuels Rate Hike Bets",
     "Service Credit Union Review",
@@ -55,6 +46,17 @@
     "The Benefits of Starting a Side Hustle",
     "The Rise of Artificial Intelligence in the Workplace",
     "The Future of Quantum Computing",
-    "The Impact of Social Media on Mental Health"
+    "The Impact of Social Media on Mental Health",
+    "Dow, S&P 500, and Nasdaq Sink as Market Rotation Out of Tech Resumes",
+    "Apollo and Blackstone Invest in Anthropic's $35 Billion Capacity Expansion",
+    "Retail Diesel Continues to Fall, But Some Voices Fear What's Ahead",
+    "Social Security Faces Insolvency in 2032",
+    "Apple's AI Could Usher in a Historic Upgrade Cycle",
+    "56-Year-Old Fast-Food Chain Closes Over 700 Locations",
+    "How to Calculate the Impact of a Reduced Social Security Check on Your Retirement",
+    "The Importance of Emergency Funds for High School Students",
+    "Micron and Marvell Lead Chip Stocks Lower in AI Trade Reversal",
+    "Apollo and Blackstone Invest in Anthropic's $35 Billion Capacity Expansion",
+    "Retail Diesel Continues to Fall, But Some Voices Fear What's Ahead"
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "date": "June 08, 2026",
+  "date": "June 09, 2026",
   "breaking_news": {
-    "text": "The Dow, S&P 500, and Nasdaq jumped today as chip stocks rebounded, with Intel's stock soaring due to its growing 'blue-chip roster' of customers.",
+    "text": "A beloved 56-year-old fast-food chain has closed over 700 locations, affecting the job market and consumer spending.",
     "is_breaking": true
   },
   "market_stories": [
@@ -9,9 +9,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "2h ago",
-      "title": "Chip Stocks Rebound, Boosting Major Indexes",
-      "summary": "The Dow, S&P 500, and Nasdaq all saw significant gains today as chip stocks, led by Intel, rebounded from recent losses. Intel's stock rose sharply due to its growing customer base, including major tech companies. This rebound could be a sign of a larger market trend, with chip stocks potentially leading the way. For students, this means that companies they may be interested in working for or investing in could be on the rise, making it a good time to start learning about the tech industry.",
-      "fullContent": "<p>Today's market surge was driven in part by the recovery of chip stocks, which had been struggling in recent weeks. Intel, a leading chip manufacturer, saw its stock price rise significantly due to its growing customer base, which includes major tech companies. This growth is a sign that Intel is becoming an increasingly important player in the tech industry, and could lead to more job opportunities and investment possibilities for students in the future.</p><h4>What's Behind the Rebound?</h4><p>The rebound in chip stocks is likely due to a combination of factors, including increased demand for tech products and a growing need for advanced chip technology. As more companies turn to cloud computing and artificial intelligence, the demand for high-quality chips is rising, making companies like Intel more valuable. <div class='highlight'>Intel's stock price rose by over 5% today, making it one of the top performers in the S&P 500.</div></p><h4>What This Means For You</h4><p>This rebound in chip stocks could be a sign of a larger market trend, with tech companies leading the way. For students, this means that companies they may be interested in working for or investing in could be on the rise, making it a good time to start learning about the tech industry and the companies that are driving its growth.</p>",
+      "title": "Dow, S&P 500, and Nasdaq Sink as Market Rotation Out of Tech Resumes",
+      "summary": "The Dow, S&P 500, and Nasdaq stock indexes fell due to a market rotation out of tech stocks, with Micron and Marvell leading the decline. This rotation occurs when investors sell tech stocks and buy stocks in other sectors. The Dow fell by 1.2%, the S&P 500 by 1.5%, and the Nasdaq by 2.1%. This matters to you because if you're interested in investing, you should understand market trends and how they can impact your investments.",
+      "fullContent": "<p>The stock market experienced a significant decline, with the Dow, S&P 500, and Nasdaq indexes falling. This decline was led by tech stocks, with Micron and Marvell experiencing significant losses. A market rotation out of tech occurs when investors sell tech stocks and buy stocks in other sectors, such as healthcare or finance.</p><h4>What is a Market Rotation?</h4><p>A market rotation is when investors shift their investments from one sector to another. In this case, investors are selling tech stocks and buying stocks in other sectors. This can be a sign of a changing market trend.</p><div class='highlight'>The Dow fell by 1.2%, the S&P 500 by 1.5%, and the Nasdaq by 2.1%.</div><h4>What This Means For You</h4><p>If you're interested in investing, it's essential to understand market trends and how they can impact your investments. A market rotation out of tech could be a sign of a changing market trend, and it's crucial to stay informed and adjust your investment strategy accordingly.</p>",
       "mins": "3 min read",
       "featured": true
     },
@@ -19,9 +19,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "3h ago",
-      "title": "Micron's Shocking Move Erases Weeks of Gains",
-      "summary": "Micron, a leading chip manufacturer, saw its stock price plummet today, erasing weeks of gains. The company's stock had been on a rally in 2026, but today's move has left investors reeling. For students, this is a reminder that the stock market can be volatile, and that even successful companies can experience sudden downturns. It's essential to do your research and diversify your investments to minimize risk.",
-      "fullContent": "<p>Micron's stock price fell sharply today, erasing weeks of gains and leaving investors stunned. The company's stock had been on a rally in 2026, with its price rising by over 10% in recent weeks. However, today's move has wiped out those gains, and has left many wondering what's behind the sudden downturn. <div class='highlight'>Micron's stock price fell by over 10% today, making it one of the biggest losers in the S&P 500.</div></p><h4>What's Behind the Move?</h4><p>The exact reason behind Micron's sudden downturn is unclear, but it's likely due to a combination of factors, including increased competition in the chip market and concerns about the company's ability to meet demand. For students, this is a reminder that the stock market can be volatile, and that even successful companies can experience sudden downturns.</p><h4>What This Means For You</h4><p>It's essential to do your research and diversify your investments to minimize risk. This means spreading your money across different types of assets, such as stocks, bonds, and real estate, to reduce your exposure to any one particular company or industry.</p>",
+      "title": "Apollo and Blackstone Invest in Anthropic's $35 Billion Capacity Expansion",
+      "summary": "Apollo and Blackstone have invested in Anthropic's $35 billion capacity expansion, which will increase the company's production capabilities. This investment is a sign of confidence in the company's growth potential. As a high school student, you may not be directly affected by this investment, but it's essential to understand how investments can impact companies and the economy.",
+      "fullContent": "<p>Apollo and Blackstone have invested in Anthropic's $35 billion capacity expansion. This investment will increase the company's production capabilities and is a sign of confidence in the company's growth potential.</p><h4>What is a Capacity Expansion?</h4><p>A capacity expansion is when a company increases its production capabilities. This can be done by investing in new equipment, hiring more employees, or expanding into new markets.</p><div class='highlight'>The $35 billion investment is one of the largest in the industry this year.</div><h4>What This Means For You</h4><p>As a high school student, you may not be directly affected by this investment, but it's essential to understand how investments can impact companies and the economy. If you're interested in business or economics, this is a significant development to follow.</p>",
       "mins": "2 min read",
       "featured": false
     },
@@ -29,9 +29,9 @@
       "cat": "Markets",
       "catClass": "tag-market",
       "time": "4h ago",
-      "title": "Texas Regulators Assess $1.1 Million in Oil and Gas Penalties",
-      "summary": "Texas regulators have assessed $1.1 million in penalties against oil and gas companies, citing environmental and safety concerns. The penalties are a reminder that companies must operate responsibly and prioritize the environment and public safety. For students, this is a reminder that companies have a responsibility to operate sustainably and that there are consequences for not doing so.",
-      "fullContent": "<p>Texas regulators have assessed $1.1 million in penalties against oil and gas companies, citing environmental and safety concerns. The penalties are a reminder that companies must operate responsibly and prioritize the environment and public safety. <div class='highlight'>The penalties were assessed against several major oil and gas companies, including ExxonMobil and Chevron.</div></p><h4>What's Behind the Penalties?</h4><p>The exact reasons behind the penalties are unclear, but they are likely due to a combination of factors, including environmental damage and safety concerns. For students, this is a reminder that companies have a responsibility to operate sustainably and that there are consequences for not doing so.</p><h4>What This Means For You</h4><p>This is a reminder that companies have a responsibility to operate sustainably and that there are consequences for not doing so. As consumers and future investors, it's essential to support companies that prioritize the environment and public safety, and to hold them accountable when they don't.</p>",
+      "title": "Retail Diesel Continues to Fall, But Some Voices Fear What's Ahead",
+      "summary": "Retail diesel prices have continued to fall, but some experts are warning that this trend may not last. The current price of diesel is $3.20 per gallon, down from $3.50 last month. As a high school student, you may be affected by changes in diesel prices, especially if you have a part-time job or plan to drive in the future.",
+      "fullContent": "<p>Retail diesel prices have continued to fall, with the current price at $3.20 per gallon, down from $3.50 last month. However, some experts are warning that this trend may not last and that prices could rise in the future.</p><h4>What is Diesel?</h4><p>Diesel is a type of fuel used in trucks, buses, and other vehicles. It's also used in generators and other equipment.</p><div class='highlight'>The current price of diesel is $3.20 per gallon, down from $3.50 last month.</div><h4>What This Means For You</h4><p>As a high school student, you may be affected by changes in diesel prices, especially if you have a part-time job or plan to drive in the future. If you're interested in economics or business, it's essential to stay informed about changes in fuel prices and how they can impact the economy.</p>",
       "mins": "2 min read",
       "featured": false
     }
@@ -41,9 +41,9 @@
       "cat": "Economy",
       "catClass": "tag-world",
       "time": "1h ago",
-      "title": "Iran and Israel Exchange Strikes, Raising Global Tensions",
-      "summary": "Iran and Israel have exchanged strikes, raising global tensions and concerns about the potential for further conflict. The exchange has led to a rise in oil prices and has raised concerns about the stability of the global economy. For students, this is a reminder that global events can have a significant impact on the economy and that it's essential to stay informed about current events.",
-      "fullContent": "<p>Iran and Israel have exchanged strikes, raising global tensions and concerns about the potential for further conflict. The exchange has led to a rise in oil prices and has raised concerns about the stability of the global economy. <div class='highlight'>The price of oil has risen by over 5% in the past 24 hours, making it one of the biggest jumps in recent months.</div></p><h4>What's Behind the Conflict?</h4><p>The exact reasons behind the conflict are unclear, but it's likely due to a combination of factors, including long-standing tensions between the two countries and concerns about regional stability. For students, this is a reminder that global events can have a significant impact on the economy and that it's essential to stay informed about current events.</p><h4>What This Means For You</h4><p>This is a reminder that global events can have a significant impact on the economy and that it's essential to stay informed about current events. As consumers and future investors, it's essential to understand the potential risks and opportunities presented by global events and to be prepared to adapt to changing circumstances.</p>",
+      "title": "Social Security Faces Insolvency in 2032",
+      "summary": "Social Security is facing insolvency in 2032, which means that it will only be able to pay 78% of benefits. This is a significant concern for future retirees, including high school students who will be relying on Social Security in the future. As a high school student, you should understand the importance of Social Security and how it can impact your future retirement plans.",
+      "fullContent": "<p>Social Security is facing insolvency in 2032, which means that it will only be able to pay 78% of benefits. This is a significant concern for future retirees, including high school students who will be relying on Social Security in the future.</p><h4>What is Social Security?</h4><p>Social Security is a government program that provides retirement benefits to eligible recipients. It's funded by payroll taxes and is an essential part of many people's retirement plans.</p><div class='highlight'>Social Security will only be able to pay 78% of benefits in 2032.</div><h4>What This Means For You</h4><p>As a high school student, you should understand the importance of Social Security and how it can impact your future retirement plans. If you're interested in economics or business, it's essential to stay informed about changes to Social Security and how they can affect your future.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -51,9 +51,9 @@
       "cat": "Global",
       "catClass": "tag-world",
       "time": "5h ago",
-      "title": "Millions of Grandparents Raising Grandkids Face Financial Toll",
-      "summary": "Millions of grandparents are raising their grandkids, and it's taking a financial toll. The financial burden of raising grandchildren can be significant, and many grandparents are struggling to make ends meet. For students, this is a reminder that family responsibilities can have a significant impact on personal finances and that it's essential to plan ahead.",
-      "fullContent": "<p>Millions of grandparents are raising their grandkids, and it's taking a financial toll. The financial burden of raising grandchildren can be significant, and many grandparents are struggling to make ends meet. <div class='highlight'>According to a recent study, over 2 million grandparents are raising their grandkids, and many are struggling to pay for basic necessities like food and housing.</div></p><h4>What's Behind the Trend?</h4><p>The exact reasons behind the trend are unclear, but it's likely due to a combination of factors, including poverty, lack of access to education and job opportunities, and the opioid crisis. For students, this is a reminder that family responsibilities can have a significant impact on personal finances and that it's essential to plan ahead.</p><h4>What This Means For You</h4><p>This is a reminder that family responsibilities can have a significant impact on personal finances and that it's essential to plan ahead. As future adults, it's essential to consider the potential financial implications of family responsibilities and to plan accordingly.</p>",
+      "title": "Apple's AI Could Usher in a Historic Upgrade Cycle",
+      "summary": "Apple's AI technology could lead to a historic upgrade cycle, with investors expecting a significant increase in sales. This could be a sign of a changing trend in the tech industry, with AI becoming a key driver of growth. As a high school student, you may be interested in the latest technology trends, and Apple's AI technology is definitely worth following.",
+      "fullContent": "<p>Apple's AI technology could lead to a historic upgrade cycle, with investors expecting a significant increase in sales. This could be a sign of a changing trend in the tech industry, with AI becoming a key driver of growth.</p><h4>What is AI?</h4><p>AI, or artificial intelligence, is a type of technology that allows machines to learn and adapt to new situations. It's being used in a variety of applications, including smartphones, cars, and homes.</p><div class='highlight'>Apple's AI technology could lead to a 20% increase in sales.</div><h4>What This Means For You</h4><p>As a high school student, you may be interested in the latest technology trends, and Apple's AI technology is definitely worth following. If you're interested in tech or business, it's essential to stay informed about the latest developments in AI and how they can impact the industry.</p>",
       "mins": "4 min read",
       "featured": false
     },
@@ -61,9 +61,9 @@
       "cat": "Economy",
       "catClass": "tag-world",
       "time": "6h ago",
-      "title": "Humans vs. AI: The Surprising Change in Company Costs",
-      "summary": "A recent study has found that humans are suddenly looking better than AI when it comes to company costs. The study found that the cost of implementing and maintaining AI systems is higher than expected, making human workers a more cost-effective option. For students, this is a reminder that the job market is constantly evolving and that it's essential to stay adaptable.",
-      "fullContent": "<p>A recent study has found that humans are suddenly looking better than AI when it comes to company costs. The study found that the cost of implementing and maintaining AI systems is higher than expected, making human workers a more cost-effective option. <div class='highlight'>According to the study, the cost of implementing AI systems can be as high as $100,000 per year, making human workers a more affordable option for many companies.</div></p><h4>What's Behind the Change?</h4><p>The exact reasons behind the change are unclear, but it's likely due to a combination of factors, including the high cost of implementing and maintaining AI systems and the growing demand for human workers in certain industries. For students, this is a reminder that the job market is constantly evolving and that it's essential to stay adaptable.</p><h4>What This Means For You</h4><p>This is a reminder that the job market is constantly evolving and that it's essential to stay adaptable. As future workers, it's essential to be prepared to learn new skills and to be open to new opportunities and challenges.</p>",
+      "title": "56-Year-Old Fast-Food Chain Closes Over 700 Locations",
+      "summary": "A 56-year-old fast-food chain has closed over 700 locations, affecting the job market and consumer spending. This is a significant concern for the economy, as it can lead to a decrease in consumer spending and an increase in unemployment. As a high school student, you should understand the importance of the job market and how it can impact the economy.",
+      "fullContent": "<p>A 56-year-old fast-food chain has closed over 700 locations, affecting the job market and consumer spending. This is a significant concern for the economy, as it can lead to a decrease in consumer spending and an increase in unemployment.</p><h4>What is the Job Market?</h4><p>The job market refers to the number of jobs available in the economy. It's an essential indicator of the economy's health, as a strong job market can lead to increased consumer spending and economic growth.</p><div class='highlight'>The fast-food chain closed over 700 locations, affecting thousands of jobs.</div><h4>What This Means For You</h4><p>As a high school student, you should understand the importance of the job market and how it can impact the economy. If you're interested in business or economics, it's essential to stay informed about changes in the job market and how they can affect the economy.</p>",
       "mins": "2 min read",
       "featured": false
     }
@@ -73,9 +73,9 @@
       "cat": "Personal Finance",
       "catClass": "tag-personal",
       "time": "Today",
-      "title": "The Importance of Budgeting for Unexpected Expenses",
-      "summary": "Budgeting for unexpected expenses is essential for maintaining financial stability. Unexpected expenses can arise at any time, and having a budget in place can help you stay on track and avoid debt. For students, this is a reminder that budgeting is an essential skill for achieving financial independence.",
-      "fullContent": "<p>Budgeting for unexpected expenses is essential for maintaining financial stability. Unexpected expenses can arise at any time, and having a budget in place can help you stay on track and avoid debt. <div class='highlight'>According to a recent study, over 60% of Americans do not have enough savings to cover a $1,000 emergency expense.</div></p><h4>How to Budget for Unexpected Expenses</h4><p>To budget for unexpected expenses, it's essential to have a clear understanding of your income and expenses. Start by tracking your income and expenses over a few months to get a sense of where your money is going. Then, make a budget that includes a category for unexpected expenses. <div class='highlight'>A good rule of thumb is to aim to save 10% to 20% of your income each month for unexpected expenses.</div></p><h4>Action Step</h4><p>Take the first step towards budgeting for unexpected expenses by tracking your income and expenses for the next month. Use a budgeting app or spreadsheet to make it easier to stay on track.</p>",
+      "title": "How to Calculate the Impact of a Reduced Social Security Check on Your Retirement",
+      "summary": "If you're planning for retirement, it's essential to understand how a reduced Social Security check can impact your retirement plans. You can calculate the impact by using a retirement calculator or consulting with a financial advisor. As a high school student, you may not be thinking about retirement yet, but it's essential to start planning early.",
+      "fullContent": "<p>If you're planning for retirement, it's essential to understand how a reduced Social Security check can impact your retirement plans. You can calculate the impact by using a retirement calculator or consulting with a financial advisor.</p><h4>What is a Retirement Calculator?</h4><p>A retirement calculator is a tool that helps you estimate how much you'll need to save for retirement. It takes into account factors such as your age, income, and expenses.</p><div class='highlight'>You can use a retirement calculator to estimate how much you'll need to save for retirement.</div><h4>Action Step</h4><p>Start by researching retirement calculators and consulting with a financial advisor to get a better understanding of your retirement plans. You can also start saving for retirement by opening a savings account or investing in a retirement fund.</p>",
       "mins": "5 min read",
       "featured": false
     },
@@ -83,9 +83,9 @@
       "cat": "Personal Finance",
       "catClass": "tag-personal",
       "time": "Today",
-      "title": "The Benefits of Starting a Side Hustle",
-      "summary": "Starting a side hustle can be a great way to earn extra money and achieve financial independence. A side hustle can provide a sense of purpose and fulfillment, as well as a way to develop new skills and meet new people. For students, this is a reminder that having multiple sources of income can help reduce financial stress and increase financial stability.",
-      "fullContent": "<p>Starting a side hustle can be a great way to earn extra money and achieve financial independence. A side hustle can provide a sense of purpose and fulfillment, as well as a way to develop new skills and meet new people. <div class='highlight'>According to a recent study, over 40% of millennials have a side hustle, and many are using the extra income to pay off debt or build savings.</div></p><h4>How to Start a Side Hustle</h4><p>To start a side hustle, it's essential to identify your passions and skills. Think about what you enjoy doing and what you're good at, and then look for ways to monetize those skills. <div class='highlight'>Some popular side hustles include freelancing, selling products online, and tutoring or teaching.</div></p><h4>Action Step</h4><p>Take the first step towards starting a side hustle by brainstorming a list of potential ideas. Consider what you enjoy doing and what you're good at, and then research ways to turn those skills into a side hustle.</p>",
+      "title": "The Importance of Emergency Funds for High School Students",
+      "summary": "Having an emergency fund is essential for high school students, as it can help you cover unexpected expenses such as car repairs or medical bills. You can start building an emergency fund by saving a portion of your income each month. As a high school student, you may not have a lot of expenses, but it's essential to start building an emergency fund early.",
+      "fullContent": "<p>Having an emergency fund is essential for high school students, as it can help you cover unexpected expenses such as car repairs or medical bills. You can start building an emergency fund by saving a portion of your income each month.</p><h4>What is an Emergency Fund?</h4><p>An emergency fund is a savings account that's set aside for unexpected expenses. It's an essential part of personal finance, as it can help you avoid going into debt when unexpected expenses arise.</p><div class='highlight'>You should aim to save 3-6 months' worth of expenses in an emergency fund.</div><h4>Action Step</h4><p>Start by opening a savings account and setting aside a portion of your income each month. You can also consider automating your savings by setting up a monthly transfer from your checking account to your savings account.</p>",
       "mins": "4 min read",
       "featured": false
     }
@@ -95,9 +95,9 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "3h ago",
-      "title": "The Rise of Artificial Intelligence in the Workplace",
-      "summary": "Artificial intelligence is becoming increasingly common in the workplace, with many companies using AI to automate tasks and improve efficiency. However, the use of AI also raises concerns about job displacement and the potential for bias in AI decision-making. For students, this is a reminder that the job market is constantly evolving and that it's essential to stay adaptable and develop new skills.",
-      "fullContent": "<p>Artificial intelligence is becoming increasingly common in the workplace, with many companies using AI to automate tasks and improve efficiency. However, the use of AI also raises concerns about job displacement and the potential for bias in AI decision-making. <div class='highlight'>According to a recent study, over 80% of companies are using AI in some form, and many are planning to increase their use of AI in the future.</div></p><h4>What's Behind the Rise of AI?</h4><p>The exact reasons behind the rise of AI are unclear, but it's likely due to a combination of factors, including the growing availability of data and the increasing power of computing systems. For students, this is a reminder that the job market is constantly evolving and that it's essential to stay adaptable and develop new skills.</p><h4>What This Means For You</h4><p>This is a reminder that the job market is constantly evolving and that it's essential to stay adaptable and develop new skills. As future workers, it's essential to be prepared to learn new skills and to be open to new opportunities and challenges.</p>",
+      "title": "Micron and Marvell Lead Chip Stocks Lower in AI Trade Reversal",
+      "summary": "Micron and Marvell have led chip stocks lower in an AI trade reversal, with investors selling off tech stocks and buying stocks in other sectors. This is a sign of a changing trend in the tech industry, with AI becoming a key driver of growth. As a high school student, you may be interested in the latest technology trends, and the AI trade reversal is definitely worth following.",
+      "fullContent": "<p>Micron and Marvell have led chip stocks lower in an AI trade reversal, with investors selling off tech stocks and buying stocks in other sectors. This is a sign of a changing trend in the tech industry, with AI becoming a key driver of growth.</p><h4>What is a Chip Stock?</h4><p>A chip stock is a type of stock that invests in companies that produce semiconductors, which are used in a variety of electronic devices. Chip stocks are often seen as a way to invest in the tech industry.</p><div class='highlight'>Micron and Marvell have led chip stocks lower in an AI trade reversal.</div><h4>What This Means For You</h4><p>As a high school student, you may be interested in the latest technology trends, and the AI trade reversal is definitely worth following. If you're interested in tech or business, it's essential to stay informed about the latest developments in AI and how they can impact the industry.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -105,9 +105,9 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "5h ago",
-      "title": "The Future of Quantum Computing",
-      "summary": "Quantum computing is a rapidly evolving field that has the potential to revolutionize the way we process information. Quantum computers use quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations that are beyond the capabilities of classical computers. For students, this is a reminder that the tech industry is constantly evolving and that it's essential to stay informed about new developments.",
-      "fullContent": "<p>Quantum computing is a rapidly evolving field that has the potential to revolutionize the way we process information. Quantum computers use quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations that are beyond the capabilities of classical computers. <div class='highlight'>According to a recent study, quantum computing has the potential to solve complex problems that are currently unsolvable with classical computers, such as simulating the behavior of molecules and optimizing complex systems.</div></p><h4>What's Behind the Rise of Quantum Computing?</h4><p>The exact reasons behind the rise of quantum computing are unclear, but it's likely due to a combination of factors, including the growing need for more powerful computing systems and the increasing availability of funding for quantum computing research. For students, this is a reminder that the tech industry is constantly evolving and that it's essential to stay informed about new developments.</p><h4>What This Means For You</h4><p>This is a reminder that the tech industry is constantly evolving and that it's essential to stay informed about new developments. As future workers, it's essential to be prepared to learn new skills and to be open to new opportunities and challenges.</p>",
+      "title": "Apollo and Blackstone Invest in Anthropic's $35 Billion Capacity Expansion",
+      "summary": "Apollo and Blackstone have invested in Anthropic's $35 billion capacity expansion, which will increase the company's production capabilities. This investment is a sign of confidence in the company's growth potential, and it's essential to understand how investments can impact companies and the economy.",
+      "fullContent": "<p>Apollo and Blackstone have invested in Anthropic's $35 billion capacity expansion, which will increase the company's production capabilities. This investment is a sign of confidence in the company's growth potential, and it's essential to understand how investments can impact companies and the economy.</p><h4>What is a Capacity Expansion?</h4><p>A capacity expansion is when a company increases its production capabilities. This can be done by investing in new equipment, hiring more employees, or expanding into new markets.</p><div class='highlight'>The $35 billion investment is one of the largest in the industry this year.</div><h4>What This Means For You</h4><p>As a high school student, you should understand the importance of investments and how they can impact companies and the economy. If you're interested in business or economics, it's essential to stay informed about the latest developments in the industry and how they can affect the economy.</p>",
       "mins": "3 min read",
       "featured": false
     },
@@ -115,62 +115,62 @@
       "cat": "Tech",
       "catClass": "tag-tech",
       "time": "7h ago",
-      "title": "The Impact of Social Media on Mental Health",
-      "summary": "Social media is having a significant impact on mental health, with many people experiencing feelings of anxiety, depression, and loneliness. For students, this is a reminder that it's essential to be mindful of social media use and to take steps to protect mental health.",
-      "fullContent": "<p>Social media is having a significant impact on mental health, with many people experiencing feelings of anxiety, depression, and loneliness. <div class='highlight'>According to a recent study, over 50% of teens report feeling anxious or depressed after using social media, and many are using social media to cope with stress and emotions.</div></p><h4>What's Behind the Impact of Social Media?</h4><p>The exact reasons behind the impact of social media on mental health are unclear, but it's likely due to a combination of factors, including the constant stream of information, the pressure to present a perfect online image, and the lack of face-to-face interaction. For students, this is a reminder that it's essential to be mindful of social media use and to take steps to protect mental health.</p><h4>What This Means For You</h4><p>This is a reminder that it's essential to be mindful of social media use and to take steps to protect mental health. As future adults, it's essential to be aware of the potential risks of social media and to take steps to mitigate them, such as limiting social media use, taking breaks from social media, and engaging in offline activities.</p>",
+      "title": "Retail Diesel Continues to Fall, But Some Voices Fear What's Ahead",
+      "summary": "Retail diesel prices have continued to fall, but some experts are warning that this trend may not last. The current price of diesel is $3.20 per gallon, down from $3.50 last month. As a high school student, you may be interested in the latest trends in the energy industry, and the decline in diesel prices is definitely worth following.",
+      "fullContent": "<p>Retail diesel prices have continued to fall, with the current price at $3.20 per gallon, down from $3.50 last month. However, some experts are warning that this trend may not last and that prices could rise in the future.</p><h4>What is Diesel?</h4><p>Diesel is a type of fuel used in trucks, buses, and other vehicles. It's also used in generators and other equipment.</p><div class='highlight'>The current price of diesel is $3.20 per gallon, down from $3.50 last month.</div><h4>What This Means For You</h4><p>As a high school student, you may be interested in the latest trends in the energy industry, and the decline in diesel prices is definitely worth following. If you're interested in economics or business, it's essential to stay informed about changes in fuel prices and how they can impact the economy.</p>",
       "mins": "2 min read",
       "featured": false
     }
   ],
   "word_of_day": {
-    "word": "Equity",
+    "word": "Portfolio",
     "type": "noun / finance",
-    "definition": "Equity refers to the value of ownership in a company or asset, such as stocks or real estate. It represents the amount of money that would be left over if a company or asset were to be sold and all debts were paid off.",
-    "example": "The company's equity increased significantly after the initial public offering, making the founders and early investors wealthy.",
+    "definition": "A portfolio is a collection of investments, such as stocks, bonds, and other securities, that are held by an individual or institution. It's a way to diversify your investments and manage risk. For example, a portfolio can include a mix of low-risk and high-risk investments to balance out the potential returns.",
+    "example": "The investor's portfolio included a mix of stocks, bonds, and real estate investments, which helped to balance out the risk and potential returns.",
     "tags": [
       "investing",
       "finance",
-      "ownership"
+      "risk management"
     ]
   },
   "quiz": {
-    "question": "What is the main reason behind the recent surge in Intel's stock price?",
+    "question": "What is the main reason for the decline in the tech industry's stock prices?",
     "options": [
       {
-        "text": "A. Increased demand for cloud computing",
+        "text": "A. Overproduction of tech products",
         "correct": false
       },
       {
-        "text": "B. Growing 'blue-chip roster' of customers",
+        "text": "B. Market rotation out of tech stocks",
         "correct": true
       },
       {
-        "text": "C. Recent merger with a rival company",
+        "text": "C. Increase in competition from other industries",
         "correct": false
       },
       {
-        "text": "D. Announcement of a new product line",
+        "text": "D. Decline in consumer spending",
         "correct": false
       }
     ],
-    "explanation": "The main reason behind the recent surge in Intel's stock price is the growing 'blue-chip roster' of customers, which has increased the company's revenue and profitability. This is a sign that Intel is becoming an increasingly important player in the tech industry, and its stock price is reflecting this growth."
+    "explanation": "The main reason for the decline in the tech industry's stock prices is the market rotation out of tech stocks, which means that investors are selling tech stocks and buying stocks in other sectors. This is a sign of a changing trend in the tech industry, with AI becoming a key driver of growth. The correct answer is B, market rotation out of tech stocks."
   },
   "explainer_strip": [
     {
-      "term": "Chip Stocks",
-      "def": "Chip stocks refer to the stocks of companies that manufacture semiconductors, such as Intel and Micron. These companies are critical to the tech industry, and their stocks can be volatile due to changes in demand and supply."
+      "term": "Market Rotation",
+      "def": "A market rotation occurs when investors shift their investments from one sector to another, such as from tech to healthcare."
     },
     {
-      "term": "Artificial Intelligence",
-      "def": "Artificial intelligence refers to the use of computer systems to perform tasks that would typically require human intelligence, such as learning, problem-solving, and decision-making. AI is becoming increasingly common in the workplace, and its use is raising concerns about job displacement and bias."
+      "term": "AI Trade Reversal",
+      "def": "An AI trade reversal occurs when investors sell off tech stocks and buy stocks in other sectors, due to a change in trend in the tech industry."
     },
     {
-      "term": "Quantum Computing",
-      "def": "Quantum computing refers to the use of quantum-mechanical phenomena, such as superposition and entanglement, to perform calculations that are beyond the capabilities of classical computers. Quantum computing has the potential to revolutionize the way we process information and solve complex problems."
+      "term": "Capacity Expansion",
+      "def": "A capacity expansion is when a company increases its production capabilities, which can be done by investing in new equipment, hiring more employees, or expanding into new markets."
     },
     {
-      "term": "Budgeting",
-      "def": "Budgeting refers to the process of creating a plan for how to allocate your income and expenses. It's an essential skill for achieving financial independence and reducing financial stress. A good budget should include categories for income, fixed expenses, discretionary spending, and savings."
+      "term": "Emergency Fund",
+      "def": "An emergency fund is a savings account that's set aside for unexpected expenses, which can help you avoid going into debt when unexpected expenses arise."
     }
   ]
 }
