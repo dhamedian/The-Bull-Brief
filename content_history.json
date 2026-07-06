@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the primary reason behind the surge in EOG Resources' performance in Q1?",
     "What is the primary factor driving the increase in gas prices this summer, according to forecasts?",
     "What is the main reason for the recent surge in Momentus' stock price?",
     "What is the primary reason behind the recent surge in solar stocks?",
@@ -29,10 +28,10 @@
     "What is the main reason behind the lawsuit against Micron?",
     "What is the main reason behind Senator Ashley Moody's 310% stock portfolio increase?",
     "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
-    "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?"
+    "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
+    "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?"
   ],
   "words_of_day": [
-    "Hedge",
     "Market Capitalization",
     "Dividend",
     "Liquidity",
@@ -61,20 +60,10 @@
     "Synergy",
     "Compound Interest",
     "Disruption",
-    "Equity"
+    "Equity",
+    "Derivative"
   ],
   "story_titles": [
-    "Millions of Americans Can Get Medicare to Cover GLP-1s for Weight Loss Starting This Week",
-    "Trump's Energy Secretary Says Global Warming is 'No Big Deal'",
-    "CoreWeave, Nebius Shares Tumble as Meta Stands to Become a Fresh Threat in the Cloud",
-    "How to Start a Savings Plan for Your Future",
-    "Understanding Credit Scores and How to Improve Them",
-    "CoreWeave and Nebius: The Impact of Cloud Computing on the Tech Industry",
-    "The Future of Artificial Intelligence: Trends and Opportunities",
-    "Meta's Increasing Presence in the Cloud Computing Market",
-    "Tesla's Q2 Delivery Numbers Soar, But Stock Plunges",
-    "Everus Construction Surges 100% in 2026",
-    "Brown Advisory Large-Cap Growth Strategy Invests in Axon Enterprises",
     "US Job Market Shows Signs of Slowing Down",
     "Global Economic Growth Shows Signs of Slowing Down",
     "US Retail Giant Exits Fashion Market Amid Scandal",
@@ -93,6 +82,17 @@
     "How to Avoid Overspending on Non-Essential Items",
     "The Impact of AI on the Stock Market",
     "The Future of Tech Stocks",
-    "The Impact of AI on Education"
+    "The Impact of AI on Education",
+    "Oil Prices Remain Steady Despite Saudi Price Cuts and OPEC+ Target Boost",
+    "Micron's Stock Gains Signal a Return to Optimism in the Chip Sector",
+    "Silver Prices Plummet 50% from January Peak to $60",
+    "Britain Considers Regulating AI Models",
+    "Bitcoin Faces Further Weakness Amid Downturn",
+    "The Income Ladder: What It Takes to Go from $250 to $5,000 a Month",
+    "How to Avoid Falling for Financial Scams",
+    "The Importance of Emergency Funds",
+    "Microsoft Overhauls Xbox Unit Amid Restructuring",
+    "Britain Considers Regulating AI Models",
+    "The Future of Tech Stocks"
   ]
 }
