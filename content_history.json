@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the primary factor driving the increase in gas prices this summer, according to forecasts?",
     "What is the main reason for the recent surge in Momentus' stock price?",
     "What is the primary reason behind the recent surge in solar stocks?",
     "What is the main reason behind the closure of 80 locations of a high-end steak and seafood chain?",
@@ -29,10 +28,10 @@
     "What is the main reason behind Senator Ashley Moody's 310% stock portfolio increase?",
     "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
     "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
-    "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?"
+    "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
+    "What is the main reason behind the expected price increases at Best Buy and Apple?"
   ],
   "words_of_day": [
-    "Market Capitalization",
     "Dividend",
     "Liquidity",
     "Inflation",
@@ -61,20 +60,10 @@
     "Compound Interest",
     "Disruption",
     "Equity",
-    "Derivative"
+    "Derivative",
+    "Hedging"
   ],
   "story_titles": [
-    "US Job Market Shows Signs of Slowing Down",
-    "Global Economic Growth Shows Signs of Slowing Down",
-    "US Retail Giant Exits Fashion Market Amid Scandal",
-    "How to Start Saving for College",
-    "How to Avoid Overspending on Credit Cards",
-    "Palantir's AI Advantage",
-    "The Future of AI in Healthcare",
-    "The Impact of AI on Education",
-    "Dow Jones Futures Rise, Techs Lead After Tesla and Sandisk Stocks Dive",
-    "Recurve Capital's Analysis on Carvana",
-    "Intercontinental Exchange's Strategic Move in Predictive Markets",
     "U.S. Stocks Have Delivered 8.7% a Year Since Independence Was Declared in 1776",
     "A Looming AI Disappointment and Rising Yields",
     "Vltava Fund Exited KLA Corporation Amid Price-Quality Imbalance",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Funds",
     "Microsoft Overhauls Xbox Unit Amid Restructuring",
     "Britain Considers Regulating AI Models",
-    "The Future of Tech Stocks"
+    "The Future of Tech Stocks",
+    "Best Buy and Apple Flag Price Increases",
+    "Rivian's Stock Sale Triggers Worst Rout in Two Years",
+    "NATO Announces Billions in Defense Deals",
+    "Amazon Readies $25 Billion Bond",
+    "Google Invests in German Fusion Group",
+    "Micron, Samsung, and SK Hynix See Memory Stocks Dragged into Bear Market",
+    "How to Create a Budget for Your Summer Job",
+    "How to Avoid Lifestyle Creep",
+    "Google Invests in AI-Powered Fusion Group",
+    "Amazon Readies $25 Billion Bond",
+    "Rivian's Stock Sale Triggers Worst Rout in Two Years"
   ]
 }
