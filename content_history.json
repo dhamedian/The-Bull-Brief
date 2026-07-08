@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the recent surge in Momentus' stock price?",
     "What is the primary reason behind the recent surge in solar stocks?",
     "What is the main reason behind the closure of 80 locations of a high-end steak and seafood chain?",
     "What is the main reason behind Barry Diller's $12.4 billion offer to buy MGM?",
@@ -29,10 +28,10 @@
     "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
     "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
     "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
-    "What is the main reason behind the expected price increases at Best Buy and Apple?"
+    "What is the main reason behind the expected price increases at Best Buy and Apple?",
+    "What is the primary driver of the AI bubble concerns in the tech industry?"
   ],
   "words_of_day": [
-    "Dividend",
     "Liquidity",
     "Inflation",
     "Synergy",
@@ -61,20 +60,10 @@
     "Disruption",
     "Equity",
     "Derivative",
-    "Hedging"
+    "Hedging",
+    "Arbitrage"
   ],
   "story_titles": [
-    "U.S. Stocks Have Delivered 8.7% a Year Since Independence Was Declared in 1776",
-    "A Looming AI Disappointment and Rising Yields",
-    "Vltava Fund Exited KLA Corporation Amid Price-Quality Imbalance",
-    "How to Set Up a Budget for Your Summer Job",
-    "How to Avoid Overspending on Non-Essential Items",
-    "The Impact of AI on the Stock Market",
-    "The Future of Tech Stocks",
-    "The Impact of AI on Education",
-    "Oil Prices Remain Steady Despite Saudi Price Cuts and OPEC+ Target Boost",
-    "Micron's Stock Gains Signal a Return to Optimism in the Chip Sector",
-    "Silver Prices Plummet 50% from January Peak to $60",
     "Britain Considers Regulating AI Models",
     "Bitcoin Faces Further Weakness Amid Downturn",
     "The Income Ladder: What It Takes to Go from $250 to $5,000 a Month",
@@ -93,6 +82,17 @@
     "How to Avoid Lifestyle Creep",
     "Google Invests in AI-Powered Fusion Group",
     "Amazon Readies $25 Billion Bond",
-    "Rivian's Stock Sale Triggers Worst Rout in Two Years"
+    "Rivian's Stock Sale Triggers Worst Rout in Two Years",
+    "Tech Stocks Plunge Amid AI Bubble Concerns",
+    "Oil Prices Surge Amid US-Iran Tensions",
+    "Genmab A/S Stock Surges Amid Positive Trial Results",
+    "Mexico's Trucking Labor Crunch Intensifies",
+    "Insurance Giant Turns to AI to Replace Jobs",
+    "Bank of America Warns of Two Separate Economies",
+    "The Importance of Diversification in Investing",
+    "The Benefits of Starting a Savings Plan Early",
+    "The Rise of AI in the Insurance Industry",
+    "The Impact of AI on the Job Market",
+    "The Future of Tech Stocks"
   ]
 }
