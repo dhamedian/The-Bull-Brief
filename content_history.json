@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the primary reason behind the recent surge in solar stocks?",
     "What is the main reason behind the closure of 80 locations of a high-end steak and seafood chain?",
     "What is the main reason behind Barry Diller's $12.4 billion offer to buy MGM?",
     "What was the reason behind General Mills' decision to sell its H\u00e4agen-Dazs shops in China?",
@@ -29,10 +28,10 @@
     "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
     "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
     "What is the main reason behind the expected price increases at Best Buy and Apple?",
-    "What is the primary driver of the AI bubble concerns in the tech industry?"
+    "What is the primary driver of the AI bubble concerns in the tech industry?",
+    "What is the main reason behind the rise in MARA stock?"
   ],
   "words_of_day": [
-    "Liquidity",
     "Inflation",
     "Synergy",
     "Trillion",
@@ -61,20 +60,10 @@
     "Equity",
     "Derivative",
     "Hedging",
-    "Arbitrage"
+    "Arbitrage",
+    "Bubble"
   ],
   "story_titles": [
-    "Britain Considers Regulating AI Models",
-    "Bitcoin Faces Further Weakness Amid Downturn",
-    "The Income Ladder: What It Takes to Go from $250 to $5,000 a Month",
-    "How to Avoid Falling for Financial Scams",
-    "The Importance of Emergency Funds",
-    "Microsoft Overhauls Xbox Unit Amid Restructuring",
-    "Britain Considers Regulating AI Models",
-    "The Future of Tech Stocks",
-    "Best Buy and Apple Flag Price Increases",
-    "Rivian's Stock Sale Triggers Worst Rout in Two Years",
-    "NATO Announces Billions in Defense Deals",
     "Amazon Readies $25 Billion Bond",
     "Google Invests in German Fusion Group",
     "Micron, Samsung, and SK Hynix See Memory Stocks Dragged into Bear Market",
@@ -93,6 +82,17 @@
     "The Benefits of Starting a Savings Plan Early",
     "The Rise of AI in the Insurance Industry",
     "The Impact of AI on the Job Market",
-    "The Future of Tech Stocks"
+    "The Future of Tech Stocks",
+    "MARA Stock Leads Digital Rally On Data Center Development Plans",
+    "Mortgage Rates Edge Higher As US-Iran Ceasefire Falls Apart",
+    "Stock Market Edges Up Despite War Jitters",
+    "The Impact Of The US-Iran Ceasefire On The Global Economy",
+    "The Rise Of Digital Payments And The Decline Of Paper Checks",
+    "The Importance Of Financial Literacy For High School Students",
+    "The Importance Of Emergency Funds For High School Students",
+    "The Benefits Of Starting To Invest Early",
+    "The Rise Of AI In The Tech Industry",
+    "The Benefits Of Using Digital Payments",
+    "The Importance Of Cybersecurity In The Digital Age"
   ]
 }
