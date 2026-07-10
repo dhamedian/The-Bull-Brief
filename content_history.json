@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind the closure of 80 locations of a high-end steak and seafood chain?",
     "What is the main reason behind Barry Diller's $12.4 billion offer to buy MGM?",
     "What was the reason behind General Mills' decision to sell its H\u00e4agen-Dazs shops in China?",
     "What is the primary reason behind Marvell's shares reaching a record high?",
@@ -29,10 +28,10 @@
     "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
     "What is the main reason behind the expected price increases at Best Buy and Apple?",
     "What is the primary driver of the AI bubble concerns in the tech industry?",
-    "What is the main reason behind the rise in MARA stock?"
+    "What is the main reason behind the rise in MARA stock?",
+    "What is the main reason for the Federal Reserve's decision to release minutes from its latest meeting?"
   ],
   "words_of_day": [
-    "Inflation",
     "Synergy",
     "Trillion",
     "Insolvency",
@@ -61,20 +60,10 @@
     "Derivative",
     "Hedging",
     "Arbitrage",
-    "Bubble"
+    "Bubble",
+    "Liquidity"
   ],
   "story_titles": [
-    "Amazon Readies $25 Billion Bond",
-    "Google Invests in German Fusion Group",
-    "Micron, Samsung, and SK Hynix See Memory Stocks Dragged into Bear Market",
-    "How to Create a Budget for Your Summer Job",
-    "How to Avoid Lifestyle Creep",
-    "Google Invests in AI-Powered Fusion Group",
-    "Amazon Readies $25 Billion Bond",
-    "Rivian's Stock Sale Triggers Worst Rout in Two Years",
-    "Tech Stocks Plunge Amid AI Bubble Concerns",
-    "Oil Prices Surge Amid US-Iran Tensions",
-    "Genmab A/S Stock Surges Amid Positive Trial Results",
     "Mexico's Trucking Labor Crunch Intensifies",
     "Insurance Giant Turns to AI to Replace Jobs",
     "Bank of America Warns of Two Separate Economies",
@@ -93,6 +82,17 @@
     "The Benefits Of Starting To Invest Early",
     "The Rise Of AI In The Tech Industry",
     "The Benefits Of Using Digital Payments",
-    "The Importance Of Cybersecurity In The Digital Age"
+    "The Importance Of Cybersecurity In The Digital Age",
+    "Fed Officials Divided on Interest Rate Outlook",
+    "SK Hynix to Start Trading Soon",
+    "Seller-Paid Rate Buydown: A New Trend in Home Buying",
+    "The Space Race: China Takes a Big Step Toward Rivaling SpaceX",
+    "Credit Card, Debit Card, or Cash: What's Best for Travel?",
+    "The Challenge of Getting Entry-Level Jobs",
+    "Protecting Your Finances from Scams",
+    "Understanding Seller-Paid Rate Buydowns",
+    "The Space Race: How China's Advancements Could Impact the Tech Industry",
+    "The Future of Semiconductor Manufacturing",
+    "The Impact of China's Space Advancements on the Global Economy"
   ]
 }
