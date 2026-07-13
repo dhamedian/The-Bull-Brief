@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind Barry Diller's $12.4 billion offer to buy MGM?",
     "What was the reason behind General Mills' decision to sell its H\u00e4agen-Dazs shops in China?",
     "What is the primary reason behind Marvell's shares reaching a record high?",
     "What is the primary reason for the recent surge in demand for central processing units (CPUs)?",
@@ -29,10 +28,10 @@
     "What is the main reason behind the expected price increases at Best Buy and Apple?",
     "What is the primary driver of the AI bubble concerns in the tech industry?",
     "What is the main reason behind the rise in MARA stock?",
-    "What is the main reason for the Federal Reserve's decision to release minutes from its latest meeting?"
+    "What is the main reason for the Federal Reserve's decision to release minutes from its latest meeting?",
+    "What is the main reason for the recent increase in oil prices?"
   ],
   "words_of_day": [
-    "Synergy",
     "Trillion",
     "Insolvency",
     "Fiduciary",
@@ -61,20 +60,10 @@
     "Hedging",
     "Arbitrage",
     "Bubble",
-    "Liquidity"
+    "Liquidity",
+    "Blockade"
   ],
   "story_titles": [
-    "Mexico's Trucking Labor Crunch Intensifies",
-    "Insurance Giant Turns to AI to Replace Jobs",
-    "Bank of America Warns of Two Separate Economies",
-    "The Importance of Diversification in Investing",
-    "The Benefits of Starting a Savings Plan Early",
-    "The Rise of AI in the Insurance Industry",
-    "The Impact of AI on the Job Market",
-    "The Future of Tech Stocks",
-    "MARA Stock Leads Digital Rally On Data Center Development Plans",
-    "Mortgage Rates Edge Higher As US-Iran Ceasefire Falls Apart",
-    "Stock Market Edges Up Despite War Jitters",
     "The Impact Of The US-Iran Ceasefire On The Global Economy",
     "The Rise Of Digital Payments And The Decline Of Paper Checks",
     "The Importance Of Financial Literacy For High School Students",
@@ -93,6 +82,17 @@
     "Understanding Seller-Paid Rate Buydowns",
     "The Space Race: How China's Advancements Could Impact the Tech Industry",
     "The Future of Semiconductor Manufacturing",
-    "The Impact of China's Space Advancements on the Global Economy"
+    "The Impact of China's Space Advancements on the Global Economy",
+    "SpaceX Workers See Big Gains After IPO",
+    "Tech Stocks Fall as AI Trade Faces Scrutiny",
+    "Oil Prices Jump After US Imposes Blockade on Strait of Hormuz",
+    "Global Economy Feels Impact of US Blockade on Strait of Hormuz",
+    "MGM Resorts Sees Stock Price Increase After Reported Takeover Talks",
+    "Big Banks' Stock Prices Increase Ahead of Earnings Reports",
+    "How to Start a Savings Plan as a Teen",
+    "The Importance of Emergency Funds",
+    "SK Hynix and Arm See Stock Prices Fall Due to AI Concerns",
+    "Micron and Other Chip Stocks See Price Fall Due to Imported Volatility",
+    "SpaceX Workers See Big Gains After IPO"
   ]
 }
