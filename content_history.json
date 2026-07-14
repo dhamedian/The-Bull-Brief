@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What was the reason behind General Mills' decision to sell its H\u00e4agen-Dazs shops in China?",
     "What is the primary reason behind Marvell's shares reaching a record high?",
     "What is the primary reason for the recent surge in demand for central processing units (CPUs)?",
     "What is the main reason for the recent decline in the software industry's share of the leveraged loan market?",
@@ -29,10 +28,10 @@
     "What is the primary driver of the AI bubble concerns in the tech industry?",
     "What is the main reason behind the rise in MARA stock?",
     "What is the main reason for the Federal Reserve's decision to release minutes from its latest meeting?",
-    "What is the main reason for the recent increase in oil prices?"
+    "What is the main reason for the recent increase in oil prices?",
+    "What is the main reason for IBM's stock price decline?"
   ],
   "words_of_day": [
-    "Trillion",
     "Insolvency",
     "Fiduciary",
     "Yield",
@@ -61,20 +60,10 @@
     "Arbitrage",
     "Bubble",
     "Liquidity",
-    "Blockade"
+    "Blockade",
+    "Insolvency"
   ],
   "story_titles": [
-    "The Impact Of The US-Iran Ceasefire On The Global Economy",
-    "The Rise Of Digital Payments And The Decline Of Paper Checks",
-    "The Importance Of Financial Literacy For High School Students",
-    "The Importance Of Emergency Funds For High School Students",
-    "The Benefits Of Starting To Invest Early",
-    "The Rise Of AI In The Tech Industry",
-    "The Benefits Of Using Digital Payments",
-    "The Importance Of Cybersecurity In The Digital Age",
-    "Fed Officials Divided on Interest Rate Outlook",
-    "SK Hynix to Start Trading Soon",
-    "Seller-Paid Rate Buydown: A New Trend in Home Buying",
     "The Space Race: China Takes a Big Step Toward Rivaling SpaceX",
     "Credit Card, Debit Card, or Cash: What's Best for Travel?",
     "The Challenge of Getting Entry-Level Jobs",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Funds",
     "SK Hynix and Arm See Stock Prices Fall Due to AI Concerns",
     "Micron and Other Chip Stocks See Price Fall Due to Imported Volatility",
-    "SpaceX Workers See Big Gains After IPO"
+    "SpaceX Workers See Big Gains After IPO",
+    "Target's Problems Aren't What You Think They Are",
+    "JPMorgan's Blowout Profits",
+    "SpaceX's Big Starship Launch",
+    "Social Security's Disability Claims",
+    "Freight Distress Report",
+    "JPMorgan's Consumer Spending",
+    "The Importance of Emergency Funds",
+    "The Power of Compound Interest",
+    "SK Hynix's Stock Price Falls",
+    "Alexander's Stock Price Jumps",
+    "IBM's Earnings Miss"
   ]
 }
