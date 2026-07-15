@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the primary reason behind Marvell's shares reaching a record high?",
     "What is the primary reason for the recent surge in demand for central processing units (CPUs)?",
     "What is the main reason for the recent decline in the software industry's share of the leveraged loan market?",
     "What is the main reason behind the recent surge in Intel's stock price?",
@@ -29,10 +28,10 @@
     "What is the main reason behind the rise in MARA stock?",
     "What is the main reason for the Federal Reserve's decision to release minutes from its latest meeting?",
     "What is the main reason for the recent increase in oil prices?",
-    "What is the main reason for IBM's stock price decline?"
+    "What is the main reason for IBM's stock price decline?",
+    "What is the main reason for Bitcoin's recent price increase to $65,000?"
   ],
   "words_of_day": [
-    "Insolvency",
     "Fiduciary",
     "Yield",
     "Equity",
@@ -61,20 +60,10 @@
     "Bubble",
     "Liquidity",
     "Blockade",
-    "Insolvency"
+    "Insolvency",
+    "Dividend"
   ],
   "story_titles": [
-    "The Space Race: China Takes a Big Step Toward Rivaling SpaceX",
-    "Credit Card, Debit Card, or Cash: What's Best for Travel?",
-    "The Challenge of Getting Entry-Level Jobs",
-    "Protecting Your Finances from Scams",
-    "Understanding Seller-Paid Rate Buydowns",
-    "The Space Race: How China's Advancements Could Impact the Tech Industry",
-    "The Future of Semiconductor Manufacturing",
-    "The Impact of China's Space Advancements on the Global Economy",
-    "SpaceX Workers See Big Gains After IPO",
-    "Tech Stocks Fall as AI Trade Faces Scrutiny",
-    "Oil Prices Jump After US Imposes Blockade on Strait of Hormuz",
     "Global Economy Feels Impact of US Blockade on Strait of Hormuz",
     "MGM Resorts Sees Stock Price Increase After Reported Takeover Talks",
     "Big Banks' Stock Prices Increase Ahead of Earnings Reports",
@@ -93,6 +82,17 @@
     "The Power of Compound Interest",
     "SK Hynix's Stock Price Falls",
     "Alexander's Stock Price Jumps",
-    "IBM's Earnings Miss"
+    "IBM's Earnings Miss",
+    "BMW's US Business Sees Success, What Does This Mean for the Auto Industry?",
+    "Littelfuse's 40% Rally: What's Behind the Company's Success?",
+    "Uber's AI Budget: What Does This Mean for the Ride-Hailing Industry?",
+    "The Bond Deal of the Decade: What Does This Mean for Investors?",
+    "The Impact of Bitcoin's Price Increase on the Global Economy",
+    "The State of the Housing Market: What Does This Mean for Homebuyers?",
+    "The Importance of Saving for College",
+    "The Benefits of Investing in a Roth IRA",
+    "The Future of Artificial Intelligence: What Does This Mean for You?",
+    "The Impact of Uber's AI Investment on the Ride-Hailing Industry",
+    "The Benefits of Using Cryptocurrency for Online Transactions"
   ]
 }
