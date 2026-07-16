@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the primary reason for the recent surge in demand for central processing units (CPUs)?",
     "What is the main reason for the recent decline in the software industry's share of the leveraged loan market?",
     "What is the main reason behind the recent surge in Intel's stock price?",
     "What is the main reason for the decline in the tech industry's stock prices?",
@@ -29,10 +28,10 @@
     "What is the main reason for the Federal Reserve's decision to release minutes from its latest meeting?",
     "What is the main reason for the recent increase in oil prices?",
     "What is the main reason for IBM's stock price decline?",
-    "What is the main reason for Bitcoin's recent price increase to $65,000?"
+    "What is the main reason for Bitcoin's recent price increase to $65,000?",
+    "What is the main reason for the decline in McDonald's stock price?"
   ],
   "words_of_day": [
-    "Fiduciary",
     "Yield",
     "Equity",
     "Portfolio",
@@ -61,20 +60,10 @@
     "Liquidity",
     "Blockade",
     "Insolvency",
-    "Dividend"
+    "Dividend",
+    "Futures"
   ],
   "story_titles": [
-    "Global Economy Feels Impact of US Blockade on Strait of Hormuz",
-    "MGM Resorts Sees Stock Price Increase After Reported Takeover Talks",
-    "Big Banks' Stock Prices Increase Ahead of Earnings Reports",
-    "How to Start a Savings Plan as a Teen",
-    "The Importance of Emergency Funds",
-    "SK Hynix and Arm See Stock Prices Fall Due to AI Concerns",
-    "Micron and Other Chip Stocks See Price Fall Due to Imported Volatility",
-    "SpaceX Workers See Big Gains After IPO",
-    "Target's Problems Aren't What You Think They Are",
-    "JPMorgan's Blowout Profits",
-    "SpaceX's Big Starship Launch",
     "Social Security's Disability Claims",
     "Freight Distress Report",
     "JPMorgan's Consumer Spending",
@@ -93,6 +82,17 @@
     "The Benefits of Investing in a Roth IRA",
     "The Future of Artificial Intelligence: What Does This Mean for You?",
     "The Impact of Uber's AI Investment on the Ride-Hailing Industry",
-    "The Benefits of Using Cryptocurrency for Online Transactions"
+    "The Benefits of Using Cryptocurrency for Online Transactions",
+    "McDonald's Stock Hits Nearly 2-Year Lows",
+    "ZoomInfo Technologies: One of the Most Undervalued Stocks Under $5",
+    "Kosmos Energy: One of the Most Undervalued Stocks Under $5",
+    "Oil Faces Supply Crunch Due to Various Factors",
+    "Retail Sales Get Boost from Car Buyers and Amazon Prime Day",
+    "The Economy Hasn't Lost Its Mojo",
+    "The Importance of Emergency Funds",
+    "The Benefits of Using Cashback Apps",
+    "Microsoft CEO Adds Fuel to Palantir CEO's AI Warning",
+    "The Future of Artificial Intelligence",
+    "The Impact of AI on the Job Market"
   ]
 }
