@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the recent decline in the software industry's share of the leveraged loan market?",
     "What is the main reason behind the recent surge in Intel's stock price?",
     "What is the main reason for the decline in the tech industry's stock prices?",
     "What is the main reason behind the $38 billion Visa, Mastercard swipe fee settlement?",
@@ -29,10 +28,10 @@
     "What is the main reason for the recent increase in oil prices?",
     "What is the main reason for IBM's stock price decline?",
     "What is the main reason for Bitcoin's recent price increase to $65,000?",
-    "What is the main reason for the decline in McDonald's stock price?"
+    "What is the main reason for the decline in McDonald's stock price?",
+    "What is the main reason behind Warren Buffett's biggest bet surpassing Nvidia as the largest company in the world?"
   ],
   "words_of_day": [
-    "Yield",
     "Equity",
     "Portfolio",
     "Interchange fee",
@@ -61,20 +60,10 @@
     "Blockade",
     "Insolvency",
     "Dividend",
-    "Futures"
+    "Futures",
+    "Speculation"
   ],
   "story_titles": [
-    "Social Security's Disability Claims",
-    "Freight Distress Report",
-    "JPMorgan's Consumer Spending",
-    "The Importance of Emergency Funds",
-    "The Power of Compound Interest",
-    "SK Hynix's Stock Price Falls",
-    "Alexander's Stock Price Jumps",
-    "IBM's Earnings Miss",
-    "BMW's US Business Sees Success, What Does This Mean for the Auto Industry?",
-    "Littelfuse's 40% Rally: What's Behind the Company's Success?",
-    "Uber's AI Budget: What Does This Mean for the Ride-Hailing Industry?",
     "The Bond Deal of the Decade: What Does This Mean for Investors?",
     "The Impact of Bitcoin's Price Increase on the Global Economy",
     "The State of the Housing Market: What Does This Mean for Homebuyers?",
@@ -93,6 +82,17 @@
     "The Benefits of Using Cashback Apps",
     "Microsoft CEO Adds Fuel to Palantir CEO's AI Warning",
     "The Future of Artificial Intelligence",
-    "The Impact of AI on the Job Market"
+    "The Impact of AI on the Job Market",
+    "Buffett's Berkshire Hathaway Takes the Top Spot",
+    "Nvidia's Market Value Takes a Hit",
+    "Belden's Acquisition Strategy",
+    "The Impact of AI on the Job Market",
+    "The Rise of Indie Semiconductor",
+    "The Impact of Scams on Investors",
+    "The Importance of Monitoring Your Accounts",
+    "The Benefits of Diversifying Your Portfolio",
+    "The Rise of AI in the Tech Industry",
+    "The Benefits of Using Cloud Computing",
+    "The Impact of Tech on the Environment"
   ]
 }
