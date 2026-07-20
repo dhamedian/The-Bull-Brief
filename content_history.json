@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind the recent surge in Intel's stock price?",
     "What is the main reason for the decline in the tech industry's stock prices?",
     "What is the main reason behind the $38 billion Visa, Mastercard swipe fee settlement?",
     "What is the expected target price for SpaceX's IPO?",
@@ -29,10 +28,10 @@
     "What is the main reason for IBM's stock price decline?",
     "What is the main reason for Bitcoin's recent price increase to $65,000?",
     "What is the main reason for the decline in McDonald's stock price?",
-    "What is the main reason behind Warren Buffett's biggest bet surpassing Nvidia as the largest company in the world?"
+    "What is the main reason behind Warren Buffett's biggest bet surpassing Nvidia as the largest company in the world?",
+    "What is the main reason behind the rise in chip stocks such as AMD, Micron, and SK Hynix?"
   ],
   "words_of_day": [
-    "Equity",
     "Portfolio",
     "Interchange fee",
     "IPO",
@@ -61,20 +60,10 @@
     "Insolvency",
     "Dividend",
     "Futures",
-    "Speculation"
+    "Speculation",
+    "Volatility"
   ],
   "story_titles": [
-    "The Bond Deal of the Decade: What Does This Mean for Investors?",
-    "The Impact of Bitcoin's Price Increase on the Global Economy",
-    "The State of the Housing Market: What Does This Mean for Homebuyers?",
-    "The Importance of Saving for College",
-    "The Benefits of Investing in a Roth IRA",
-    "The Future of Artificial Intelligence: What Does This Mean for You?",
-    "The Impact of Uber's AI Investment on the Ride-Hailing Industry",
-    "The Benefits of Using Cryptocurrency for Online Transactions",
-    "McDonald's Stock Hits Nearly 2-Year Lows",
-    "ZoomInfo Technologies: One of the Most Undervalued Stocks Under $5",
-    "Kosmos Energy: One of the Most Undervalued Stocks Under $5",
     "Oil Faces Supply Crunch Due to Various Factors",
     "Retail Sales Get Boost from Car Buyers and Amazon Prime Day",
     "The Economy Hasn't Lost Its Mojo",
@@ -93,6 +82,17 @@
     "The Benefits of Diversifying Your Portfolio",
     "The Rise of AI in the Tech Industry",
     "The Benefits of Using Cloud Computing",
-    "The Impact of Tech on the Environment"
+    "The Impact of Tech on the Environment",
+    "Dow, S&P 500, and Nasdaq Climb as Chip Stocks Rise Ahead of Big Tech Earnings",
+    "Bitcoin and Ethereum Prices Mixed as Second-Half 2026 Outlooks Conflict",
+    "Dollar Gains as US-Iran Conflict Intensifies",
+    "US-Iran Conflict Intensifies, Impacting Global Economy",
+    "Sterling Gives Back Gains as UK Economy Shows Signs of Slowdown",
+    "Major Car Dealer Cuts 40% of Its Locations, Issues Serious Warning",
+    "Should You Tap Your IRA to Buy a House?",
+    "Why You Should Start Saving for Retirement Now",
+    "AMD, Micron, and SK Hynix Lead Chip Stock Recovery",
+    "The Future of Artificial Intelligence in Finance",
+    "The Impact of Cybersecurity on Personal Finance"
   ]
 }
