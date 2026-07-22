@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind the $38 billion Visa, Mastercard swipe fee settlement?",
     "What is the expected target price for SpaceX's IPO?",
     "What is the main reason behind Elon Musk's net worth surpassing $1 trillion?",
     "What is the main reason for the predicted increase in gas prices?",
@@ -29,10 +28,10 @@
     "What is the main reason for the decline in McDonald's stock price?",
     "What is the main reason behind Warren Buffett's biggest bet surpassing Nvidia as the largest company in the world?",
     "What is the main reason behind the rise in chip stocks such as AMD, Micron, and SK Hynix?",
-    "What is the main reason for 3M's stock price increase?"
+    "What is the main reason for 3M's stock price increase?",
+    "What is the main reason for the recent increase in global oil prices?"
   ],
   "words_of_day": [
-    "Interchange fee",
     "IPO",
     "Underwriting",
     "Hedging",
@@ -61,20 +60,10 @@
     "Futures",
     "Speculation",
     "Volatility",
-    "Synergy"
+    "Synergy",
+    "Collateral"
   ],
   "story_titles": [
-    "The Impact of AI on the Job Market",
-    "The Rise of Indie Semiconductor",
-    "The Impact of Scams on Investors",
-    "The Importance of Monitoring Your Accounts",
-    "The Benefits of Diversifying Your Portfolio",
-    "The Rise of AI in the Tech Industry",
-    "The Benefits of Using Cloud Computing",
-    "The Impact of Tech on the Environment",
-    "Dow, S&P 500, and Nasdaq Climb as Chip Stocks Rise Ahead of Big Tech Earnings",
-    "Bitcoin and Ethereum Prices Mixed as Second-Half 2026 Outlooks Conflict",
-    "Dollar Gains as US-Iran Conflict Intensifies",
     "US-Iran Conflict Intensifies, Impacting Global Economy",
     "Sterling Gives Back Gains as UK Economy Shows Signs of Slowdown",
     "Major Car Dealer Cuts 40% of Its Locations, Issues Serious Warning",
@@ -93,6 +82,17 @@
     "The Benefits of Budgeting",
     "The Future of Wireless Technology",
     "The Impact of AI on Finance",
-    "The Future of Cybersecurity"
+    "The Future of Cybersecurity",
+    "GE Vernova Stock Drops Despite Surging AI-Driven Orders",
+    "KLA Corporation: An Attractive Bet for Investors",
+    "AMD Invests $5 Billion in Anthropic to Challenge Nvidia's Dominance",
+    "Global Oil Prices Rise Above $95 a Barrel",
+    "Private Mortgage Insurance: What You Need to Know",
+    "The Impact of Inflation on Your Savings",
+    "Should You Tap into Your IRA to Buy a House?",
+    "The Importance of Emergency Funds",
+    "AMD's $5 Billion Investment in Anthropic: What It Means for the Future of AI",
+    "The Future of Cryptocurrency: What You Need to Know",
+    "The Impact of AI on the Job Market: What You Need to Know"
   ]
 }
