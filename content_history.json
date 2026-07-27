@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the predicted increase in gas prices?",
     "What is the main reason for the recent decline in global oil prices?",
     "What is the main reason behind Venture Global and Atlantic-SEE's expansion of their LNG sales agreement?",
     "What is the main reason for the decline in SpaceX's stock price after its 3-day winning streak?",
@@ -29,10 +28,10 @@
     "What is the main reason for 3M's stock price increase?",
     "What is the main reason for the recent increase in global oil prices?",
     "What was the main reason for Tesla's stock price drop today?",
-    "What is the main reason for the decline in SK Hynix and Micron stock prices?"
+    "What is the main reason for the decline in SK Hynix and Micron stock prices?",
+    "What is the main reason for the decline in the 63-year-old chain's financial performance?"
   ],
   "words_of_day": [
-    "Hedging",
     "Hedonic",
     "Securitization",
     "Liquidity",
@@ -61,20 +60,10 @@
     "Synergy",
     "Collateral",
     "Depreciation",
-    "Momentum"
+    "Momentum",
+    "Bankruptcy"
   ],
   "story_titles": [
-    "Global Oil Prices Rise Above $95 a Barrel",
-    "Private Mortgage Insurance: What You Need to Know",
-    "The Impact of Inflation on Your Savings",
-    "Should You Tap into Your IRA to Buy a House?",
-    "The Importance of Emergency Funds",
-    "AMD's $5 Billion Investment in Anthropic: What It Means for the Future of AI",
-    "The Future of Cryptocurrency: What You Need to Know",
-    "The Impact of AI on the Job Market: What You Need to Know",
-    "Tesla Sees $200 Billion Wipeout After Musk's Spending Plan",
-    "Alphabet's Profit Growth Masks Historic Cash Drain",
-    "Dollar Hits New 40-Year High Versus Yen",
     "PwC Opens AI Innovation Centre in Shanghai",
     "Oil Prices Surge Due to Global Demand",
     "ECB Decision Impacts Euro Exchange Rate",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Funds for Students",
     "Tech CEOs Defend Open-Source AI Amid US Crackdown",
     "AMD CEO Lisa Su Discusses AI Demand and Hyperscaler Spending",
-    "Hyperliquid RWA Volume Reaches $25.1 Billion, Surpassing Crypto Trading"
+    "Hyperliquid RWA Volume Reaches $25.1 Billion, Surpassing Crypto Trading",
+    "Big Tech Earnings This Week Will Be Pivotal for the AI Trade",
+    "SanDisk's $42 Billion Backlog Is Real, But Valuation Questions Remain",
+    "The Campbell's Company Offers Promising Upside Despite Past Challenges",
+    "The AI Boom Shows No Sign of Slowing, and the US Economy Is Reaping the Benefits",
+    "Your Retirement Math May Have a Surprising Flaw",
+    "Should You Get Paid to Care for a Family Member?",
+    "How to Create a Budget That Works for You",
+    "The Importance of Building an Emergency Fund",
+    "Tech Stocks Today: Big Tech Earnings This Week Mark a Pivotal Moment for the AI Trade",
+    "One Number Instantly Explains Why Apple's Investors Are Having a Wildly Different Year Than Oracle's",
+    "After 80 Stores Close, 63-Year-Old Chain Gives Chapter 11 Warning"
   ]
 }
