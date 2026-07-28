@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the recent decline in global oil prices?",
     "What is the main reason behind Venture Global and Atlantic-SEE's expansion of their LNG sales agreement?",
     "What is the main reason for the decline in SpaceX's stock price after its 3-day winning streak?",
     "What is the main reason behind Jim Cramer's warning to investors buying into SpaceX?",
@@ -29,10 +28,10 @@
     "What is the main reason for the recent increase in global oil prices?",
     "What was the main reason for Tesla's stock price drop today?",
     "What is the main reason for the decline in SK Hynix and Micron stock prices?",
-    "What is the main reason for the decline in the 63-year-old chain's financial performance?"
+    "What is the main reason for the decline in the 63-year-old chain's financial performance?",
+    "What is the main reason behind the 52-year-old international restaurant chain's decision to close all its locations?"
   ],
   "words_of_day": [
-    "Hedonic",
     "Securitization",
     "Liquidity",
     "Volatility",
@@ -61,20 +60,10 @@
     "Collateral",
     "Depreciation",
     "Momentum",
-    "Bankruptcy"
+    "Bankruptcy",
+    "Compound Interest"
   ],
   "story_titles": [
-    "PwC Opens AI Innovation Centre in Shanghai",
-    "Oil Prices Surge Due to Global Demand",
-    "ECB Decision Impacts Euro Exchange Rate",
-    "How to Avoid Lifestyle Creep as Your Income Increases",
-    "The Importance of Emergency Funds for Students",
-    "The Future of Artificial Intelligence in Business",
-    "The Impact of 5G on Business and Society",
-    "The Role of Blockchain in Supply Chain Management",
-    "SK Hynix and Micron Stock Prices Plummet Amid Korea Chip Selloff",
-    "AMD CEO Lisa Su Discusses AI Demand and Hyperscaler Spending",
-    "Hyperliquid RWA Volume Reaches $25.1 Billion, Surpassing Crypto Trading",
     "US Economy Shows Signs of Growth, But Oil Price Surge Raises Concerns",
     "Iran Peace Talks Failure Leads to Oil Price Surge",
     "US Economy Had Begun to Speed Up Before Iran Peace Talks Failed",
@@ -93,6 +82,17 @@
     "The Importance of Building an Emergency Fund",
     "Tech Stocks Today: Big Tech Earnings This Week Mark a Pivotal Moment for the AI Trade",
     "One Number Instantly Explains Why Apple's Investors Are Having a Wildly Different Year Than Oracle's",
-    "After 80 Stores Close, 63-Year-Old Chain Gives Chapter 11 Warning"
+    "After 80 Stores Close, 63-Year-Old Chain Gives Chapter 11 Warning",
+    "Nasdaq Pares Losses as Chip Stocks Sell Off, S&P 500 and Dow Rise",
+    "PayPal Earnings Top Estimates, CEO Lores Does Not Rule Out Stripe Deal",
+    "Housing Market Trends: What the First Half of the Year Tells Us",
+    "The Ideal Retirement Strategy to Keep Healthcare Costs Down",
+    "Mike Rowe and Meta Train Data Center Custodian to Become Advanced Technician",
+    "Your Healthcare Could Cost $185,500 in Retirement",
+    "How to Create a Budget That Works for You",
+    "The Importance of Emergency Funds for Students",
+    "The Future of Tech: How AI is Changing the Industry",
+    "The Impact of Social Media on Mental Health",
+    "The Future of Virtual Reality: How it's Changing the Way We Interact"
   ]
 }
