@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind Venture Global and Atlantic-SEE's expansion of their LNG sales agreement?",
     "What is the main reason for the decline in SpaceX's stock price after its 3-day winning streak?",
     "What is the main reason behind Jim Cramer's warning to investors buying into SpaceX?",
     "What is the main reason behind Alphabet's $269 billion market cap wipeout?",
@@ -29,10 +28,10 @@
     "What was the main reason for Tesla's stock price drop today?",
     "What is the main reason for the decline in SK Hynix and Micron stock prices?",
     "What is the main reason for the decline in the 63-year-old chain's financial performance?",
-    "What is the main reason behind the 52-year-old international restaurant chain's decision to close all its locations?"
+    "What is the main reason behind the 52-year-old international restaurant chain's decision to close all its locations?",
+    "What is the main reason for the decline in SpaceX's stock price ahead of its Q2 earnings report?"
   ],
   "words_of_day": [
-    "Securitization",
     "Liquidity",
     "Volatility",
     "Megatrend",
@@ -61,20 +60,10 @@
     "Depreciation",
     "Momentum",
     "Bankruptcy",
-    "Compound Interest"
+    "Compound Interest",
+    "Hedging"
   ],
   "story_titles": [
-    "US Economy Shows Signs of Growth, But Oil Price Surge Raises Concerns",
-    "Iran Peace Talks Failure Leads to Oil Price Surge",
-    "US Economy Had Begun to Speed Up Before Iran Peace Talks Failed",
-    "How to Create a Budget That Works for You",
-    "The Importance of Emergency Funds for Students",
-    "Tech CEOs Defend Open-Source AI Amid US Crackdown",
-    "AMD CEO Lisa Su Discusses AI Demand and Hyperscaler Spending",
-    "Hyperliquid RWA Volume Reaches $25.1 Billion, Surpassing Crypto Trading",
-    "Big Tech Earnings This Week Will Be Pivotal for the AI Trade",
-    "SanDisk's $42 Billion Backlog Is Real, But Valuation Questions Remain",
-    "The Campbell's Company Offers Promising Upside Despite Past Challenges",
     "The AI Boom Shows No Sign of Slowing, and the US Economy Is Reaping the Benefits",
     "Your Retirement Math May Have a Surprising Flaw",
     "Should You Get Paid to Care for a Family Member?",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Funds for Students",
     "The Future of Tech: How AI is Changing the Industry",
     "The Impact of Social Media on Mental Health",
-    "The Future of Virtual Reality: How it's Changing the Way We Interact"
+    "The Future of Virtual Reality: How it's Changing the Way We Interact",
+    "SpaceX Stock Faces Pressure Ahead of Q2 Earnings",
+    "Logitech CEO Confident in Company's Operations",
+    "Dodgers Owner Faces SEC and DOJ Probes",
+    "Global Economic Trends: What You Need to Know",
+    "The Impact of Space Exploration on the Economy",
+    "The Importance of Economic Indicators",
+    "How to Manage Unexpected Medical Bills",
+    "The Importance of Budgeting for High School Students",
+    "The Future of Space Technology: What You Need to Know",
+    "The Impact of Artificial Intelligence on the Job Market",
+    "The Importance of Cybersecurity in the Digital Age"
   ]
 }
