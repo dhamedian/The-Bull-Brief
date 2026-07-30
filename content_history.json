@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the decline in SpaceX's stock price after its 3-day winning streak?",
     "What is the main reason behind Jim Cramer's warning to investors buying into SpaceX?",
     "What is the main reason behind Alphabet's $269 billion market cap wipeout?",
     "What is the main reason for the decline in tech stocks, including Google and other companies?",
@@ -29,10 +28,10 @@
     "What is the main reason for the decline in SK Hynix and Micron stock prices?",
     "What is the main reason for the decline in the 63-year-old chain's financial performance?",
     "What is the main reason behind the 52-year-old international restaurant chain's decision to close all its locations?",
-    "What is the main reason for the decline in SpaceX's stock price ahead of its Q2 earnings report?"
+    "What is the main reason for the decline in SpaceX's stock price ahead of its Q2 earnings report?",
+    "What is the main reason for the decline in US economic growth in the second quarter?"
   ],
   "words_of_day": [
-    "Liquidity",
     "Volatility",
     "Megatrend",
     "Collateral",
@@ -61,20 +60,10 @@
     "Momentum",
     "Bankruptcy",
     "Compound Interest",
-    "Hedging"
+    "Hedging",
+    "Hyperinflation"
   ],
   "story_titles": [
-    "The AI Boom Shows No Sign of Slowing, and the US Economy Is Reaping the Benefits",
-    "Your Retirement Math May Have a Surprising Flaw",
-    "Should You Get Paid to Care for a Family Member?",
-    "How to Create a Budget That Works for You",
-    "The Importance of Building an Emergency Fund",
-    "Tech Stocks Today: Big Tech Earnings This Week Mark a Pivotal Moment for the AI Trade",
-    "One Number Instantly Explains Why Apple's Investors Are Having a Wildly Different Year Than Oracle's",
-    "After 80 Stores Close, 63-Year-Old Chain Gives Chapter 11 Warning",
-    "Nasdaq Pares Losses as Chip Stocks Sell Off, S&P 500 and Dow Rise",
-    "PayPal Earnings Top Estimates, CEO Lores Does Not Rule Out Stripe Deal",
-    "Housing Market Trends: What the First Half of the Year Tells Us",
     "The Ideal Retirement Strategy to Keep Healthcare Costs Down",
     "Mike Rowe and Meta Train Data Center Custodian to Become Advanced Technician",
     "Your Healthcare Could Cost $185,500 in Retirement",
@@ -93,6 +82,17 @@
     "The Importance of Budgeting for High School Students",
     "The Future of Space Technology: What You Need to Know",
     "The Impact of Artificial Intelligence on the Job Market",
-    "The Importance of Cybersecurity in the Digital Age"
+    "The Importance of Cybersecurity in the Digital Age",
+    "Jim Cramer Sees Buying Opportunity in Post-Earnings Sell-Off",
+    "US Economic Growth Slows in Second Quarter",
+    "Microsoft's $41 Billion AI Bet Clears Major Test",
+    "International Sales of US Homes Dry Up, Except for One Country",
+    "US Economic Growth and Its Impact on the Global Economy",
+    "The Importance of Domestic Demand in Economic Growth",
+    "The Importance of Avoiding Scams and Frauds",
+    "The Importance of Budgeting for High School Students",
+    "Microsoft's AI Technology Shows Promising Results",
+    "The Future of Tech: How AI is Changing the Industry",
+    "The Impact of AI on the Job Market"
   ]
 }
