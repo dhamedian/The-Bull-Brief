@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind Jim Cramer's warning to investors buying into SpaceX?",
     "What is the main reason behind Alphabet's $269 billion market cap wipeout?",
     "What is the main reason for the decline in tech stocks, including Google and other companies?",
     "What is the main reason for the decline in oil prices?",
@@ -29,10 +28,10 @@
     "What is the main reason for the decline in the 63-year-old chain's financial performance?",
     "What is the main reason behind the 52-year-old international restaurant chain's decision to close all its locations?",
     "What is the main reason for the decline in SpaceX's stock price ahead of its Q2 earnings report?",
-    "What is the main reason for the decline in US economic growth in the second quarter?"
+    "What is the main reason for the decline in US economic growth in the second quarter?",
+    "What is the main reason for the recent increase in Amazon's stock price?"
   ],
   "words_of_day": [
-    "Volatility",
     "Megatrend",
     "Collateral",
     "Dividend",
@@ -61,20 +60,10 @@
     "Bankruptcy",
     "Compound Interest",
     "Hedging",
-    "Hyperinflation"
+    "Hyperinflation",
+    "Liquidity"
   ],
   "story_titles": [
-    "The Ideal Retirement Strategy to Keep Healthcare Costs Down",
-    "Mike Rowe and Meta Train Data Center Custodian to Become Advanced Technician",
-    "Your Healthcare Could Cost $185,500 in Retirement",
-    "How to Create a Budget That Works for You",
-    "The Importance of Emergency Funds for Students",
-    "The Future of Tech: How AI is Changing the Industry",
-    "The Impact of Social Media on Mental Health",
-    "The Future of Virtual Reality: How it's Changing the Way We Interact",
-    "SpaceX Stock Faces Pressure Ahead of Q2 Earnings",
-    "Logitech CEO Confident in Company's Operations",
-    "Dodgers Owner Faces SEC and DOJ Probes",
     "Global Economic Trends: What You Need to Know",
     "The Impact of Space Exploration on the Economy",
     "The Importance of Economic Indicators",
@@ -93,6 +82,17 @@
     "The Importance of Budgeting for High School Students",
     "Microsoft's AI Technology Shows Promising Results",
     "The Future of Tech: How AI is Changing the Industry",
-    "The Impact of AI on the Job Market"
+    "The Impact of AI on the Job Market",
+    "Amazon Beats Earnings Expectations, Apple Sinks",
+    "Starbucks CEO Explains Why Pumpkin Spice Latte Won't Be Year-Round",
+    "Big Tech's AI Spending Ramps Up",
+    "Fed Interest-Rate Decision Impacts Global Economy",
+    "Corporate Insiders Send Warning Signals About Stock Market",
+    "Health Savings Accounts Can Be a Great Retirement Tool",
+    "The Importance of Emergency Funds for Students",
+    "The Benefits of Investing in a Roth IRA",
+    "The Future of Artificial Intelligence in Healthcare",
+    "The Rise of Virtual Reality in Education",
+    "The Impact of 5G on Mobile Gaming"
   ]
 }
