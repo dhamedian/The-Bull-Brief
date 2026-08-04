@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the decline in tech stocks, including Google and other companies?",
     "What is the main reason for the decline in oil prices?",
     "What is the main reason why Polestar is exiting the US market?",
     "What is the main reason behind the delay in OpenAI's initial public offering?",
@@ -29,10 +28,10 @@
     "What is the main reason for the decline in SpaceX's stock price ahead of its Q2 earnings report?",
     "What is the main reason for the decline in US economic growth in the second quarter?",
     "What is the main reason for the recent increase in Amazon's stock price?",
-    "What is the primary reason Warren Buffett points to the Vanguard 500 Index Fund as a smart investment choice?"
+    "What is the primary reason Warren Buffett points to the Vanguard 500 Index Fund as a smart investment choice?",
+    "What is the potential impact of SpaceX's earnings on Tesla's stock price?"
   ],
   "words_of_day": [
-    "Collateral",
     "Dividend",
     "Lien",
     "Yield",
@@ -61,20 +60,10 @@
     "Hedging",
     "Hyperinflation",
     "Liquidity",
-    "Expense Ratio"
+    "Expense Ratio",
+    "Valuation"
   ],
   "story_titles": [
-    "International Sales of US Homes Dry Up, Except for One Country",
-    "US Economic Growth and Its Impact on the Global Economy",
-    "The Importance of Domestic Demand in Economic Growth",
-    "The Importance of Avoiding Scams and Frauds",
-    "The Importance of Budgeting for High School Students",
-    "Microsoft's AI Technology Shows Promising Results",
-    "The Future of Tech: How AI is Changing the Industry",
-    "The Impact of AI on the Job Market",
-    "Amazon Beats Earnings Expectations, Apple Sinks",
-    "Starbucks CEO Explains Why Pumpkin Spice Latte Won't Be Year-Round",
-    "Big Tech's AI Spending Ramps Up",
     "Fed Interest-Rate Decision Impacts Global Economy",
     "Corporate Insiders Send Warning Signals About Stock Market",
     "Health Savings Accounts Can Be a Great Retirement Tool",
@@ -93,6 +82,17 @@
     "Understanding Credit Scores as a High School Student",
     "How Tech is Changing the Home Improvement Industry",
     "The Future of Tech in Healthcare",
-    "The Rise of Virtual Reality in Education"
+    "The Rise of Virtual Reality in Education",
+    "Amazon's Potential to Hit $3 Trillion and What it Means for Investors",
+    "Elevance Health's Potential for Margin Recovery",
+    "The Impact of SpaceX Earnings on Tesla Stock",
+    "The Impact of Job Openings on the Labor Market",
+    "The Rise of Palantir in the AI Race",
+    "The Potential for Stocks to Soar in August",
+    "Understanding Term Life Insurance",
+    "The Importance of Emergency Savings",
+    "The Rise of AI in the Tech Industry",
+    "The Impact of SpaceX on the Tech Industry",
+    "The Use of AI in Healthcare"
   ]
 }
