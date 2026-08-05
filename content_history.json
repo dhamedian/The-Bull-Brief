@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the decline in oil prices?",
     "What is the main reason why Polestar is exiting the US market?",
     "What is the main reason behind the delay in OpenAI's initial public offering?",
     "What is the main reason for the decline in Micron's stock price?",
@@ -29,10 +28,10 @@
     "What is the main reason for the decline in US economic growth in the second quarter?",
     "What is the main reason for the recent increase in Amazon's stock price?",
     "What is the primary reason Warren Buffett points to the Vanguard 500 Index Fund as a smart investment choice?",
-    "What is the potential impact of SpaceX's earnings on Tesla's stock price?"
+    "What is the potential impact of SpaceX's earnings on Tesla's stock price?",
+    "What is the main reason for the increase in Uber's investment in robotaxi technology?"
   ],
   "words_of_day": [
-    "Dividend",
     "Lien",
     "Yield",
     "Price-Fixing",
@@ -61,20 +60,10 @@
     "Hyperinflation",
     "Liquidity",
     "Expense Ratio",
-    "Valuation"
+    "Valuation",
+    "Diversification"
   ],
   "story_titles": [
-    "Fed Interest-Rate Decision Impacts Global Economy",
-    "Corporate Insiders Send Warning Signals About Stock Market",
-    "Health Savings Accounts Can Be a Great Retirement Tool",
-    "The Importance of Emergency Funds for Students",
-    "The Benefits of Investing in a Roth IRA",
-    "The Future of Artificial Intelligence in Healthcare",
-    "The Rise of Virtual Reality in Education",
-    "The Impact of 5G on Mobile Gaming",
-    "Warren Buffett's Favorite ETF: What You Need to Know",
-    "Could Masco Be a Top Home Improvement Stock to Watch?",
-    "Why Knowles Could Be a Small-Cap Stock to Watch",
     "US Boosts the Yen: What This Means for Global Economies",
     "Impact of Healthcare Benefits on Pay Raises",
     "Medicare and Accident Coverage: What You Need to Know",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Savings",
     "The Rise of AI in the Tech Industry",
     "The Impact of SpaceX on the Tech Industry",
-    "The Use of AI in Healthcare"
+    "The Use of AI in Healthcare",
+    "Gold, Bitcoin, and $TRUMP: A Comparison of Investments",
+    "Uber's Stock Drops After Disappointing Bookings Guidance",
+    "Glencore's Trading Jackpot in the Middle East",
+    "US Economy Keeps Up Momentum Despite Rising Costs",
+    "Shopify's Stock Surges After Announcement of Growth Trajectory",
+    "Charles River's Stock Surges After Announcement of Metric High",
+    "The Importance of Emergency Savings for Students",
+    "The Benefits of Budgeting for Students",
+    "The Potential of Robotaxis for the Future of Transportation",
+    "The Rise of Artificial Intelligence in the Tech Industry",
+    "The Potential of Blockchain Technology for the Future of Finance"
   ]
 }
