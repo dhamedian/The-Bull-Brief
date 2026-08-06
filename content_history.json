@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason why Polestar is exiting the US market?",
     "What is the main reason behind the delay in OpenAI's initial public offering?",
     "What is the main reason for the decline in Micron's stock price?",
     "What is the main reason behind the lawsuit against Micron?",
@@ -29,10 +28,10 @@
     "What is the main reason for the recent increase in Amazon's stock price?",
     "What is the primary reason Warren Buffett points to the Vanguard 500 Index Fund as a smart investment choice?",
     "What is the potential impact of SpaceX's earnings on Tesla's stock price?",
-    "What is the main reason for the increase in Uber's investment in robotaxi technology?"
+    "What is the main reason for the increase in Uber's investment in robotaxi technology?",
+    "What is the potential valuation of Amazon's stake in AI startup Anthropic?"
   ],
   "words_of_day": [
-    "Lien",
     "Yield",
     "Price-Fixing",
     "Synergy",
@@ -61,20 +60,10 @@
     "Liquidity",
     "Expense Ratio",
     "Valuation",
-    "Diversification"
+    "Diversification",
+    "IPO"
   ],
   "story_titles": [
-    "US Boosts the Yen: What This Means for Global Economies",
-    "Impact of Healthcare Benefits on Pay Raises",
-    "Medicare and Accident Coverage: What You Need to Know",
-    "The Importance of Emergency Savings for Students",
-    "Understanding Credit Scores as a High School Student",
-    "How Tech is Changing the Home Improvement Industry",
-    "The Future of Tech in Healthcare",
-    "The Rise of Virtual Reality in Education",
-    "Amazon's Potential to Hit $3 Trillion and What it Means for Investors",
-    "Elevance Health's Potential for Margin Recovery",
-    "The Impact of SpaceX Earnings on Tesla Stock",
     "The Impact of Job Openings on the Labor Market",
     "The Rise of Palantir in the AI Race",
     "The Potential for Stocks to Soar in August",
@@ -93,6 +82,17 @@
     "The Benefits of Budgeting for Students",
     "The Potential of Robotaxis for the Future of Transportation",
     "The Rise of Artificial Intelligence in the Tech Industry",
-    "The Potential of Blockchain Technology for the Future of Finance"
+    "The Potential of Blockchain Technology for the Future of Finance",
+    "Amazon's $200 Billion Stake in Anthropic: What It Means for Investors",
+    "AppLovin Stock Plunges to 52-Week Low After Earnings Report",
+    "SpaceX Lockup Ends, Stock Bucks Higher",
+    "Don't Worry About What Others Have Saved for Retirement",
+    "My Late Friend Had $20,000 in Credit-Card Debt: Will Her Life Insurance Pay for It?",
+    "Grant Cardone Reveals the Best Thing to Do with $50,000",
+    "How to Create a Budget That Actually Works for You",
+    "The Importance of Emergency Savings",
+    "Google Faces AI Leadership Shake-Up",
+    "SpaceX Insiders Get Their First Chance to Cash Out",
+    "Amazon's Stake in Anthropic Could Be Worth Over $200 Billion"
   ]
 }
