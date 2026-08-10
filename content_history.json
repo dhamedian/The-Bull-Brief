@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the decline in Micron's stock price?",
     "What is the main reason behind the lawsuit against Micron?",
     "What is the main reason behind Senator Ashley Moody's 310% stock portfolio increase?",
     "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
@@ -29,10 +28,10 @@
     "What is the potential impact of SpaceX's earnings on Tesla's stock price?",
     "What is the main reason for the increase in Uber's investment in robotaxi technology?",
     "What is the potential valuation of Amazon's stake in AI startup Anthropic?",
-    "What is the main reason for the recent rally in US stocks and bonds, according to today's news?"
+    "What is the main reason for the recent rally in US stocks and bonds, according to today's news?",
+    "What is the main reason for TSMC's 45% increase in sales?"
   ],
   "words_of_day": [
-    "Price-Fixing",
     "Synergy",
     "Compound Interest",
     "Disruption",
@@ -61,20 +60,10 @@
     "Valuation",
     "Diversification",
     "IPO",
-    "Equity"
+    "Equity",
+    "Speculation"
   ],
   "story_titles": [
-    "US Economy Keeps Up Momentum Despite Rising Costs",
-    "Shopify's Stock Surges After Announcement of Growth Trajectory",
-    "Charles River's Stock Surges After Announcement of Metric High",
-    "The Importance of Emergency Savings for Students",
-    "The Benefits of Budgeting for Students",
-    "The Potential of Robotaxis for the Future of Transportation",
-    "The Rise of Artificial Intelligence in the Tech Industry",
-    "The Potential of Blockchain Technology for the Future of Finance",
-    "Amazon's $200 Billion Stake in Anthropic: What It Means for Investors",
-    "AppLovin Stock Plunges to 52-Week Low After Earnings Report",
-    "SpaceX Lockup Ends, Stock Bucks Higher",
     "Don't Worry About What Others Have Saved for Retirement",
     "My Late Friend Had $20,000 in Credit-Card Debt: Will Her Life Insurance Pay for It?",
     "Grant Cardone Reveals the Best Thing to Do with $50,000",
@@ -93,6 +82,17 @@
     "Understanding Credit Scores: A Foundation for Financial Health",
     "Claude AI's Stock Picks: A Blend of AI and Human Insight",
     "The Future of Tech Careers: Navigating AI and Beyond",
-    "The Intersection of Tech and Finance: Emerging Trends"
+    "The Intersection of Tech and Finance: Emerging Trends",
+    "TSMC Sees 45% Sales Increase Thanks to AI Chip Demand",
+    "Ceva Tops Q2 Targets On Edge AI Tech Licensing",
+    "Figs Stock Keeps Going Up",
+    "Is $1 Million Enough for a Household to Retire?",
+    "Air Taxi Maker Flies On Deal To Buy Boeing Subsidiaries",
+    "Berkshire Hathaway is Digging into its Nearly $400 Billion in Cash",
+    "How to Create a Budget That Works for You",
+    "The Importance of Emergency Savings",
+    "SpaceX Stock Hits Resistance at IPO Price After Earnings",
+    "The Stocks of these 'Toll Takers' Could be the AI Boom's Next Big Winners",
+    "Ceva Tops Q2 Targets On Edge AI Tech Licensing"
   ]
 }
