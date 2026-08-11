@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind the lawsuit against Micron?",
     "What is the main reason behind Senator Ashley Moody's 310% stock portfolio increase?",
     "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
     "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
@@ -29,10 +28,10 @@
     "What is the main reason for the increase in Uber's investment in robotaxi technology?",
     "What is the potential valuation of Amazon's stake in AI startup Anthropic?",
     "What is the main reason for the recent rally in US stocks and bonds, according to today's news?",
-    "What is the main reason for TSMC's 45% increase in sales?"
+    "What is the main reason for TSMC's 45% increase in sales?",
+    "What is the main reason for Nvidia's AI funding deal?"
   ],
   "words_of_day": [
-    "Synergy",
     "Compound Interest",
     "Disruption",
     "Equity",
@@ -61,20 +60,10 @@
     "Diversification",
     "IPO",
     "Equity",
-    "Speculation"
+    "Speculation",
+    "Synergy"
   ],
   "story_titles": [
-    "Don't Worry About What Others Have Saved for Retirement",
-    "My Late Friend Had $20,000 in Credit-Card Debt: Will Her Life Insurance Pay for It?",
-    "Grant Cardone Reveals the Best Thing to Do with $50,000",
-    "How to Create a Budget That Actually Works for You",
-    "The Importance of Emergency Savings",
-    "Google Faces AI Leadership Shake-Up",
-    "SpaceX Insiders Get Their First Chance to Cash Out",
-    "Amazon's Stake in Anthropic Could Be Worth Over $200 Billion",
-    "Tech Stocks Bounce Back: What It Means for Investors",
-    "Congresswoman's Investment Strategy: A Mix of AI and Nuclear Stocks",
-    "Luxury Giant Closes Stores: What It Means for Retail",
     "Soft Jobs Report Leads to Rally in US Stocks and Bonds",
     "Social Security Celebrates 91st Birthday: Its Enduring Importance",
     "Impact of AI on Employment: Opportunities and Challenges",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Savings",
     "SpaceX Stock Hits Resistance at IPO Price After Earnings",
     "The Stocks of these 'Toll Takers' Could be the AI Boom's Next Big Winners",
-    "Ceva Tops Q2 Targets On Edge AI Tech Licensing"
+    "Ceva Tops Q2 Targets On Edge AI Tech Licensing",
+    "Disney's Stock: Is It a Buy After Dropping 49% From Its All-Time High?",
+    "Brown-Forman Corporation Rejects $15 Billion Takeover Bid",
+    "PayPal Holdings Delivers Adequate Returns Without Dramatic Change",
+    "Wall Street Thinks Inflation Is Under Control, But Investors Should Be Cautious",
+    "The Impact of Nvidia's AI Funding Deal on the Tech Industry",
+    "The Impact of Interest Rates on Personal Finances",
+    "Should You Invest in a CD or a High-Yield Savings Account?",
+    "How to Create a Budget That Works for You",
+    "The Future of AI: How Nvidia's Funding Deal Will Impact the Industry",
+    "The Impact of CoreWeave and Supermicro's Earnings on the Tech Industry",
+    "The Future of Tech Careers: Navigating AI and Beyond"
   ]
 }
