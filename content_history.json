@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason behind Senator Ashley Moody's 310% stock portfolio increase?",
     "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
     "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
     "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
@@ -29,10 +28,10 @@
     "What is the potential valuation of Amazon's stake in AI startup Anthropic?",
     "What is the main reason for the recent rally in US stocks and bonds, according to today's news?",
     "What is the main reason for TSMC's 45% increase in sales?",
-    "What is the main reason for Nvidia's AI funding deal?"
+    "What is the main reason for Nvidia's AI funding deal?",
+    "What is the main reason for the recent surge in AI infrastructure stocks, according to today's news?"
   ],
   "words_of_day": [
-    "Compound Interest",
     "Disruption",
     "Equity",
     "Derivative",
@@ -61,20 +60,10 @@
     "IPO",
     "Equity",
     "Speculation",
-    "Synergy"
+    "Synergy",
+    "Leverage"
   ],
   "story_titles": [
-    "Soft Jobs Report Leads to Rally in US Stocks and Bonds",
-    "Social Security Celebrates 91st Birthday: Its Enduring Importance",
-    "Impact of AI on Employment: Opportunities and Challenges",
-    "Building an Emergency Fund: A Key to Financial Stability",
-    "Understanding Credit Scores: A Foundation for Financial Health",
-    "Claude AI's Stock Picks: A Blend of AI and Human Insight",
-    "The Future of Tech Careers: Navigating AI and Beyond",
-    "The Intersection of Tech and Finance: Emerging Trends",
-    "TSMC Sees 45% Sales Increase Thanks to AI Chip Demand",
-    "Ceva Tops Q2 Targets On Edge AI Tech Licensing",
-    "Figs Stock Keeps Going Up",
     "Is $1 Million Enough for a Household to Retire?",
     "Air Taxi Maker Flies On Deal To Buy Boeing Subsidiaries",
     "Berkshire Hathaway is Digging into its Nearly $400 Billion in Cash",
@@ -93,6 +82,17 @@
     "How to Create a Budget That Works for You",
     "The Future of AI: How Nvidia's Funding Deal Will Impact the Industry",
     "The Impact of CoreWeave and Supermicro's Earnings on the Tech Industry",
-    "The Future of Tech Careers: Navigating AI and Beyond"
+    "The Future of Tech Careers: Navigating AI and Beyond",
+    "AI Investment Game Heats Up: CoreWeave's Stock Surges After Earnings",
+    "Lumentum's Stock Surges, Boosting Optical-Networking Trade",
+    "Astronics Breaks Out, While SpaceX Supplier Tumbles",
+    "Social Security COLA Estimate: Seniors Could See a Bigger Raise in 2027",
+    "Citadel Securities Predicts a Leverage Buildup on the Horizon",
+    "Ray Dalio on the AI Investment Game: How to Play",
+    "How to Start a Roth IRA as a Teenager",
+    "The Importance of Emergency Savings for Teenagers",
+    "The Rise of AI Infrastructure Stocks: What You Need to Know",
+    "The Future of Tech Careers: Navigating AI and Beyond",
+    "The Impact of AI on the Job Market: What You Need to Know"
   ]
 }
