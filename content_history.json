@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for Tesla's stock price falling despite delivering a record number of vehicles in Q2?",
     "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
     "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
     "What is the main reason behind the expected price increases at Best Buy and Apple?",
@@ -29,10 +28,10 @@
     "What is the main reason for the recent rally in US stocks and bonds, according to today's news?",
     "What is the main reason for TSMC's 45% increase in sales?",
     "What is the main reason for Nvidia's AI funding deal?",
-    "What is the main reason for the recent surge in AI infrastructure stocks, according to today's news?"
+    "What is the main reason for the recent surge in AI infrastructure stocks, according to today's news?",
+    "What is the main reason for the surge in Lockheed Martin and Northrop Grumman's stock prices?"
   ],
   "words_of_day": [
-    "Disruption",
     "Equity",
     "Derivative",
     "Hedging",
@@ -61,20 +60,10 @@
     "Equity",
     "Speculation",
     "Synergy",
-    "Leverage"
+    "Leverage",
+    "Fiduciary"
   ],
   "story_titles": [
-    "Is $1 Million Enough for a Household to Retire?",
-    "Air Taxi Maker Flies On Deal To Buy Boeing Subsidiaries",
-    "Berkshire Hathaway is Digging into its Nearly $400 Billion in Cash",
-    "How to Create a Budget That Works for You",
-    "The Importance of Emergency Savings",
-    "SpaceX Stock Hits Resistance at IPO Price After Earnings",
-    "The Stocks of these 'Toll Takers' Could be the AI Boom's Next Big Winners",
-    "Ceva Tops Q2 Targets On Edge AI Tech Licensing",
-    "Disney's Stock: Is It a Buy After Dropping 49% From Its All-Time High?",
-    "Brown-Forman Corporation Rejects $15 Billion Takeover Bid",
-    "PayPal Holdings Delivers Adequate Returns Without Dramatic Change",
     "Wall Street Thinks Inflation Is Under Control, But Investors Should Be Cautious",
     "The Impact of Nvidia's AI Funding Deal on the Tech Industry",
     "The Impact of Interest Rates on Personal Finances",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Savings for Teenagers",
     "The Rise of AI Infrastructure Stocks: What You Need to Know",
     "The Future of Tech Careers: Navigating AI and Beyond",
-    "The Impact of AI on the Job Market: What You Need to Know"
+    "The Impact of AI on the Job Market: What You Need to Know",
+    "Lockheed Martin and Northrop Grumman Bet Big on Missile Defense Surge",
+    "Molina Healthcare Surged on Medicaid Clarity and Robust Results",
+    "Dell's Stock Has Beaten Micron and AMD This Year",
+    "Is $1 Million Enough for a Household to Retire?",
+    "Surprise Inflation Data Leads to Rise in Dow",
+    "Cisco and AI Name Dive on Earnings",
+    "How to Prioritize Your Savings Goals",
+    "The Importance of Emergency Funds",
+    "Anthropic Investors Aiming for $2 Trillion IPO",
+    "Cisco and AI Name Dive on Earnings",
+    "Dell's Stock Has Beaten Micron and AMD This Year"
   ]
 }
