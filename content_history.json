@@ -1,6 +1,5 @@
 {
   "quiz_questions": [
-    "What is the main reason for the decline in Tesla's stock price despite delivering a record number of vehicles in Q2?",
     "What is the main reason for Microsoft's decision to cut 4,800 jobs and overhaul its Xbox unit?",
     "What is the main reason behind the expected price increases at Best Buy and Apple?",
     "What is the primary driver of the AI bubble concerns in the tech industry?",
@@ -29,10 +28,10 @@
     "What is the main reason for TSMC's 45% increase in sales?",
     "What is the main reason for Nvidia's AI funding deal?",
     "What is the main reason for the recent surge in AI infrastructure stocks, according to today's news?",
-    "What is the main reason for the surge in Lockheed Martin and Northrop Grumman's stock prices?"
+    "What is the main reason for the surge in Lockheed Martin and Northrop Grumman's stock prices?",
+    "What is the main reason for the recent surge in Big Tech companies' AI spending?"
   ],
   "words_of_day": [
-    "Equity",
     "Derivative",
     "Hedging",
     "Arbitrage",
@@ -61,20 +60,10 @@
     "Speculation",
     "Synergy",
     "Leverage",
-    "Fiduciary"
+    "Fiduciary",
+    "Asset"
   ],
   "story_titles": [
-    "Wall Street Thinks Inflation Is Under Control, But Investors Should Be Cautious",
-    "The Impact of Nvidia's AI Funding Deal on the Tech Industry",
-    "The Impact of Interest Rates on Personal Finances",
-    "Should You Invest in a CD or a High-Yield Savings Account?",
-    "How to Create a Budget That Works for You",
-    "The Future of AI: How Nvidia's Funding Deal Will Impact the Industry",
-    "The Impact of CoreWeave and Supermicro's Earnings on the Tech Industry",
-    "The Future of Tech Careers: Navigating AI and Beyond",
-    "AI Investment Game Heats Up: CoreWeave's Stock Surges After Earnings",
-    "Lumentum's Stock Surges, Boosting Optical-Networking Trade",
-    "Astronics Breaks Out, While SpaceX Supplier Tumbles",
     "Social Security COLA Estimate: Seniors Could See a Bigger Raise in 2027",
     "Citadel Securities Predicts a Leverage Buildup on the Horizon",
     "Ray Dalio on the AI Investment Game: How to Play",
@@ -93,6 +82,17 @@
     "The Importance of Emergency Funds",
     "Anthropic Investors Aiming for $2 Trillion IPO",
     "Cisco and AI Name Dive on Earnings",
-    "Dell's Stock Has Beaten Micron and AMD This Year"
+    "Dell's Stock Has Beaten Micron and AMD This Year",
+    "Dow, S&P 500, Nasdaq Rise After Volatile July",
+    "AI-Tied IPO Stock Breaks Out After Guidance Boost",
+    "Stock Market Wavers After Hitting Record High",
+    "Congress Changes Rules Around Charitable Giving",
+    "Patients Take Health Insurance Battles to Social Media",
+    "Medicaid and Family Homes",
+    "The 50/30/20 Rule: A Simple Budgeting Solution",
+    "The Importance of Emergency Savings",
+    "Big Tech Companies Ramp Up AI Spending",
+    "The Future of Tech Careers",
+    "The Impact of AI on the Job Market"
   ]
 }
